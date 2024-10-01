@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>StudentAct Dataset</title>
+    <meta name="description" content="StudentAct Dataset">
+    <meta name="author" content="Lan Le">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/> 
+    <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+    <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
+    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    
+  </head>
+
+
+  <body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+        
+
+    <div class="container">    
+      <section>
+        <h1 id="the-pollenbee-dataset">StudentAct Dataset</h1>
+          <p>The StudentAct dataset is meant to aid research efforts in the general area of developing, 
+            testing and evaluating algorithms for human activity recognition. The Hanoi University of Science and  
+            Technology (HUST) has copyright in the collection of activity video and associated data and serves as a distributor of the StudentAct dataset.</p> 
+          <p>Release of the Database To advance the state-of-the-art in activity recognition, 
+            this database could be downloaded here. The requestor must sign in the commitment and send it to the database administrator 
+            (lan.lethi1@hust.edu.vn) by email. In addition to other possible remedies, failure to observe these restrictions may result in 
+            access being denied for the database. 
+          </p>
+      
+          <p>The researcher(s) agrees to the following restrictions on the StudentAct dataset: </p>
+            <ol>
+              <li>Redistribution: Without prior written approval from the database administrator, the StudentAct dataset, in whole or in part, will not be further distributed, published, copied, or disseminated in any way or form whatsoever, whether for profit or not. This includes further distributing, copying or disseminating to a different facility or organizational unit in the requesting university, organization, or company. </li>
+              <li> Modification and Commercial Use: The StudentAct dataset, in whole or in part, may not be modified or used for commercial purposes. </li>
+              <li> Publication Requirements: In no case should the still frames or video be used in any way that could cause the original subject embarrassment or mental anguish. </li>
+              <li> Citation/Reference: All documents and papers that report on research that uses the StudentAct dataset will acknowledge the use of the database by including an appropriate citation to the following StudentAct dataset. <i>
+                Phuong-Dung Nguyen, Hong-Quan Nguyen, Thuy-Binh Nguyen, Thi-Lan Le, Thanh-Hai Tran, Hai Vu, Quynh Nguyen Huu, A new dataset and systematic evaluation of deep learning models for student activity recognition from classroom videos, 2022 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)</i> </li>
+            </ol>    
+
+          
+        
+        <!-- <p><img src="/assets/images/datasets/pollenbee/video_dataset.gif" alt="Example of our collected video" width="700"></p> -->
+        
+        <h1 id="details">Details</h1>
+        <p>The data was collected from classes with different subjects and numbers of students, at the meeting room on the 9th floor of B1 building, 
+          Hanoi University of Science and Technology. The classroom measures 9.2m x 8.3m x 3.5m, can accommodate about 60 students, 
+          and is equipped with 5 cameras at 5 different viewing angles to ensure accurate images of activities and minimize obstruction. 
+          This data can also be used for multi-angle detection and recognition problems. The cameras are set to record at a speed of 25fps, 
+          with a resolution of full HD 1920x1080 pixels, and are synchronized in terms of recording time. 
+          In addition, the camera has a cover to help teachers and students feel as natural as possible, without feeling watched. 
+          Figure 1 shows the camera setting for data collection:
+        </p>
+
+        <p><img src="/assets/images/datasets/StudentAct/CameraSetting.png" alt="Data acquisition system" width="850"></p>
+
+        <p>
+          After recording, 45 GB of videos have been collected. We split the videos into frames at 5fps, and labeled all simultaneous activities in each frame. 
+          This approach reduces redundancy while retaining necessary information. We used an improved version of the LabelMe labeling tool to label at a fast 
+          speed and high accuracy. After labeling 31,046 images, we obtained a set of 596,371 bounding boxes for 5 activities of interest. 
+          The activities are named in English as follows: sitting, raising_hand, standing, sleeping, and using_phone.
+        </p>
+
+        <p>The labeled data is stored in json files, each with a corresponding image folder. The data format stored in the json file is described as follows:</p>
+        <p>
+          {"images":[{"file_name":"….jpg","width":1920,"height":1080,"id":…},…], <br>
+          "categories":[{"id":0,"name":"head"},<br>
+          {"id":1,"name":"sitting"},<br>
+          {"id":2,"name":"standing"},<br>
+          {"id":3,"name":"raising_hand"},<br>
+          {"id":4,"name":"using_phone"},<br>
+          {"id":5,"name":"sleeping"}],<br>
+          "annotations":[{"bbox":[top, left, width, height], "category_id":…, "image_id":…, "iscrowd":0, "area":…, "person_id":…,"cam_id":…,"id":…}, …]} 
+        </p>
+
+        <ul>
+          <li>“images”: contains a list of image file names, the size of the image files, and the id of those files. 
+            The image file name is formatted as [camera_name][yearmonthdayhourminutesecond]_[sequence_number_starting_from_starttime]. 
+              For example: ch01_20210331111112_0001.jpg => image number 0001 from 11:11:12 on 31/03/2021 viewed from camera 1.</li>
+          <li>“categories”: contains a list of label </li>
+          <li>“annotations”: contains a list of label definitions, each definition includes: 
+            the top-left coordinates of the bounding box of the label, the size of the bounding box, label id (corresponding to the categories list), 
+            image id (corresponding to the images list), area of the label region, student id, camera id, and that label’s id.</li>
+            
+        </ul>
+
+
+      <!-- <h1>Terms & Conditions of Use</h1>
+      <p>The datasets are released for academic research only, and are free to researchers from educational or research institutes for non-commercial purposes.</p>
+      <h1>Related Publications</h1>
+      <p>All publications using VnBeeTracking or any of the derived datasets should cite the following papers:</p>
+      <ol>
+        <li>Le, T. N., Tran, D. N., Phan, T. T. H., Pham, H. T., Le, T. L., & Vu, H. (2023, October). <em>A robust multiple honeybee tracking method from videos captured at beehive entrance</em>. In 2023 International Conference on Multimedia Analysis and Pattern Recognition (MAPR) (pp. 1-6). IEEE.</li>
+      </ol>        
+
+    <h1 id="download">Download</h1>
+    <p>The dataset can be downloaded <a href="https://drive.google.com/drive/folders/1m8E-RIRFznhRERB0vDTcxj1ow_rfgbEv?usp=drive_link">here</a>.  
+      5 original videos are placed in the folder named 'OrginalVideo'. The frames are extracted from the first 10s of each video and the .txt files 
+      that are the result of labeling the honeybees in the respective frames are placed in the folder named 'Image_Label'. The results of merging .txt files
+       of each video are placed in the folder named 'GroundTruth' and you can use these files  for evaluating the performance of your tracking model.
+    </p>     -->
+    
+    
+      </section> 
+   
+   
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>

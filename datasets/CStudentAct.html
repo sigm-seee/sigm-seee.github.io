@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>StudentAct Dataset</title>
+    <meta name="description" content="StudentAct Dataset">
+    <meta name="author" content="Lan Le">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/> 
+    <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+    <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
+    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    
+  </head>
+
+
+  <body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+        
+
+    <div class="container">    
+      <section>
+        <h1 id="the-cstudentAct-dataset">CStudentAct Dataset</h1>
+          <p>Although several image and video datasets have been collected for student activity recognition, 
+            they are mainly annotated at the frame level or sequence level, which can be used for object detection-based and video classification-based approaches. 
+            Therefore, to promote research in continuous student activity recognition, we have prepared a new dataset named CStudentAct. 
+            The CStudentAct Dataset is an extension of the StudentAct Dataset. It provides both temporal and spatial information for each activity. 
+            To build CStudentAct, we have annotated sequences for all bounding boxes belonging to the same action instance by linking them frame-by-frame over time. 
+            Figure 1 shows an example of labeling the raising_hand activity.
+          </p>       
+          
+        
+        <p><img src="/assets/images/datasets/CStudentAct/CStudentAct.jpg" alt="Example of labeling the raising hand activity sequence in CStudentAct dataset" width="700"></p>
+        Figure 1: Example of labeling the raising hand activity sequence in CStudentAct dataset
+        <div class="bigspacer"></div>
+        
+        <h1 id="details">Details</h1>
+        Each labeled data sample includes the following information:
+        <p>
+          <ul>
+            <li>	Activity type </li>
+            <li>	Action instances </li>
+            <li> Bounding boxes of the activity in each frame of interest </li>
+          </ul>     
+
+          In this dataset, action instances are defined as the names of dynamic activity sequences of students in the classroom. 
+          This means that the same person can have multiple action instances, each representing a different sequence of activities. 
+          Figure 2 illustrates several labeled activity sequences.
+        </p>
+
+        <p>
+          <img src="/assets/images/datasets/CStudentAct/activity_sequences.jpg" alt="Data acquisition system" width="850">       
+        </p>
+        Figure 2: Some of examples of activity sequences in our CStudentAct dataset: (a) raising hand, (b) standing, (c) sleeping, (d) using phone
+
+        <div class="bigspacer"></div>
+
+        <p>
+          After reviewing all activity sequences, the results are stored in a text file containing: 
+          frame ID, action instance ID, x, y, w, h, as shown in Figure 3. This serves as the basis for later evaluations. 
+          Using action instances helps to describe student behavior in the classroom in detail. 
+          Compared to using only image-level labels, action instances provide more information about how, where, and when activities are performed.
+        </p>
+
+        <p>
+          <img src="/assets/images/datasets/CStudentAct/label.jpg" alt="file structure stores labeled results of the Sleeping" width="850">       
+        </p>
+
+        <p>Table 1 shows the number of images, the number of action instances, and the number of labeled bounding boxes for different activity types in our CStudentAct dataset:</p>
+        
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
+          </style>
+          <table class="tg"><thead>
+            <tr>
+              <th class="tg-fymr">&nbsp;&nbsp;&nbsp;<br>Activity&nbsp;&nbsp;&nbsp;</th>
+              <th class="tg-fymr">&nbsp;&nbsp;&nbsp;<br>Number of images&nbsp;&nbsp;&nbsp;</th>
+              <th class="tg-fymr">&nbsp;&nbsp;&nbsp;<br>Number of&nbsp;&nbsp;&nbsp;act_ins&nbsp;&nbsp;&nbsp;</th>
+              <th class="tg-fymr">&nbsp;&nbsp;&nbsp;<br>Number of bbox&nbsp;&nbsp;&nbsp;</th>
+            </tr></thead>
+          <tbody>
+            <tr>
+              <td class="tg-0pky"> Raising_hand   </td>
+              <td class="tg-dvpl"> 296</td>
+              <td class="tg-dvpl"> 39</td>
+              <td class="tg-dvpl">3991</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky"> Using_phone   </td>
+              <td class="tg-dvpl"> 3125</td>
+              <td class="tg-dvpl"> 26</td>
+              <td class="tg-dvpl">11998 </td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">Sleeping</td>
+              <td class="tg-dvpl"> 3313</td>
+              <td class="tg-dvpl"> 31</td>
+              <td class="tg-dvpl"> 10162</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky"> Standing   </td>
+              <td class="tg-dvpl"> 4623</td>
+              <td class="tg-dvpl"> 46</td>
+              <td class="tg-dvpl"> 6626</td>
+            </tr>
+          </tbody></table>
+        
+          <div class="bigspacer"></div>
+       
+       <p>
+        The CStudentAct dataset is meant to aid research efforts in the general area of developing, testing and evaluating algorithms for human activity recognition. 
+        The Hanoi University of Science and Technology (HUST) has copyright in the collection of activity video and associated data and serves as a 
+        distributor of the CStudentAct dataset. <br>
+        Release of the Dataset To advance the state-of-the-art in activity recognition, this dataset could be downloaded. 
+        The requestor must sign in the commitment and send it to the dataset administrator (<a href="lan.lethi1@hust.edu.vn">lan.lethi1@hust.edu.vn</a>) by email. In addition to other possible remedies, 
+        failure to observe these restrictions may result in access being denied for the dataset.
+        </p>
+        <p>
+        The researcher(s) agrees to the following restrictions on the CStudentAct dataset:
+        </p>
+        <p>
+          <ul>  
+            <li><strong>Redistribution</strong>: Without prior written approval from the dataset administrator, the CStudentAct dataset, in whole or in part, will not be further distributed, 
+                published, copied, or disseminated in any way or form whatsoever, whether for profit or not. This includes further distributing, 
+                copying or disseminating to a different facility or organizational unit in the requesting university, organization, or company. </li>
+
+            <li> <strong>Modification and Commercial Use</strong>: The CStudentAct dataset, in whole or in part, may not be modified or used for commercial purposes. </li>
+            <li> <strong>Publication Requirements</strong>: In no case should the still frames or video be used in any way that could cause the original subject embarrassment or mental anguish. </li>
+          </ul>
+        
+       </p>
+      
+
+      <!-- <h1>Terms & Conditions of Use</h1>
+      <p>The datasets are released for academic research only, and are free to researchers from educational or research institutes for non-commercial purposes.</p>
+      <h1>Related Publications</h1>
+      <p>All publications using VnBeeTracking or any of the derived datasets should cite the following papers:</p>
+      <ol>
+        <li>Le, T. N., Tran, D. N., Phan, T. T. H., Pham, H. T., Le, T. L., & Vu, H. (2023, October). <em>A robust multiple honeybee tracking method from videos captured at beehive entrance</em>. In 2023 International Conference on Multimedia Analysis and Pattern Recognition (MAPR) (pp. 1-6). IEEE.</li>
+      </ol>        
+
+    <h1 id="download">Download</h1>
+    <p>The dataset can be downloaded <a href="https://drive.google.com/drive/folders/1m8E-RIRFznhRERB0vDTcxj1ow_rfgbEv?usp=drive_link">here</a>.  
+      5 original videos are placed in the folder named 'OrginalVideo'. The frames are extracted from the first 10s of each video and the .txt files 
+      that are the result of labeling the honeybees in the respective frames are placed in the folder named 'Image_Label'. The results of merging .txt files
+       of each video are placed in the folder named 'GroundTruth' and you can use these files  for evaluating the performance of your tracking model.
+    </p>     -->
+    
+    
+      </section> 
+   
+   
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>

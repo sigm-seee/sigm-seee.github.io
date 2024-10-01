@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>VnPersonSearch3000 Dataset</title>
+    <meta name="description" content="VnBeeTracking Dataset">
+    <meta name="author" content="Nhung Le">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/> 
+    <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+    <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
+    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    
+  </head>
+
+
+  <body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+        
+
+    <div class="container">    
+      <section>
+        <h1 id="the-VnPersonSearch3000-dataset">The VnPersonSearch3000 Dataset</h1>
+        The 3000VnPersonSearch dataset includes pairs of image and description. The images are
+        person bounding boxes that are extracted from video frames. The videos are captured by
+        both moving cameras and fixed-position cameras with different fields of view. They are
+        captured during day and night time with street lamp light. The capture scenarios are mostly
+        crowded street and outdoor festival scenes, so the occlusion and pose variance also appear 
+        <br>
+        <br>
+        <h2>  Data collection for 3000VnPersonSearch </h2>
+
+        <p>
+          In our previous work [33], human bounding boxes are manually extracted and wellbounded boxes are chosen for image database. This is a tedious task and far from realworld scenarios. In this work, we propose to perform this task via semi-automatic way.
+          Firstly, the YOLO-v4 method [1] is applied to automatically detect human in each frame.
+          The DEEPSORT tracking method presented in [52] is then utilized to track detected persons
+          over time. Figure 1 shows examples of detection and tracking results. 
+        </p>
+
+        <p>
+          <img src="/assets/images/datasets/VnPersonSearch3000/detection_result.jpg" alt="Examples of human detection and tracking sequences. The red bounding boxes contain the images
+          that are chosen for person search dataset" width="850"> <br> <i> Fig 1. Examples of human detection and tracking sequences. The red bounding boxes contain the images
+          that are chosen for person search dataset</i>
+        </p>
+        
+
+        <p>As our objective is not to evaluate detection and tracking models, so we just take the output of the detector and
+          tracker to build our dataset. As the detector and tracker could be imperfect, we manually
+          check and remove false positives or poor samples (too small resolution, motion blur, highly
+          occluded..). We also check to correctly cluster the person images that belong to the same
+          ID. By this way, we collect the person images for 3000 IDs and each ID has more than two
+          images with front and back/side views. To be able to widely release the new built dataset for 
+          research purposes while still ensure person privacy, all face areas of persons in the dataset
+          are blurred. To this end, we apply the face detection in the dlib library [16] to extract face
+          regions and then blur these regions by an ellipse with 10% transparency.
+          Moreover, to facilitate the description process of person images, a web-based interface
+          is built for the descriptors. Figure 2 shows the interface of our website by which the users
+          can log into it to make a new description or edit the existing ones for a person image.          
+        </p>       
+
+        <p>
+          <img src="/assets/images/datasets/VnPersonSearch3000/annotation.jpg" alt="The annotation GUI for Vietnamese language-based person search" width="850"> 
+          <br> <i> Fig 2. The annotation GUI for Vietnamese language-based person search</i>
+        </p>
+        
+        <p>
+          The interface is laid out with person images, descriptions, together with the corresponding
+          person IDs. Thanks to the developed interface, the descriptions for person images are made
+          by ten subjects to ensure the diversity of the descriptive language sentences. Each image is 
+          described by two different subjects. There are 6,302 person images with 12,602 Vietnamese
+          descriptions in total. Figure 3 shows some example IDs with images and the corresponding
+          Vietnamese descriptions in 3000VnPersonSearch datataset.
+        </p>
+
+        <p>
+          <img src="/assets/images/datasets/VnPersonSearch3000/sample.jpg" alt="Examples of images and Vietnamese descriptions of three persons/IDs (369, 388 and 1445) in
+          3000VnPersonSearch dataset. Each person/ID has two images and each image has two descriptions (Desc-1
+          and Desc-2)" width="850"> 
+          <br> <i> Fig 3. Examples of images and Vietnamese descriptions of three persons/IDs (369, 388 and 1445) in
+            3000VnPersonSearch dataset. Each person/ID has two images and each image has two descriptions (Desc-1
+            and Desc-2)</i>
+        </p>
+
+        <h2>Vietnamese text pre-processing in 3000VnPersonSearch</h2>
+      
+        <p>Vietnamese is an isolating language in which the basic unit is syllable. In writing, syllables
+          are separated by a white space. One word corresponds to one or more syllables. Almost
+          vocabulary is created by two or more syllables (80% of words are bi-syllable). 
+          For example a Vietnamese sentence of “Một người đan ` ong m ˆ ặc ao kho ´ ac m ´ au ` đen” (in English: a
+          man wears a black coat) contains 9 syllables that are segmented into 5 words as follows
+          “một (one) người đan ` ong (man) m ˆ ặc (wear) ao ´ khoac (a coat) m ´ au ` đen (black)”. These
+          segmented units are words and also called tokens. We use the underscore symbol “ ” to concatenate syllables into a word. 
+          Therefore we can keep the space as the separator for word.
+          There are several popular word segmentation tools for Vietnamese such as JVnSegmenter,
+          vnTokenizer, UETsegmenter. In this paper, Vietnamese text is all segmented into words
+          using RDRsegmenter tool which is reported to be superior to other tools at this moment in
+          both accuracy and performance speed. The current accuracy of the RDRsegmenter on a set
+          of two thousand testing sentences is about 97.90% F1 score [30]. The main error of word
+          segmentation is ambiguity error. For example: the sequence of words “dep t ´ ong ˆ đỏ” can be
+          segmented as “dep t ´ ong ˆ đỏ” (sandals with red color tone) or “dep ´ tong ˆ đỏ” (red flip-flops).
+          In 3000VnPersonSearch, there are a total of 6,302 person images with 12,602 Vietnamese
+          descriptions. Each description can be one or more sentences. The average length of the descriptions is 30.02 tokens, 
+          the longest one contains 95 tokens and the shortest one has 7 tokens
+          (see Fig. 4). There are 1,827 unique tokens with a total of 378,274 occurrences in the dataset
+        </p>
+
+        <p>
+          <img src="/assets/images/datasets/VnPersonSearch3000/chart.jpg" alt="Frequency of description length in word/token for 3000VnPersonSearch dataset" width="600"> 
+          <br> <i> Fig 4. Frequency of description length in word/token for 3000VnPersonSearch dataset: the total number of
+            descriptions is 12,602; the average length is 30.02 tokens with the standard deviation in length is 9.91; the
+            longest description is 95 tokens and the shortest is 7 tokens</i>
+        </p>
+
+      <h2>  Main challenges of 3000VnPersonSearch </h2>
+        <p> Table 1 shows the statistics of our 3000VnPersonSearch dataset in comparison with the
+            CUHK-PEDES dataset (the unique data set for person search based on English description)
+            and our previous data set VnPersonSearch created in [33].
+        </p>
+
+        <p>
+          <img src="/assets/images/datasets/VnPersonSearch3000/table1.jpg" alt="Comparison of text-based person search datasets" width="700"> 
+          <br> <i> Table1. Comparison of text-based person search datasets</i>
+        </p>
+
+        <p>
+          Although the number of IDs in 3000VnPersonSearch data set is smaller than that in
+          the CUHK-PEDES dataset, the 3000VnPersonSearch dataset raises some challenges that
+          reflect the real scenarios: (1) It contains some detected person images that do not fully
+          show the human from head to toe. This caused by occlusion or poor detection phase (see
+          example images of ID 369 in Fig. 4); (2) The same person may bring belongings or not
+          when captured at different tracks (for example, the same girl with the ID 380 in Fig. 3
+          brings nothing when she comes in a baker but when return she holds a cake in hands. These
+          images are captured at different tracks); (3) Different camera viewpoint angles capture the 
+          same person with or without belongings (for the same girl of the ID 1445 in Fig. 4, at a
+          side view, we see a black cross bag worn, but at backside capture this bag is not shown); (4)
+          Depending on the expression of the subjects, the same objects can be described differently
+          (for the ID 369 descriptions, one subject used “red flower shirt” but the other one describes
+          “red background T-shirt with yellow and green motifs”.) (5) The Vietnamese language is
+          one of the most rich of vocabulary and expression languages in the world, so Vietnamese
+          descriptions are diverse and abundance.         
+        </p>
+
+        <p>
+          To leverage the new dataset for research community, 3000VnPersonSearch dataset is
+          organized in the same format as CUHK-PEDES and is available for research purpose upon request.
+        </p>
+      
+
+      <h2>Terms & Conditions of Use</h2>
+      <p>The datasets are released for academic research only, and are free to researchers from educational or research institutes for non-commercial purposes.</p>
+      <h2>Related Publications</h2>
+      <p>All publications using 3000VnPersonSearch or any of the derived datasets should cite the following papers:</p>
+      <ol>
+        <li>Pham, Thi Thanh Thuy, Hong-Quan Nguyen, Hoai Phan, Thi-Ngoc-Diep Do, Thuy-Binh Nguyen, Thanh-Hai Tran, and Thi-Lan Le. 
+          <em> "Towards a large-scale person search by vietnamese natural language: dataset and methods.</em>
+           Multimedia Tools and Applications 81, no. 19 (2022): 27569-27600.</li>        
+      </ol>        
+
+    <h2 id="download">Download</h2>
+    <p>The requestor must sign in the commitment and send it to the database administrator (lan.lethi1@hust.edu.vn) by email.</p>    
+    </section> 
+   
+   
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>

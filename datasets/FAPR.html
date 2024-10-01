@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Fully Automated Person ReID (FAPR)</title>
+    <meta name="description" content="Fully Automated Person ReID (FAPR)">
+    <meta name="author" content="Hong-Quan Nguyen">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/> 
+    <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+    <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
+    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    
+  </head>
+
+
+  <body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+        
+
+    <div class="container">    
+      <section>
+        <h1 id="the-pollenbee-dataset">Fully Automated Person ReID (FAPR)</h1>
+        <p>Most existing datasets are only utilized in one of three considered tasks. Therefore, in this study, 
+            a dataset is built by our own for evaluating the performance of each step in the fully automated person ReID system, 
+            called Fully Automated Person ReID (FAPR) dataset. This dataset contains total 15 videos and is recorded on three days
+            by two static non-overlapping cameras with HD resolution (1920 × 1080), at 20 frames per second
+            (fps) in indoor and outdoor environment conditions. Some descriptions about this dataset is shown
+            in Table 1 in different terms:<strong> #Images, #Bounding boxes, #BB/Images, #IDs, #Tracklets </strong>. Some
+            characteristics of this dataset are described as follows.</p>
+            <p> Firstly, due to the limitation of observation environment, the distances from pedestrians to
+            cameras are not far (about from 2 meters to 8 meters). This leads to strong variation in human body
+            scale in a captured image. Secondly, the border area of each extracted image is blurred because
+            of pedestrian movement and low quality of surveillance cameras. The blurred phenomenon also
+            causes a great difficulty for human detection as well as tracking steps. Thirdly, two cameras are
+            installed to observe pedestrians horizontally. Lastly, as above mentioned, this dataset is captured in
+            both indoor and outdoor environments. The videos captured in indoor are suffered from neon light,
+            while outdoor videos are collected without daylight with heavy shadow. Especially, three videos
+            (20191105 indoor left, 20191105 indoor right, 20191105 indoor cross) are captured by sunlight
+            which cause noise for all steps. All characteristics mentioned above make this dataset also contains
+            common challenges as existing datasets used for human detection, tracking and person ReID. In
+            order to generate the ground truth for human detection evaluation, bounding boxes are manually
+            created by LabelImg tool which is the widely used tool for image annotation. Five annotators
+            have prepared all groundtruth for person detection, tracking and re-identification </p>       
+
+        <!-- <p><img src="/assets/images/datasets/pollenbee/system.PNG" alt="Data acquisition system" width="850"></p>
+        <p>Example of video collected by our data acquisition system:</p>
+        <video controls autoplay>
+          <source src="/assets/images/datasets/VnBeeTracking/2022-04-08-12-30.mp4" type="video/mp4">          
+          Your browser does not support the video tag.
+        </video> -->
+        <!-- <p><img src="/assets/images/datasets/pollenbee/video_dataset.gif" alt="Example of our collected video" width="700"></p> -->
+        
+        <h1 id="details">Details</h1>
+        <!-- <p>In order to capture images of honey bees at different times with different lighting conditions and numbers of honey bees, we recorded video over several days, 
+          each day between 6 am and 5:30 pm, each time is separate to 30 minutes, and each video lasts from 1 to 5 minutes. </p>
+        <p>5 videos recorded on mornings of different days were selected to build the dataset. These videos are recorded in 1080x720 resolution at 60 fps. 
+          We extracted frames from the first 10 seconds of each video, so the total number of frames extracted from all 5 videos is 3,000 frames. 
+          After that, for labeling all honeybees in these frames, we used the labelImg tool to determine the bounding box and assign ID for them. 
+          If a honeybee appears in multiple frames, the IDs assigned to it in these frames are the same. As a result, 252 IDs and 28,223 bounding boxes were annotated.</p>
+        <p>An example of a frame with labeled honeybees</p>
+        <p><img src="/assets/images/datasets/VnBeeTracking/annotation.png" alt="Annotation" width="800"></p> -->
+
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            .xl6518007{
+                text-align: right;
+
+            }
+        </style>
+
+        <p>The detailed statistics of FAPR dataset are shown in the table below:</p>      
+        <table border=0 cellpadding=0 cellspacing=0 width=961 style='border-collapse:
+            collapse;table-layout:fixed;width:800pt'>          
+            <thead height=20 style='height:15.0pt'>
+                <th height=20 class=xl6318007 width=252 style='height:15.0pt;width:200pt; text-align: center;'>Videos</th>
+                <th class=xl6318007 width=143 style='border-left:none;width:107pt; text-align: center;'>#Image</th>
+                <th class=xl6318007 width=211 style='border-left:none;width:158pt; text-align: center;'>#Bounding
+                boxes</td>
+                <th class=xl6318007 width=161 style='border-left:none;width:121pt; text-align: center;'>#BB/Image</th>
+                <th class=xl6318007 width=115 style='border-left:none;width:86pt; text-align: center;'>#IDs</th>
+                <th class=xl6318007 width=159 style='border-left:none;width:119pt; text-align: center;'>#Tracklets</th>
+            </thead>
+
+            <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>indoor</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>489</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1153</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.36</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>7</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>7</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>outdoor
+                easy</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1499</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2563</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1.71</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>6</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>7</td>
+            </tr>
+            <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>outdoor
+                hard</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2702</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>6552</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.42</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>8</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>20</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191104
+                indoor_left</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>363</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1287</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>3.55</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191104
+                indoor_right</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>440</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1266</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.88</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>13</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191104
+                indoor_cross</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>240</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1056</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>4.40</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191104_outdoor_left</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>449</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1333</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.97</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191104_outdoor_right</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>382</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1406</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>3.68</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>11</td>
+            </tr>
+            <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191104
+                outdoor_cross</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>200</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>939</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>4.70</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>12</td>
+            </tr>
+            <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191105
+                indoor_left</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>947</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1502</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1.59</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>11</td>
+            </tr>
+            <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191105
+                indoor_right</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>474</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1119</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.36</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+            </tr>
+            <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191105
+                indoor_cross</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1447</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>3087</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.13</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>21</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191105_outdoor_left</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>765</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1565</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.05</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>11</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>11</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191105
+                outdoor_right</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>470</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1119</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.38</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>10</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>11</td>
+            </tr>
+                <tr height=19 style='height:14.25pt'>
+                <td height=19 class=xl6418007 style='height:14.25pt;border-top:none'>20191105
+                outdoor_cross</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>1009</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2620</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>2.60</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>9</td>
+                <td class=xl6518007 style='border-top:none;border-left:none'>17</td>
+            </tr>
+
+            <![if supportMisalignedColumns]>
+            <tr height=0 style='display:none'>
+            <td width=172 style='width:129pt'></td>
+            <td width=143 style='width:107pt'></td>
+            <td width=211 style='width:158pt'></td>
+            <td width=161 style='width:121pt'></td>
+            <td width=115 style='width:86pt'></td>
+            <td width=159 style='width:119pt'></td>
+            </tr>
+            <![endif]>       
+        </table>        
+       
+      <!-- <p>where:</p>
+      <ul>
+        <li>Fs - number of frames in each video</li>
+        <li>IDs - number of IDs in each video</li>
+        <li>BBs - number of bounding boxes in each video</li>
+        <li>Max_IDs - maximum number of IDs per frame</li>
+        <li>Min_IDs - minimum number of IDs per frame</li>
+        <li>Avg_IDs - average number of IDs per frame</li>
+        <li>Max_Fs - maximum number of frames in which an ID appears</li>
+        <li>Avg_Fs - average number of frames in which an ID appears.</li>
+      </ul> -->
+
+      <div class="bigspacer"></div>
+      <h1>Terms & Conditions of Use</h1>
+      <p>The datasets are released for academic research only, and are free to researchers from educational or research institutes for non-commercial purposes.</p>
+      <h1>Related Publications</h1>
+      <p>All publications using VnBeeTracking or any of the derived datasets should cite the following papers:</p>
+      <ol>
+        <li >Hong-Quan Nguyen, Thuy-Binh Nguyen, Duc-Long Tran, Thi-Lan Le. <em>A UNIFIED FRAMEWORK FOR AUTOMATED PERSON RE-IDENTIFICATION</em>. 
+            Transport and Communications Science Journal, Vol. 71, Issue 7 (09/2020), 868-880.
+        </li>
+        <br>
+        <li>
+            Nguyen, Hong-Quan, Thuy-Binh Nguyen, T. A. Le, Thi-Lan Le, Thanh-Hai Vu, and Alexis Noe.
+           <em>Comparative evaluation of human detection and tracking approaches for online tracking applications.</em>
+            In 2019 International Conference on Advanced Technologies for Communications (ATC), IEEE, pp. 348-353. 2019.
+        </li>
+      </ol>        
+
+    <h1 id="download">Download</h1>
+    <p>
+        The requestor must sign in the commitment and send it to the database administrator (lan.lethi1@hust.edu.vn) by email.
+    </p>    
+   
+    </section> 
+   
+   
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>

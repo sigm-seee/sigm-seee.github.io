@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>VietForest dataset</title>
+    <meta name="description" content="VietForest dataset">
+    <meta name="author" content="Nhung Le">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/> 
+    <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+    <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
+    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    
+  </head>
+
+
+  <body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+        
+
+    <div class="container">    
+      <section>
+        <h1 id="the-viet-forest-dataset">The VietForest dataset</h1>
+        <p>Our Vietnamese forestry dataset (VietForest) is a valuable
+          resource comprising 156 classes of plant species predominantly found in the forests of Phu Tho province. This dataset
+          encompasses a diverse range of flora, including 18 orders, 45
+          families, and 122 genera, totaling 26,251 images. The dataset
+          showcases local plant species, many of which hold significant
+          ecological importance and some of which are listed for conservation efforts. The dataset not only aids in understanding the
+          local habitat but also provides detailed biological information
+          associated with each species</p> 
+        <p>The pictures in the dataset are taken in Phu Tho province in 2023.</p>
+        <p>
+          Some pictures of our dataset are shown below:
+        </p>  
+        <!-- <p><img src="./VietForest/VietForest.png"  width = "850"></p> -->
+        <p><img src="/assets/images/datasets/VietForest/VietForest.png" alt="Data acquisition system" width="850"></p>
+        
+        
+        
+        <h1 id="details">Details</h1>
+        <p>We trained multiple network structures, including ResNet50,
+          DenseNet169, SENet-154, and Vision Transformer B-16, on
+          two plant datasets using the loss functions described in the
+          previous section. All networks were trained with the same
+          configuration: a batch size of 32, 30 epochs, and an optimizer
+          set to SGD with a learning rate of 0.001, momentum of 0.9,
+          and weight decay of 5e-04. We utilized the StepLR learning
+          rate scheduler with a step size of 10.  </p>
+        <p>During the training
+          process, we employed basic data augmentation techniques
+          to enhance the robustness of our models. These techniques
+          included random rotation and resizing of images to a standard size of 224x224 pixel</p>
+
+        <p>The detailed recognition results of VietForest dataset on PLANTCLEF2017 dataset and VietForest dataset are shown in the table below:</p>      
+        <style>
+          table, th, td {
+            border: 1px solid black;
+          }
+        </style>
+        <!-- Table 1 -->
+        <table style="width:80%">
+        <caption>RECOGNITION RESULTS ON PLANTCLEF2017 DATASET</caption>
+        <tr>
+            <th>Network architecture</th>
+            <th>Loss function</th>
+            <th>Family Accuracy (%)</th>
+            <th>Genus Accuracy (%)</th>
+            <th>Species Accuracy (%)</th>
+        </tr>
+        <tr>
+          <td rowspan="3">ResNet-50</td>
+          <td>CE</td><td>60.29</td><td>55.46</td><td>49.16</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>66.88</td><td>61.80</td><td>53.97</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>68.45</td><td>63.25</td><td>56.43</td>
+        </tr>
+        <tr>
+          <td rowspan="3">DenseNet-169</td>
+          <td>CE</td><td>62.7</td><td>55.7</td><td>51.29</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>66.27</td><td>60.93</td><td>53.23</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>65.45</td><td>59.85</td><td>53.52</td>
+        </tr>
+        <tr>
+          <td rowspan="3">SENet-154</td>
+          <td>CE</td><td>67.84</td><td>63.35</td><td>56.67</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>71.05</td><td>66.31</td><td>58.61</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>72.95</td><td>68.05</td><td>60.51</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Vision transformer B-16</td>
+          <td>CE</td><td>68.92</td><td>61.09</td><td>54.31</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>72.05</td><td>67.45</td><td>29.25</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>73.40</td><td>68.73</td><td>60.04</td>
+        </tr>
+    </table>
+    <p>         </p>
+        <!-- Table 2 -->
+        
+      <table style="width:80%">
+        <caption>RECOGNITION RESULTS ON VIETFOREST DATASET</caption>
+        <tr>
+            <th>Network architecture</th>
+            <th>Loss function</th>
+            <th>Family Accuracy (%)</th>
+            <th>Genus Accuracy (%)</th>
+            <th>Species Accuracy (%)</th>
+        </tr>
+        <tr>
+          <td rowspan="4">ResNet-50</td>
+          <td>CE</td><td>80.80</td><td>79.37</td><td>77.87</td>
+        </tr>
+        <tr>
+            <td>HSL</td><td>79.56</td><td>57.18</td><td>77.27</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>81.32</td><td>80.06</td><td>78.43</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>82.03</td><td>80.42</td><td>79.02</td>
+        </tr>
+        <tr>
+          <td rowspan="4">DenseNet-169</td>
+          <td>CE</td><td>80.06</td><td>78.12</td><td>76.67</td>
+        </tr>
+        <tr>
+            <td>HSL</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>81.66</td><td>80.75</td><td>78.94</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>82.50</td><td>81.65</td><td>80.45</td>
+        </tr>
+        <tr>
+          <td rowspan="4">SENet-154</td>
+          <td>CE</td><td>81.68</td><td>80.78</td><td>79.00</td>
+        </tr>
+        <tr>
+            <td>HSL</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>81.66</td><td>80.75</td><td>79.94</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>82.5</td><td>81.65</td><td>80.45</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Vision transformer B-16</td>
+          <td>CE</td><td>81.02</td><td>79.47</td><td>78.16</td>
+        </tr>
+        <tr>
+            <td>HSL</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+            <td>TAX</td><td>80.29</td><td>79.41</td><td>78.09</td>
+        </tr>
+        <tr>
+            <td>AHL</td><td>81.65</td><td>80.72</td><td>79.12</td>
+        </tr>
+    </table>
+    <p>The detailed number of pictures per species:</p>
+    <table>
+      <caption>NUMBER OF PICTURES PER SPECIES</caption>
+      <tr>
+          <th>Vietnamese Species name</th>
+          <th>English Species name</th>
+          <th>Number of Images of species</th>
+          <th>Vietnamese Species name</th>
+          <th>English Species name</th>
+          <th>Number of Images of species</th>
+      </tr>
+      <tr>
+          <td>00001:Pơ mu</td>
+          <td>Hopea odorata</td>
+          <td>100</td>
+          <td>00079:Chò đãi</td>
+          <td>Annamocarya sinensis</td>
+          <td>29</td>
+      </tr>
+      <tr>
+          <td>00002:Hoàng đàn</td>
+          <td>Lagerstroemia speciosa</td>
+          <td>53</td>
+          <td>00080:Xá xị </td>
+          <td>Melaleuca leucadendra</td>
+          <td>191</td>
+      </tr>
+      <tr>
+          <td>00003:Thông đuôi ngựa</td>
+          <td>Pinus kesiya</td>
+          <td>188</td>
+          <td>00081:Vù hương</td>
+          <td>Osmanthus fragrans</td>
+          <td>91</td>
+      </tr>
+      <tr>
+          <td>00004:Thông nhựa</td>
+          <td>Pinus merkusii</td>
+          <td>51</td>
+          <td>00082:Re hương</td>
+          <td>Agarwood</td>
+          <td>77</td>
+      </tr>
+      <tr>
+          <td>00005:Thông caribeae</td>
+          <td>Caribbean pine (Pinus caribaea)</td>
+          <td>61</td>
+          <td>00083:Long não</td>
+          <td>Diospyros rhodocalyx</td>
+          <td>824</td>
+      </tr>
+      <tr>
+          <td>00006:Thông nàng</td>
+          <td>Pinus insularis</td>
+          <td>75</td>
+          <td>00084:Nanh chuột</td>
+          <td>Calamus</td>
+          <td>21</td>
+      </tr>
+      <tr>
+          <td>00007:Kim giao</td>
+          <td>Agathis</td>
+          <td>215</td>
+          <td>00085:Màng tang</td>
+          <td>Ficus septica</td>
+          <td>304</td>
+      </tr>
+      <tr>
+          <td>00008:Thông tre lá ngắn</td>
+          <td>Short-leafed pine (Pinus kesiya)</td>
+          <td>5</td>
+          <td>00086:Bời lời nhớt</td>
+          <td>Litsea cubeba</td>
+          <td>242</td>
+      </tr>
+      <tr>
+          <td>00009:Thông tre</td>
+          <td>Bamboo pine (Pinus merkusii)</td>
+          <td>269</td>
+          <td>00087:Kháo vàng</td>
+          <td>Lagerstroemia speciosa</td>
+          <td>102</td>
+      </tr>
+      <tr>
+          <td>00010:Thôi ba</td>
+          <td>Hopea odorata</td>
+          <td>190</td>
+          <td>00088:Cà lồ</td>
+          <td>Sonneratia alba</td>
+          <td>27</td>
+      </tr>
+      <tr>
+          <td>00011:Sau sau</td>
+          <td>Dipterocarpus alatus</td>
+          <td>283</td>
+          <td>00089:Kháo nước</td>
+          <td>Nypa fruticans</td>
+          <td>59</td>
+      </tr>
+      <tr>
+          <td>00012:Dâu da xoan</td>
+          <td>Strawberry tree (Muntingia calabura)</td>
+          <td>241</td>
+          <td>00090:Lộc vừng</td>
+          <td>Aleurites moluccanus</td>
+          <td>209</td>
+      </tr>
+      <tr>
+          <td>00013:Sấu </td>
+          <td>Dracontomelon duperreanum</td>
+          <td>327</td>
+          <td>00091:Tử vi</td>
+          <td>Prunus cerasoides</td>
+          <td>233</td>
+      </tr>
+      <tr>
+          <td>00014:Xoài</td>
+          <td>Mango (Mangifera indica)</td>
+          <td>559</td>
+          <td>00092:Bằng lăng nước</td>
+          <td>Careya arborea</td>
+          <td>421</td>
+      </tr>
+      <tr>
+          <td>00015:Xoan nhừ</td>
+          <td>Dipterocarpus intricatus</td>
+          <td>132</td>
+          <td>00093:Mỡ</td>
+          <td>Schleichera oleosa</td>
+          <td>116</td>
+      </tr>
+      <tr>
+          <td>00016:Sơn ta</td>
+          <td>Toona ciliata</td>
+          <td>33</td>
+          <td>00094:Ngọc lan trắng</td>
+          <td>Jasminum sambac</td>
+          <td>287</td>
+      </tr>
+      <tr>
+          <td>00017:Màu cau</td>
+          <td>Breadfruit (Artocarpus altilis)</td>
+          <td>9</td>
+          <td>00095:Giổi bà</td>
+          <td>Mango (Mangifera indica)</td>
+          <td>20</td>
+      </tr>
+      <tr>
+          <td>00018:Hoàng Lan</td>
+          <td>Orchid tree (Bauhinia variegata)</td>
+          <td>193</td>
+          <td>00096:Ngọc lan vàng</td>
+          <td>Michelia champaca</td>
+          <td>120</td>
+      </tr>
+      <tr>
+          <td>00019:Sữa </td>
+          <td>Ficus benjamina</td>
+          <td>287</td>
+          <td>00097:Giổi xanh</td>
+          <td>Green mango</td>
+          <td>85</td>
+      </tr>
+      <tr>
+          <td>00020:Thừng mực mỡ</td>
+          <td>Cratoxylum formosum</td>
+          <td>16</td>
+          <td>00098:Vàng tâm</td>
+          <td>Aquilaria crassna</td>
+          <td>87</td>
+      </tr>
+      <tr>
+          <td>00021:Thừng mực lông</td>
+          <td>Cratoxylum cochinchinense</td>
+          <td>14</td>
+          <td>00099:Gội nếp</td>
+          <td>Nephelium lappaceum</td>
+          <td>15</td>
+      </tr>
+      <tr>
+          <td>00022:Chân chim lá tám</td>
+          <td>Pterocarpus macrocarpus</td>
+          <td>202</td>
+          <td>00100:Gội gác</td>
+          <td>Baccaurea ramiflora</td>
+          <td>69</td>
+      </tr>
+      <tr>
+          <td>00023:Kè đuôi dông</td>
+          <td>Lannea coromandelica</td>
+          <td>122</td>
+          <td>00101:Quyếch</td>
+          <td>Syzygium jambos</td>
+          <td>38</td>
+      </tr>
+      <tr>
+          <td>00024:Núc nác</td>
+          <td>Strychnos nux-vomica</td>
+          <td>342</td>
+          <td>00102:Lát hoa</td>
+          <td>Dalbergia monetaria</td>
+          <td>133</td>
+      </tr>
+      <tr>
+          <td>00025:Rà đẹt đền hùng</td>
+          <td>Hopea hongyao</td>
+          <td>167</td>
+          <td>00103:Xà cừ</td>
+          <td>Hopea odorata</td>
+          <td>206</td>
+      </tr>
+      <tr>
+          <td>00026:Quao xanh</td>
+          <td>Careya arborea</td>
+          <td>135</td>
+          <td>00104:Xoan</td>
+          <td>Dalbergia tonkinensis</td>
+          <td>276</td>
+      </tr>
+      <tr>
+          <td>00027:Đinh </td>
+          <td>Canarium album</td>
+          <td>20</td>
+          <td>00105:Trương vân </td>
+          <td>Cratoxylum formosum</td>
+          <td>21</td>
+      </tr>
+      <tr>
+          <td>00028:Gạo </td>
+          <td>Rice (Oryza sativa)</td>
+          <td>234</td>
+          <td>00106:Muồng ràng ràng</td>
+          <td>Dipterocarpus alatus</td>
+          <td>59</td>
+      </tr>
+      <tr>
+          <td>00029:Bông Gòn </td>
+          <td>Cotton (Gossypium)</td>
+          <td>286</td>
+          <td>00107:Bản xe</td>
+          <td>Artocarpus hypargyreus</td>
+          <td>51</td>
+      </tr>
+      <tr>
+          <td>00030:Trám trắng</td>
+          <td>Lagerstroemia floribunda</td>
+          <td>439</td>
+          <td>00108:Mán đỉa</td>
+          <td>Ailanthus triphysa</td>
+          <td>145</td>
+      </tr>
+      <tr>
+          <td>00031:Trám chim</td>
+          <td>Lagerstroemia calyculata</td>
+          <td>155</td>
+          <td>00109:Phân mã</td>
+          <td>Altingia excelsa</td>
+          <td>17</td>
+      </tr>
+      <tr>
+          <td>00032:Trám đen</td>
+          <td>Lagerstroemia speciosa</td>
+          <td>157</td>
+          <td>00110:Sui</td>
+          <td>Dalbergia cochinchinensis</td>
+          <td>176</td>
+      </tr>
+      <tr>
+          <td>00033:Ban trắng</td>
+          <td>Bauhinia variegata</td>
+          <td>30</td>
+          <td>00111:Mít</td>
+          <td>Artocarpus heterophyllus</td>
+          <td>567</td>
+      </tr>
+      <tr>
+          <td>00034:Móng bò đỏ (ban đỏ)</td>
+          <td>Bauhinia blakeana (Hong Kong orchid tree)</td>
+          <td>210</td>
+          <td>00112:Chay</td>
+          <td>Ficus religiosa</td>
+          <td>92</td>
+      </tr>
+      <tr>
+          <td>00035:Muồng hoàng yến</td>
+          <td>Flamboyant tree (Delonix regia)</td>
+          <td>249</td>
+          <td>00113:Dướng</td>
+          <td>Ficus lacor</td>
+          <td>527</td>
+      </tr>
+      <tr>
+          <td>00036:Muồng hoa đào</td>
+          <td>Japanese apricot (Prunus mume)</td>
+          <td>222</td>
+          <td>00114:Đa </td>
+          <td>Ficus benjamina</td>
+          <td>218</td>
+      </tr>
+      <tr>
+          <td>00037:Muồng đen</td>
+          <td>Delonix regia</td>
+          <td>260</td>
+          <td>00115:Vả</td>
+          <td>Ficus racemosa</td>
+          <td>204</td>
+      </tr>
+      <tr>
+          <td>00038:Muồng hoa vàng </td>
+          <td>Golden shower tree (Cassia fistula)</td>
+          <td>176</td>
+          <td>00116:Sanh</td>
+          <td>Ficus altissima</td>
+          <td>181</td>
+      </tr>
+      <tr>
+          <td>00039:Phượng vĩ</td>
+          <td>Lagerstroemia speciosa</td>
+          <td>277</td>
+          <td>00117:Đa búp đỏ</td>
+          <td>Ficus microcarpa</td>
+          <td>218</td>
+      </tr>
+      <tr>
+          <td>00040:Lim xanh</td>
+          <td>Melia azedarach</td>
+          <td>332</td>
+          <td>00118:Đề</td>
+          <td>Ficus tinctoria</td>
+          <td>84</td>
+      </tr>
+      <tr>
+          <td>00041:Bồ kết</td>
+          <td>Starfruit (Averrhoa carambola)</td>
+          <td>232</td>
+          <td>00119:Máu chó lá lớn</td>
+          <td>Allophylus cobbe</td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td>00042:Mí </td>
+          <td>Mimusops elengi</td>
+          <td>285</td>
+          <td>00120:Máu chó lá bé</td>
+          <td>Rhus chinensis</td>
+          <td>183</td>
+      </tr>
+      <tr>
+          <td>00043:Lim xẹt</td>
+          <td>Limonia acidissima (Wood apple)</td>
+          <td>168</td>
+          <td>00121:Vối</td>
+          <td>Ficus hispida</td>
+          <td>388</td>
+      </tr>
+      <tr>
+          <td>00044:Vàng anh</td>
+          <td>Tabebuia</td>
+          <td>225</td>
+          <td>00122:Trâm trắng</td>
+          <td>Ailanthus triphysa</td>
+          <td>19</td>
+      </tr>
+      <tr>
+          <td>00045:Gụ lau</td>
+          <td>Dipterocarpus dyeri</td>
+          <td>100</td>
+          <td>00123:Trúc tiết</td>
+          <td>Bambusa procera</td>
+          <td>472</td>
+      </tr>
+      <tr>
+          <td>00046:Bứa </td>
+          <td>Ficus microcarpa</td>
+          <td>139</td>
+          <td>00124:Răng cá</td>
+          <td>Aquilaria sinensis</td>
+          <td>113</td>
+      </tr>
+      <tr>
+          <td>00047:Vắp</td>
+          <td>Hopea odorata</td>
+          <td>19</td>
+          <td>00125:Xoan đào</td>
+          <td>Dalbergia fusca</td>
+          <td>54</td>
+      </tr>
+      <tr>
+          <td>00048:Chò nhai</td>
+          <td>Ficus tinctoria</td>
+          <td>19</td>
+          <td>00126:Gáo</td>
+          <td>Crateva adansonii</td>
+          <td>77</td>
+      </tr>
+      <tr>
+          <td>00049:Chò xanh</td>
+          <td>Dipterocarpus alatus</td>
+          <td>174</td>
+          <td>00127:Hoắc quang tía</td>
+          <td>Dalbergia hupeana</td>
+          <td>29</td>
+      </tr>
+      <tr>
+          <td>00050:Bàng</td>
+          <td>Indian almond (Terminalia catappa)</td>
+          <td>403</td>
+          <td>00128:Bưởi bung</td>
+          <td>Annona squamosa</td>
+          <td>240</td>
+      </tr>
+      <tr>
+          <td>00051:Dầu rái</td>
+          <td>Castor oil plant</td>
+          <td>278</td>
+          <td>00129:Bưởi</td>
+          <td>Citrus maxima</td>
+          <td>256</td>
+      </tr>
+      <tr>
+          <td>00052:Chò nâu</td>
+          <td>Brown bamboo</td>
+          <td>151</td>
+          <td>00130:Hồng bì rừng</td>
+          <td>Diospyros gracilis</td>
+          <td>24</td>
+      </tr>
+      <tr>
+          <td>00053:Sao đen</td>
+          <td>Golden oak</td>
+          <td>642</td>
+          <td>00131:Hồng bì</td>
+          <td>Diospyros decandra</td>
+          <td>322</td>
+      </tr>
+      <tr>
+          <td>00054:Chò chỉ</td>
+          <td>Bamboo stake</td>
+          <td>186</td>
+          <td>00132:Thôi chanh</td>
+          <td>Clausena indica</td>
+          <td>21</td>
+      </tr>
+      <tr>
+          <td>00055:Táu mật</td>
+          <td>Dipterocarpus alatus</td>
+          <td>63</td>
+          <td>00133:Trường mật</td>
+          <td>Lannea coromandelica</td>
+          <td>19</td>
+      </tr>
+      <tr>
+          <td>00056:Mun</td>
+          <td>Dipterocarpus retusus</td>
+          <td>113</td>
+          <td>00134:Trường sâng</td>
+          <td>Mallotus paniculatus</td>
+          <td>12</td>
+      </tr>
+      <tr>
+          <td>00057:Côm tầng</td>
+          <td>Reed bamboo</td>
+          <td>146</td>
+          <td>00135:Sến mật</td>
+          <td>Cinnamomum iners</td>
+          <td>170</td>
+      </tr>
+      <tr>
+          <td>00058:Chòi mòi núi</td>
+          <td>Mountain thatch</td>
+          <td>119</td>
+          <td>00136:Sến xanh </td>
+          <td>Cinnamomum cassia</td>
+          <td>138</td>
+      </tr>
+      <tr>
+          <td>00059:Thẩu tấu</td>
+          <td>Dipterocarpus intricatus</td>
+          <td>107</td>
+          <td>00137:Thanh thất</td>
+          <td>Curcuma zedoaria</td>
+          <td>270</td>
+      </tr>
+      <tr>
+          <td>00060:Dâu da đất</td>
+          <td>Strawberry tree</td>
+          <td>83</td>
+          <td>00138:Sảng nhung</td>
+          <td>Dalbergia cochinchinensis</td>
+          <td>397</td>
+      </tr>
+      <tr>
+          <td>00061:Nhội</td>
+          <td>Java plum (Syzygium cumini)</td>
+          <td>267</td>
+          <td>00139:Lòng mang thường</td>
+          <td>Buchanania lanzan</td>
+          <td>126</td>
+      </tr>
+      <tr>
+          <td>00062:Vạng trứng</td>
+          <td>Egg yolk</td>
+          <td>97</td>
+          <td>00140:Lòng mang cụt</td>
+          <td>Buchanania cochinchinensis</td>
+          <td>31</td>
+      </tr>
+      <tr>
+          <td>00063:Cánh kiến</td>
+          <td>Camphor tree</td>
+          <td>190</td>
+          <td>00141:Dung nam</td>
+          <td>Lannea coromandelica</td>
+          <td>9</td>
+      </tr>
+      <tr>
+          <td>00064:Me rừng</td>
+          <td>Wild tamarind</td>
+          <td>192</td>
+          <td>00142:Hải đường</td>
+          <td>Suaeda maritima</td>
+          <td>137</td>
+      </tr>
+      <tr>
+          <td>00065:Sòi tía</td>
+          <td>Hopea odorata</td>
+          <td>128</td>
+          <td>00143:Vối thuốc </td>
+          <td>Ficus hispida</td>
+          <td>126</td>
+      </tr>
+      <tr>
+          <td>00066:Trẩu</td>
+          <td>Barringtonia asiatica</td>
+          <td>395</td>
+          <td>00144:Vối thuốc răng cưa</td>
+          <td>Ficus religiosa</td>
+          <td>61</td>
+      </tr>
+      <tr>
+          <td>00067:Sưa </td>
+          <td>Dalbergia tonkinensis</td>
+          <td>222</td>
+          <td>00145:Trầm hương</td>
+          <td>Aquilaria crassna</td>
+          <td>218</td>
+      </tr>
+      <tr>
+          <td>00068:Thàn mát</td>
+          <td>Shorea obtusa</td>
+          <td>212</td>
+          <td>00146:Nghiến</td>
+          <td>Ficus altissima</td>
+          <td>136</td>
+      </tr>
+      <tr>
+          <td>00069:Ràng ràng mít</td>
+          <td>Jackfruit tree</td>
+          <td>28</td>
+          <td>00147:Cò ke</td>
+          <td>Ficus glomerata</td>
+          <td>218</td>
+      </tr>
+      <tr>
+          <td>00070:Ràng ràng xanh</td>
+          <td>Green jackfruit tree</td>
+          <td>55</td>
+          <td>00148:Cơm nguội vàng</td>
+          <td>Crateva adansonii</td>
+          <td>152</td>
+      </tr>
+      <tr>
+          <td>00071:Giáng hương </td>
+          <td>Dalbergia odorifera</td>
+          <td>193</td>
+          <td>00149:Ngát lông</td>
+          <td>Polyalthia longifolia</td>
+          <td>66</td>
+      </tr>
+      <tr>
+          <td>00072:Cà ổi ấn độ</td>
+          <td>Indian jujube</td>
+          <td>59</td>
+          <td>00150:Hu đay</td>
+          <td>Alstonia scholaris</td>
+          <td>281</td>
+      </tr>
+      <tr>
+          <td>00073:Dẻ ăn hạt</td>
+          <td>Acacia pennata</td>
+          <td>52</td>
+          <td>00151:Tử châu lá lớn</td>
+          <td>Michelia figo</td>
+          <td>16</td>
+      </tr>
+      <tr>
+          <td>00074:Sồi phảng</td>
+          <td>Quercus serrata</td>
+          <td>110</td>
+          <td>00152:Tếch</td>
+          <td>Sterculia foetida</td>
+          <td>300</td>
+      </tr>
+      <tr>
+          <td>00075:Sồi xanh</td>
+          <td>Green oak</td>
+          <td>91</td>
+          <td>00153:Đẻn năm lá</td>
+          <td>Alstonia scholaris</td>
+          <td>36</td>
+      </tr>
+      <tr>
+          <td>00076:Dẻ cau</td>
+          <td>Betel palm</td>
+          <td>92</td>
+          <td>00154:Đẻn ba lá</td>
+          <td>Polyalthia longifolia</td>
+          <td>139</td>
+      </tr>
+      <tr>
+          <td>00077:Chẹo</td>
+          <td>Casuarina equisetifolia</td>
+          <td>33</td>
+          <td>00155:Lõi thọ</td>
+          <td>Aquilaria crassna</td>
+          <td>198</td>
+      </tr>
+      <tr>
+          <td>00078:Cơi</td>
+          <td>Rubber tree (Ficus elastica)</td>
+          <td>173</td>
+          <td>00156:Bảy lá một hoa</td>
+          <td>Sterculia foetida</td>
+          <td>367</td>
+      </tr>
+  </table>
+    
+
+      <h1>Terms & Conditions of Use</h1>
+      <p>The datasets are released for academic research only, and are free to researchers from educational or research institutes for non-commercial purposes.</p>
+      <h1>Related Publications</h1>
+      <p>All publications using VietForest or any of the derived datasets should cite the following papers:</p>
+      <ol>
+        <li></li>
+      </ol>        
+
+    <h1 id="download">Download</h1>
+    <p>The requestor must sign in the commitment and send it to the database administrator (lan.lethi1@hust.edu.vn) by email.</p>  
+
+      </p>    
+    </section> 
+   
+   
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>

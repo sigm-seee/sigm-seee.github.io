@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>VnBeeTracking Dataset</title>
+    <meta name="description" content="VnBeeTracking Dataset">
+    <meta name="author" content="Nhung Le">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/> 
+    <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+    <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+
+    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+    
+  </head>
+
+
+  <body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+        
+
+    <div class="container">    
+      <section>
+        <h1 id="the-pollenbee-dataset">The VnBeeTracking Dataset</h1>
+        <p>The VnBeeTracking Dataset is built for the purpose of serving the tracking honeybee problem.</p> 
+        <p>The videos in the dataset are collected at the beehive entrance at the Research Center for Tropical Bees and Beekeeping, Vietnam National University of Agriculture in April 2022. </p>
+        <p>We used a data acquisition system consisting of an Nvidia jetson nano development kit and an IMX477 HQ camera with a 6mm CS-Mount lens 
+          which are placed in a housing surveillance weatherproof outdoor camera box. 
+          The camera is adjusted to the downward view and the camera box is attached to the upper area of the honeybee hive box as shown in the figure below:
+        </p>  
+
+        <p><img src="/assets/images/datasets/pollenbee/system.PNG" alt="Data acquisition system" width="850"></p>
+        <p>Example of video collected by our data acquisition system:</p>
+        <video controls autoplay>
+          <source src="/assets/images/datasets/VnBeeTracking/2022-04-08-12-30.mp4" type="video/mp4">          
+          Your browser does not support the video tag.
+        </video>
+        <!-- <p><img src="/assets/images/datasets/pollenbee/video_dataset.gif" alt="Example of our collected video" width="700"></p> -->
+        
+        <h1 id="details">Details</h1>
+        <p>In order to capture images of honey bees at different times with different lighting conditions and numbers of honey bees, we recorded video over several days, 
+          each day between 6 am and 5:30 pm, each time is separate to 30 minutes, and each video lasts from 1 to 5 minutes. </p>
+        <p>5 videos recorded on mornings of different days were selected to build the dataset. These videos are recorded in 1080x720 resolution at 60 fps. 
+          We extracted frames from the first 10 seconds of each video, so the total number of frames extracted from all 5 videos is 3,000 frames. 
+          After that, for labeling all honeybees in these frames, we used the labelImg tool to determine the bounding box and assign ID for them. 
+          If a honeybee appears in multiple frames, the IDs assigned to it in these frames are the same. As a result, 252 IDs and 28,223 bounding boxes were annotated.</p>
+        <p>An example of a frame with labeled honeybees</p>
+        <p><img src="/assets/images/datasets/VnBeeTracking/annotation.png" alt="Annotation" width="800"></p>
+        <p>The detailed statistics of VnBeeTracking dataset are shown in the table below:</p>      
+        <style>
+          table, th, td {
+            border: 1px solid black;
+          }
+        </style>
+        <table style="width:80%">
+        <thead>
+          <tr>
+            <th style="text-align: center">Video</th>
+            <th style="text-align: right">Fs</th>
+            <th style="text-align: right">IDs</th>
+            <th style="text-align: right">BBs</th>
+            <th style="text-align: right">Max IDs</th>
+            <th style="text-align: right">Min IDs</th>
+            <th style="text-align: right">Avg IDs</th>
+            <th style="text-align: right">Max Fs</th>
+            <th style="text-align: right">AVG Fs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center">Video1</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">25</td>
+            <td style="text-align: right">5,416</td>
+            <td style="text-align: right">11</td>
+            <td style="text-align: right">7</td>
+            <td style="text-align: right">9</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">217</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Video2</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">48</td>
+            <td style="text-align: right">2,399</td>
+            <td style="text-align: right">8</td>
+            <td style="text-align: right">1</td>
+            <td style="text-align: right">4</td>
+            <td style="text-align: right">129</td>
+            <td style="text-align: right">50</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Video3</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">44</td>
+            <td style="text-align: right">2,955</td>
+            <td style="text-align: right">9</td>
+            <td style="text-align: right">2</td>
+            <td style="text-align: right">5</td>
+            <td style="text-align: right">599</td>
+            <td style="text-align: right">67</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Video4</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">67</td>
+            <td style="text-align: right">7,450</td>
+            <td style="text-align: right">17</td>
+            <td style="text-align: right">6</td>
+            <td style="text-align: right">12</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">113</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Video5</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">68</td>
+            <td style="text-align: right">10,003</td>
+            <td style="text-align: right">24</td>
+            <td style="text-align: right">12</td>
+            <td style="text-align: right">17</td>
+            <td style="text-align: right">600</td>
+            <td style="text-align: right">147</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>where:</p>
+      <ul>
+        <li>Fs - number of frames in each video</li>
+        <li>IDs - number of IDs in each video</li>
+        <li>BBs - number of bounding boxes in each video</li>
+        <li>Max_IDs - maximum number of IDs per frame</li>
+        <li>Min_IDs - minimum number of IDs per frame</li>
+        <li>Avg_IDs - average number of IDs per frame</li>
+        <li>Max_Fs - maximum number of frames in which an ID appears</li>
+        <li>Avg_Fs - average number of frames in which an ID appears.</li>
+      </ul>
+
+      <h1>Terms & Conditions of Use</h1>
+      <p>The datasets are released for academic research only, and are free to researchers from educational or research institutes for non-commercial purposes.</p>
+      <h1>Related Publications</h1>
+      <p>All publications using VnBeeTracking or any of the derived datasets should cite the following papers:</p>
+      <ol>
+        <li>Le, T. N., Tran, D. N., Phan, T. T. H., Pham, H. T., Le, T. L., & Vu, H. (2023, October). <em>A robust multiple honeybee tracking method from videos captured at beehive entrance</em>. In 2023 International Conference on Multimedia Analysis and Pattern Recognition (MAPR) (pp. 1-6). IEEE.</li>
+      </ol>        
+
+    <h1 id="download">Download</h1>
+    <p>The dataset can be downloaded <a href="https://drive.google.com/drive/folders/1m8E-RIRFznhRERB0vDTcxj1ow_rfgbEv?usp=drive_link">here</a>.  
+      5 original videos are placed in the folder named 'OrginalVideo'. The frames are extracted from the first 10s of each video and the .txt files 
+      that are the result of labeling the honeybees in the respective frames are placed in the folder named 'Image_Label'. The results of merging .txt files
+       of each video are placed in the folder named 'GroundTruth' and you can use these files  for evaluating the performance of your tracking model.</p>    
+    </section> 
+   
+   
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+  </body>
+</html>
