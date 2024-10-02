@@ -1,4 +1,4 @@
-# UIT-Together Research Group 
+# SigM laboratory
 
 ## Updating the public site
 
