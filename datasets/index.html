@@ -1,266 +1,290 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Datasets</title>
-    <meta name="description" content="Datasets in the lab">
-    <meta name="author" content="Kyle E. Niemeyer">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datasets</title>
+  <meta name="description" content="Datasets in the lab">
+  <meta name="author" content="Kyle E. Niemeyer">
 
-    <!-- Bootstrap styles -->
-    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    
-    <!-- Sticky Footer -->
-    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+  <!-- Enable responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Custom styles -->
-    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+  <!-- Bootstrap styles -->
+  <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- icon -->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/themes/lab/images/logo/apple-touch-icon.png">
+  <!-- Sticky Footer -->
+  <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- icon -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/themes/lab/images/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon-16x16.png" sizes="16x16"> -->
-    <link rel="manifest" href="/assets/themes/lab/images/logo/icon-lab.jpg">
-    <link rel="mask-icon" href="/assets/themes/lab/images/logo/icon-lab.jpg" color="#5bbad5">
-    <!-- <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png"> -->
-    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon-lab.jpg">
-    <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/assets/themes/lab/images/logo/icon-lab.jpg">
+  <link rel="mask-icon" href="/assets/themes/lab/images/logo/icon-lab.jpg" color="#5bbad5">
+  <!-- <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png"> -->
+  <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon-lab.jpg">
+  <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
-    <!--<script src="https://use.fontawesome.com/51d391e302.js"></script> -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+  <!--<script src="https://use.fontawesome.com/51d391e302.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
-    <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
+  <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+  <link rel="stylesheet" href="/assets/css/academicons.min.css" />
 
-    <link rel="stylesheet" href="/assets/css/icon-list-group.css"/>
+  <link rel="stylesheet" href="/assets/css/icon-list-group.css" />
 
-    <!-- Fonts via Google -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+  <!-- Fonts via Google -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet'
+    type='text/css' />
 
-    <!-- Math via MathJax -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- Math via MathJax -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <!-- atom & rss feed
+  <!-- atom & rss feed
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
     -->
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Static top navbar -->
-    <iframe src="/includes/menu_top.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>  
+  <!-- Static top navbar -->
+  <iframe src="/includes/menu_top.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
 
-    <!-- Content -->
-    <div class="container">
-      <h2>Datasets</h2>    
+  <!-- Content -->
+  <div class="container">
+    <h2>Datasets</h2>
 
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="pull-right" href="#">                              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/CoboGesture/s7_TranVanThang_2_35_38.gif" alt="The CStudentAct Dataset">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/CoboGesture.html">                 
-                  <h4 class="media-heading">The CoboGesture Dataset<small class="text-muted">(2024)</small></h4>
-                </a> 
-                <p>The dataset consists of 150 videos from 50 subjects, including 11 females and 39 males. 
-                  Each video ranges from 100 seconds to 140 seconds in length and contains  2,479 gesture samples divided into 19 classes. 
-                  The time interval between two gestures is approximately 4 seconds. 
-                  In total, these 150 videos result in 490,000 RGB frames,  corresponding to about 4.5 hours of video.</p>
-                   
-            </div>
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="pull-right" href="#">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/CoboGesture/s7_TranVanThang_2_35_38.gif"
+              alt="The CStudentAct Dataset">
+          </a>
         </div>
-      </div> 
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/CoboGesture.html">
+            <h4 class="media-heading">The CoboGesture Dataset<small class="text-muted">(2024)</small></h4>
+          </a>
+          <p>The dataset consists of 150 videos from 50 subjects, including 11 females and 39 males.
+            Each video ranges from 100 seconds to 140 seconds in length and contains 2,479 gesture samples divided into
+            19 classes.
+            The time interval between two gestures is approximately 4 seconds.
+            In total, these 150 videos result in 490,000 RGB frames, corresponding to about 4.5 hours of video.</p>
 
-      <hr>
-
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="pull-right" href="#">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/CStudentAct/CStudentAct.jpg" alt="The CStudentAct Dataset">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/CStudentAct.html">                 
-                  <h4 class="media-heading">The CStudentAct Dataset<small class="text-muted">(2024)</small></h4>
-                </a> 
-                <p>Although several image and video datasets have been collected for student activity recognition, 
-                  they are mainly annotated at the frame level or sequence level, which can be used for object detection-based and video classification-based approaches. 
-                  Therefore, to promote research in continuous student activity recognition, we have prepared a new dataset named CStudentAct. 
-                  The CStudentAct Dataset is an extension of the StudentAct Dataset</p>
-                  
-            </div>
         </div>
-      </div> 
+      </div>
+    </div>
 
-      <hr>
+    <hr>
 
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="pull-right" href="#">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VietForest/VietForest.png" alt="The VietForest dataset">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/VietForest.html">                 
-                  <h4 class="media-heading">The VietForest dataset<small class="text-muted">(2024)</small></h4>
-                </a> 
-                <p>Our Vietnamese forestry dataset (VietForest) is a valuable
-                  resource comprising 156 classes of plant species predominantly found in the forests of Phu Tho province. This dataset
-                  encompasses a diverse range of flora, including 18 orders, 45
-                  families, and 122 genera, totaling 26,251 images. The dataset
-                  showcases local plant species, many of which hold significant
-                  ecological importance and some of which are listed for conservation efforts. The dataset not only aids in understanding the
-                  local habitat but also provides detailed biological information
-                  associated with each species</p>
-                  
-            </div>
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="pull-right" href="#">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/CStudentAct/CStudentAct.jpg"
+              alt="The CStudentAct Dataset">
+          </a>
         </div>
-      </div> 
-      
-      <hr>
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/CStudentAct.html">
+            <h4 class="media-heading">The CStudentAct Dataset<small class="text-muted">(2024)</small></h4>
+          </a>
+          <p>Although several image and video datasets have been collected for student activity recognition,
+            they are mainly annotated at the frame level or sequence level, which can be used for object detection-based
+            and video classification-based approaches.
+            Therefore, to promote research in continuous student activity recognition, we have prepared a new dataset
+            named CStudentAct.
+            The CStudentAct Dataset is an extension of the StudentAct Dataset</p>
 
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="pull-right" href="#">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VnBeeTracking/annotation.png" alt="The Pollenbee Dataset">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/VnBeeTracking.html">                 
-                  <h4 class="media-heading">The VnBeeTracking Dataset<small class="text-muted">(2023)</small></h4>
-                </a> 
-                <p>The VnBeeTracking Dataset is built for the purpose of serving the tracking honeybee problem.</p> 
-                <p>The videos in the dataset are collected at the beehive entrance at the Research Center for Tropical Bees and Beekeeping, Vietnam National University of Agriculture in April 2022. </p>
-                <p>We used a data acquisition system consisting of an Nvidia jetson nano development kit and an IMX477 HQ camera with a 6mm CS-Mount lens 
-                  which are placed in a housing surveillance weatherproof outdoor camera box. </p>
-                  
-            </div>
         </div>
-      </div> 
-      
-      <hr>
+      </div>
+    </div>
 
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="media-left" href="https://dinhtus49.github.io/">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/pollenbee/video_dataset.gif" alt="The Pollenbee Dataset">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/pollenbee.html">                 
-                  <h4 class="media-heading">The VnPollenBee Dataset<small class="text-muted">(2022)</small></h4>
-                </a>            
-             
+    <hr>
 
-                <p>
-                  The VnPollenbee Dataset is built for the purpose of serving the problem of detecting pollen bees. 
-                  The dataset contains more than 2000 imagesconsisting of 1,758 pollen bearing and 59,068 non-pollen bearing bees. <br>
-                  The dataset was collected at the bee farm of the Vietnam Agricultural Academy by a data acquisition system consisting of an 
-                  Nvidia jetson nano development kit and an IMX477 HQ camera with a 6mm CS-Mount lens, 
-                  all devices are placed in a housing surveillance weatherproof outdoor camera box. We adjust the camera along with the downward-facing view. 
-                  We attach the housing surveillance weatherproof outdoor camera box within only one stage of the hive body. Our data acquisition system:
-                </p>
-            </div>
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="pull-right" href="#">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VietForest/VietForest.png"
+              alt="The VietForest dataset">
+          </a>
         </div>
-      </div> 
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/VietForest.html">
+            <h4 class="media-heading">The VietForest dataset<small class="text-muted">(2024)</small></h4>
+          </a>
+          <p>Our Vietnamese forestry dataset (VietForest) is a valuable
+            resource comprising 156 classes of plant species predominantly found in the forests of Phu Tho province.
+            This dataset
+            encompasses a diverse range of flora, including 18 orders, 45
+            families, and 122 genera, totaling 26,251 images. The dataset
+            showcases local plant species, many of which hold significant
+            ecological importance and some of which are listed for conservation efforts. The dataset not only aids in
+            understanding the
+            local habitat but also provides detailed biological information
+            associated with each species</p>
 
-      <hr>
-
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="media-left" href="#">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/StudentAct/CameraSetting.png" alt="StudentAct Dataset">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/StudentAct.html" target="_blank">                 
-                  <h4 class="media-heading">StudentAct Dataset<small class="text-muted">(2021)</small></h4>
-                </a>           
-              
-
-                <p>
-                    The StudentAct dataset is meant to aid research efforts in the general area of developing, testing and evaluating algorithms for 
-                    human activity recognition. The Hanoi University of Science and  Technology (HUST) has copyright in the collection of 
-                    activity video and associated data and serves as a distributor of the StudentAct dataset.
-                </p>
-            </div>
         </div>
-      </div> 
-      
-      <hr>
+      </div>
+    </div>
 
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="media-left" href="#">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VnPersonSearch3000/VnPersonSearch3000.jpg" alt="Fully Automated Person ReID">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/VnPersonSearch3000.html" target="_blank">                 
-                  <h4 class="media-heading">VnPersonSearch3000<small class="text-muted">(2021)</small></h4>
-                </a>         
-              
+    <hr>
 
-                <p>
-                  The 3000VnPersonSearch dataset includes pairs of image and description. The images are
-                  person bounding boxes that are extracted from video frames. The videos are captured by
-                  both moving cameras and fixed-position cameras with different fields of view. They are
-                  captured during day and night time with street lamp light. The capture scenarios are mostly
-                  crowded street and outdoor festival scenes, so the occlusion and pose variance also appear
-                </p>
-            </div>
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="pull-right" href="#">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VnBeeTracking/annotation.png"
+              alt="The Pollenbee Dataset">
+          </a>
         </div>
-      </div> 
-  
-      <hr>
-    
-      <div class='row'>
-        <div class="media mb-1 mt-1">
-            <div class="col-md-4">
-              <a class="media-left" href="#">              
-                <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/FAPR.jpg" alt="Fully Automated Person ReID">
-              </a>
-            </div>
-            <div class="media-body col-md-8">
-                <!-- <a href="pollenbee.html"> -->
-                <a href="/datasets/FAPR.html" target="_blank">                 
-                  <h4 class="media-heading">Fully Automated Person ReID (FAPR)<small class="text-muted">(2020)</small></h4>
-                </a>            
-                <!-- Member list here -->
-                <!-- <a href="#">
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/VnBeeTracking.html">
+            <h4 class="media-heading">The VnBeeTracking Dataset<small class="text-muted">(2023)</small></h4>
+          </a>
+          <p>The VnBeeTracking Dataset is built for the purpose of serving the tracking honeybee problem.</p>
+          <p>The videos in the dataset are collected at the beehive entrance at the Research Center for Tropical Bees
+            and Beekeeping, Vietnam National University of Agriculture in April 2022. </p>
+          <p>We used a data acquisition system consisting of an Nvidia jetson nano development kit and an IMX477 HQ
+            camera with a 6mm CS-Mount lens
+            which are placed in a housing surveillance weatherproof outdoor camera box. </p>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="media-left" href="https://dinhtus49.github.io/">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/pollenbee/video_dataset.gif"
+              alt="The Pollenbee Dataset">
+          </a>
+        </div>
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/pollenbee.html">
+            <h4 class="media-heading">The VnPollenBee Dataset<small class="text-muted">(2022)</small></h4>
+          </a>
+
+
+          <p>
+            The VnPollenbee Dataset is built for the purpose of serving the problem of detecting pollen bees.
+            The dataset contains more than 2000 imagesconsisting of 1,758 pollen bearing and 59,068 non-pollen bearing
+            bees. <br>
+            The dataset was collected at the bee farm of the Vietnam Agricultural Academy by a data acquisition system
+            consisting of an
+            Nvidia jetson nano development kit and an IMX477 HQ camera with a 6mm CS-Mount lens,
+            all devices are placed in a housing surveillance weatherproof outdoor camera box. We adjust the camera along
+            with the downward-facing view.
+            We attach the housing surveillance weatherproof outdoor camera box within only one stage of the hive body.
+            Our data acquisition system:
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="media-left" href="#">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/StudentAct/CameraSetting.png"
+              alt="StudentAct Dataset">
+          </a>
+        </div>
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/StudentAct.html" target="_blank">
+            <h4 class="media-heading">StudentAct Dataset<small class="text-muted">(2021)</small></h4>
+          </a>
+
+
+          <p>
+            The StudentAct dataset is meant to aid research efforts in the general area of developing, testing and
+            evaluating algorithms for
+            human activity recognition. The Hanoi University of Science and Technology (HUST) has copyright in the
+            collection of
+            activity video and associated data and serves as a distributor of the StudentAct dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="media-left" href="#">
+            <img class="pull-left mr-3 img-fluid"
+              src="/assets/images/datasets/VnPersonSearch3000/VnPersonSearch3000.jpg" alt="Fully Automated Person ReID">
+          </a>
+        </div>
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/VnPersonSearch3000.html" target="_blank">
+            <h4 class="media-heading">VnPersonSearch3000<small class="text-muted">(2021)</small></h4>
+          </a>
+
+
+          <p>
+            The 3000VnPersonSearch dataset includes pairs of image and description. The images are
+            person bounding boxes that are extracted from video frames. The videos are captured by
+            both moving cameras and fixed-position cameras with different fields of view. They are
+            captured during day and night time with street lamp light. The capture scenarios are mostly
+            crowded street and outdoor festival scenes, so the occlusion and pose variance also appear
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class='row'>
+      <div class="media mb-1 mt-1">
+        <div class="col-md-4">
+          <a class="media-left" href="#">
+            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/FAPR.jpg"
+              alt="Fully Automated Person ReID">
+          </a>
+        </div>
+        <div class="media-body col-md-8">
+          <!-- <a href="pollenbee.html"> -->
+          <a href="/datasets/FAPR.html" target="_blank">
+            <h4 class="media-heading">Fully Automated Person ReID (FAPR)<small class="text-muted">(2020)</small></h4>
+          </a>
+          <!-- Member list here -->
+          <!-- <a href="#">
                   <img src="/assets/images/team/le-thi-lan-300x300.jpg" class="img-circle" alt="Thi-Lan Le" height="60">
                 </a>
 
@@ -272,27 +296,36 @@
                   <img src="/assets/images/team/Thuy-BinhNguyen.jpg" class="img-circle" alt="Thuy-Binh Nguyen" height="60">
                 </a>                           -->
 
-                <p>
-                  This dataset contains total 15 videos and is recorded on three days by two static non-overlapping cameras with HD resolution (1920 × 1080), 
-                  at 20 frames per second (fps) in indoor and outdoor environment conditions. There are 7 to 10 different people in each video. 
-                  The result of splitting the frames is 11876 images that have been labeled with the boundingboxes and corresponding identifiers. 
-                  There are 28567 boundingbox. Dataset can be used for human detection, tracking, and re-identification problems
-                </p>
-            </div>
+          <p>
+            This dataset contains total 15 videos and is recorded on three days by two static non-overlapping cameras
+            with HD resolution (1920 × 1080),
+            at 20 frames per second (fps) in indoor and outdoor environment conditions. There are 7 to 10 different
+            people in each video.
+            The result of splitting the frames is 11876 images that have been labeled with the boundingboxes and
+            corresponding identifiers.
+            There are 28567 boundingbox. Dataset can be used for human detection, tracking, and re-identification
+            problems
+          </p>
         </div>
-      </div> 
-
-
+      </div>
     </div>
 
-     <!-- Static bottom navbar -->
-     <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
 
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+  </div>
 
-  </body>
+  <!-- Static bottom navbar -->
+  <iframe src="/includes/footer.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
-
