@@ -85,8 +85,8 @@
 
       .fix-size-prof img {
         display: block;
-        max-width:200px;
-        max-height:200px;
+        max-width:170px;
+        max-height:170px;
         width: auto;
         height: auto;
       }
@@ -101,7 +101,80 @@
         padding-top:0px;
         padding: auto;
     }
-    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cột */
+        gap: 20px; /* Khoảng cách giữa các ô */
+        text-align: center;
+      }
+
+      .grid-item img {
+        width: 100%;
+        max-width: 200px; /* Tùy chỉnh kích thước ảnh */
+        height: auto;
+      }
+
+      .grid-container-4x2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 cột */
+        gap: 20px; /* Khoảng cách giữa các ô */
+        text-align: center;
+      }
+      .media {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .member-photo {
+        width: 120px;
+        height: auto;
+        margin-right: 15px;
+        border-radius: 2px; /* Cho góc ảnh bo tròn nhẹ */
+      }
+      .container {
+        max-width: 1200px; /* Tùy chỉnh kích thước container */
+      }
+      .media-body {
+        margin-left: 10px;
+      }
+
+      .media-heading a {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .role {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+
+      .description {
+        font-style: italic;
+        color: #555;
+        text-align: justify; /* Căn lề hai bên */
+      }
+
+      .member-name {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .note {
+        margin: 5px 0;
+      }
+    .small-name {
+        font-size: 1.3rem; /* Thu nhỏ font, bạn có thể điều chỉnh kích thước này */
+        line-height: 2.0; /* Điều chỉnh chiều cao dòng */
+        white-space: nowrap; /* Ngăn cách dòng nếu tên dài */
+        text-overflow: ellipsis; /* Hiển thị dấu "..." nếu tên bị cắt */
+        overflow: hidden; /* Ẩn phần tràn */
+        display: inline-block; /* Đảm bảo tên được hiển thị trong giới hạn */
+        max-width: 120%; /* Đảm bảo không vượt quá giới hạn container */
+    }
     @font-face { font-family: OpenSansCondensed; src: url('/assets/fonts/OpenSansCondensed-Light.ttf'); } 
       .nameStudent {
         font-size:17px;
@@ -118,222 +191,333 @@
   <!-- Content -->
   <div class="container">
     
-  <h1 class="display-4 text-center">Leader</h1>
-
-  <div class="row mb-3"> <!-- opening of a new row -->
-    
-    <div class="col-sm memberbox">
-        <div class="media">
-            <a class="pull-left" href="">
-            <div class="fix-size-prof item">
-              <img class="media-object member-photo px-2" src="/assets/images/team/thay_hai_vu.jpg">
-            </div>
-            </a>
-            <div class="media-body">
-            <div class="head media-heading member-name"><a href="" class="off">Hai Vu</a></div>
-            <p style="font-weight: bold;"><b>Supervisor</b></p>
-            <p class="note">Research scientist</p>
-            <p class="note">Hanoi University of Science and Technology (HUST), School of Electrical and Electronic Engineering </p>
-            <p class="note">Email: haicuhn@gmail.com </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm memberbox">
-      <div class="media">
-          <a class="pull-left" href="">
-          <div class="fix-size-prof item">
-            <img class="media-object member-photo px-2" src="/assets/images/team/thanh-hai-300x300.jpg">
-          </div>
-          </a>
-          <div class="media-body">
-            <div class="head media-heading member-name"><a href="" class="off">Thanh-Hai Tran</a></div>
-            <p style="font-weight: bold;"><b>Supervisor</b></p>
-            <p class="note">Research scientist</p>
-            <p class="note">Hanoi University of Science and Technology (HUST), School of Electrical and Electronic Engineering </p>
-            <p class="note">Email: thanhhai.tran1978@gmail.com </p>
-          </div>
-      </div>
-    </div>
-
-    <div class="col-sm memberbox">
-      <div class="media">
-          <a class="pull-left" href="">
-          <div class="fix-size-prof item">
-            <img class="media-object member-photo px-2" src="/assets/images/team/le-thi-lan-300x300.jpg">
-          </div>
-          </a>
-          <div class="media-body">
-          <div class="head media-heading member-name"><a href="" class="off">Thi-Lan Le</a></div>
-          <p style="font-weight: bold;"><b>Supervisor</b></p>
+    <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> Permanent Members </h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Thầy Hải.png" alt="Assoc. Prof. Hai Vu">
+        <div class="member-info">
+          <div class="member-name">Assoc. Prof. Hai Vu</div>
+          <p class="note"><b>Supervisor</b></p>
           <p class="note">Research scientist</p>
-          <p class="note">Hanoi University of Science and Technology (HUST), School of Electrical and Electronic Engineering </p>
-          <p class="note">Email: lanltbk@gmail.com </p>
-          </div>
-      </div>
-    </div>
-
-</div> <!-- closing a row -->
-
-  <h1 class="display-4 text-center">Collaborators</h1>
-  <div class="row mb-3">     
-    <!-- opening of a new row -->
-    <div class="col-sm memberbox">
-        <div class="media">
-            <a class="pull-left" href="#">
-              <div class="fix-size-prof item">
-                <img class="media-object member-photo px-2" src="/assets/images/team/ToiNguyen.jpg">
-              </div>
-            </a>
-            <div class="media-body">
-            <div class="head media-heading member-name"><a href="#" class="off">Van-Toi Nguyen</a></div>
-            <p style="font-weight: bold;"><b>Supervisor</b></p>
-            <p class="note">Research scientist</p>
-            <!-- <p class="note">Assistant Professor at Department of Computer Science, University of Dayton (UD), USA</p>
-            <p class="note">Email: tamnguyen@udayton.edu </p> -->
-            </div>
         </div>
-    </div> 
-    <!-- closing a row -->
-
-    <div class="col-sm memberbox">
-      <div class="media">
-          <a class="pull-left" href="#">
-            <div class="fix-size-prof item">
-              <img class="media-object member-photo px-2" src="/assets/images/team/Thuy-BinhNguyen.jpg">
-            </div>
-          </a>
-          <div class="media-body">
-            <div class="head media-heading member-name"><a href="https://feee.utc.edu.vn/giang-vien/nguyen-thuy-binh" target="_blank" class="off">Thuy-Binh Nguyen</a></div>
-            <p style="font-weight: bold;"><b>Supervisor</b></p>
-            <p class="note">Research scientist</p>
-            <!-- <p class="note">Assistant Professor at Department of Computer Science, University of Dayton (UD), USA</p>
-            <p class="note">Email: tamnguyen@udayton.edu </p> -->
-          </div>
       </div>
-    </div>
-     <!-- closing a row -->
-  </div>
-
-  <div class="row mb-3">     
-    <div class="col-sm memberbox">
-      <div class="media">
-          <a class="pull-left" href="#">
-            <div class="fix-size-prof item">
-              <img class="media-object member-photo px-2" src="/assets/images/team/Hong-QuanNguyen.png">
-            </div>
-          </a>
-          <div class="media-body">
-            <div class="head media-heading member-name"><a href="" target="_blank" class="off">Hong-Quan Nguyen</a></div>
-            <p style="font-weight: bold;"><b>Supervisor</b></p>
-            <p class="note">Research scientist</p>
-            <!-- <p class="note">Assistant Professor at Department of Computer Science, University of Dayton (UD), USA</p>
-            <p class="note">Email: tamnguyen@udayton.edu </p> -->
-          </div>
-      </div>
-  </div>
-   <!-- closing a row -->
-</div>
-
-
-
-<h1 class="display-4 text-center">Current members</h1>
-<div class="row mb-3"> <!-- opening of a new row -->
-    <div class="col-sm memberbox">
-        <div class="media">
-            <a class="pull-left" href="#">
-              <div class="fix-size-prof item" >
-                <img class="media-object member-photo px-2" src="/assets/images/team/phd_NhungLe.jpg">
-              </div>
-            </a>
-            <div class="media-body">
-              <div class="head media-heading member-name"><a href="/team/" class="off">Thi-Nhung Le</a></div>
-              <p style="font-weight: bold;">PhD Student</p>
-              <p style="font-style: italic;">Research and development of methods to support the assessment of bee 
-                colony health from multi-modal information sources</p>
-            
-            </div>
-        </div>
-    </div>
     
-    <div class="col-sm memberbox ">
-        <div class="media">
-            <a class="pull-left" href="#">
-              <div class="fix-size-prof item">
-                <img class="media-object member-photo px-2" src="/assets/images/team/phd_LoanPham.jpg">
-              </div>
-            </a>
-            <div class="media-body">
-              <div class="head media-heading member-name"><a href="/team/tungufm" class="off">Thi-Loan Pham</a></div>
-              <p style="font-weight: bold;">PhD Student</p>
-              <p style="font-style: italic;">Detection and segmentation of ovarian tumors in ultrasound images using deep learning</p>            
-            </div>
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Cô Lan.png" alt="Assoc. Prof. Thanh-Hai Tran">
+        <div class="member-info">
+          <div class="member-name">Assoc. Prof. Thi-Lan Le</div>
+          <p class="note"><b>Supervisor</b></p>
+          <p class="note">Research scientist</p>
+          <p class="note">Head of SigM Laboratory</p>
         </div>
+      </div>
+    
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Cô Hải.png" alt="Assoc. Prof. Thi-Lan Le">
+        <div class="member-info">
+          <div class="member-name">Assoc. Prof. Thanh-Hai Tran</div>
+          <p class="note"><b>Supervisor</b></p>
+          <p class="note">Research scientist</p>
+        </div>
+      </div>
     </div>
-  </div> <!-- closing a row -->
 
-  <div class="row mb-3"> <!-- opening of a new row -->
-  <div class="col-sm memberbox ">
-    <div class="media ">
-        <a class="pull-left" href="#">
-          <div class="fix-size-prof item">
-            <img class="media-object member-photo px-2" src="/assets/images/team/phd_HoaiPhan.jpg">
+    <h3 style="margin-bottom: 30px;"></h3>
+
+    <div class="grid-container-4x2">
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Thầy Thắng.png" alt="Assoc. Prof. Manh-Thang Hoang">
+        <div class="member-info">
+          <div class="member-name">Assoc. Prof. Manh-Thang Hoang</div>
+          <p class="note"><b>Supervisor</b></p>
+          <p class="note">Research scientist</p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Cô Diệp.png" alt="Dr. Thi Ngoc Diep Do">
+        <div class="member-info">
+          <div class="member-name">Dr. Thi Ngoc Diep Do</div>
+          <p class="note"><b>Supervisor</b></p>
+          <p class="note">Research scientist</p>
+        </div>
+      </div>
+    
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Cô Huệ.png" alt="Dr. Kim-Hue Ta">
+        <div class="member-info">
+          <div class="member-name">Dr. Kim-Hue Ta</div>
+          <p class="note"><b>Supervisor</b></p>
+          <p class="note">Research scientist</p>
+        </div>
+      </div>
+    
+      <div class="grid-item">
+        <img src="/assets/images/team/Main - Thầy Dũng.png" alt="Assoc. Prof. Tien-Dung Nguyen">
+        <div class="member-info">
+          <div class="member-name">Assoc. Prof. Tien-Dung Nguyen</div>
+          <p class="note"><b>Supervisor</b></p>
+          <p class="note">Research scientist</p>
+        </div>
+      </div>
+    </div>
+  
+  <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> Invited Researchers </h1>
+  <div class="container">
+    <div class="row mb-3">
+      <!-- Thành viên 1 -->
+      <div class="col-md-6 col-sm-12 memberbox">
+        <div class="media">
+          <img class="media-object member-photo px-2" src="/assets/images/team/IR Anh Tới.jpg" alt="Van-Toi Nguyen" style="width: 120px; height: auto;">
+          <!-- <div class="media-body"> -->
+          <div class="media-body" style="margin-left: 20px;">
+            <h5 class="head media-heading member-name"><a href="#" class="off" style="font-size: 1.5rem;">Dr. Van-Toi Nguyen</a></h5>
+            <p style="font-weight: bold;">Research scientist</p>
+            <p class="note">Phenikaa University</p>
           </div>
-        </a>
+        </div>
+      </div>
+  
+      <!-- Thành viên 2 -->
+      <div class="col-md-6 col-sm-12 memberbox">
+        <div class="media">
+          <img class="media-object member-photo px-2" src="/assets/images/team/IR Chị Bình.jpg" alt="Thuy-Binh Nguyen" style="width: 120px; height: auto;">
+          <div class="media-body" style="margin-left: 20px;">
+            <h5 class="head media-heading member-name">
+              <a href="https://feee.utc.edu.vn/giang-vien/nguyen-thuy-binh" target="_blank" class="off" style="font-size: 1.5rem;">Dr. Thuy-Binh Nguyen</a>
+            </h5>
+            <div>
+            <p style="font-weight: bold;">Research scientist</p>
+            <p class="note">University of Transport and Communications</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <h3 style="margin-bottom: 30px;"></h3>
+
+    <div class="row mb-3">
+      <!-- Thành viên 3 -->
+      <div class="col-md-6 col-sm-12 memberbox">
+        <div class="media">
+          <img class="media-object member-photo px-2" src="/assets/images/team/IR Anh Quân.png" alt="Hong-Quan Nguyen" style="width: 120px; height: auto;">
+          <div class="media-body" style="margin-left: 20px;">
+            <h5 class="head media-heading member-name">
+              <a href="#" class="off" style="font-size: 1.5rem;">Dr. Hong-Quan Nguyen</a>
+            </h5>
+            <p style="font-weight: bold;">Research scientist</p>
+            <p class="note">Viet – Hung Industrial University</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Thành viên 4 -->
+      <div class="col-md-6 col-sm-12 memberbox">
+        <div class="media">
+          <img class="media-object member-photo px-2" src="/assets/images/team/IR Chị Hiền Thanh.jpg" alt="Hien-Thanh Duong" style="width: 120px; height: auto;">
+          <div class="media-body" style="margin-left: 20px;">
+            <h5 class="head media-heading member-name">
+              <a href="#" class="off" style="font-size: 1.5rem;">Dr. Hien-Thanh Duong</a>
+            </h5>
+            <p style="font-weight: bold;">Research scientist</p>
+            <p class="note">Hanoi University of Mining and Geology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <!-- Thành viên 3 -->
+      <div class="col-md-6 col-sm-12 memberbox">
+        <div class="media">
+          <img class="media-object member-photo px-2" src="/assets/images/team/IR Anh Nam.jpg" alt="Van-Nam Hoang" style="width: 120px; height: auto;">
+          <div class="media-body" style="margin-left: 20px;">
+            <h5 class="head media-heading member-name">
+              <a href="#" class="off" style="font-size: 1.5rem;">Msc. Van-Nam Hoang</a>
+            </h5>
+            <p style="font-weight: bold;">Research scientist</p>
+            <p class="note">Engineering</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Thành viên 4 -->
+      <div class="col-md-6 col-sm-12 memberbox">
+        <div class="media">
+          <img class="media-object member-photo px-2" src="/assets/images/team/PhD - Chị Lịch.jpg" alt="Thi-Lich Nghiem" style="width: 120px; height: auto;">
+          <div class="media-body" style="margin-left: 20px;">
+            <h5 class="head media-heading member-name">
+              <a href="#" class="off" style="font-size: 1.5rem;">Dr. Thi-Lich Nghiem</a>
+            </h5>
+            <p style="font-weight: bold;">Research scientist</p>
+            <p class="note">Thuong Mai University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom: 30px;"></h3>
+
+<!-- <h1 class="display-4 text-center">Current members</h1> -->
+<h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> PhD Students </h1>
+<div class="container">
+  <div class="row">
+    <!-- <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Chị Lịch.jpg" alt="Thi-Lich">
         <div class="media-body">
-        <div class="head media-heading member-name"><a href="https://nguyenvd-uit.github.io/" class="off">Thi-Hoai Phan</a></div>
-        <p style="font-weight: bold;"><b>PhD Student</b></p>
+          <h5 class="media-heading"><a href="/team/" class="off">Thi-Lich Nghiem</a></h5>
+          <p class="role" style="">Thuong Mai University</p>
+          <p class="description">Automatic classification of hyper-pixels images. Application to hot-spot identification in the civil airspace.</p>
         </div>
-    </div>
-</div>
-<div class="col-sm memberbox">
-  <div class="media">
-      <a class="pull-left" href="#">
-        <div class="fix-size-prof item">
-          <img class="media-object member-photo px-2" src="/assets/images/team/phd_LichNghiem.jpg">
-        </div>
-      </a>
-      <div class="media-body">
-        <div class="head media-heading member-name"><a href="#" class="off">Thi-Lich Nghiem</a></div>
-        <p style="font-weight: bold;"><b>PhD Student</b></p>
-        <p style="font-style: italic;">Automatic classification of hyper-pixels images. Application to hot-spot identification in the civil airspace</p>  
       </div>
+    </div> -->
+
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/phd_DungNguyen.jpg" alt="Thi-Phuong-Dung">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="/team/" class="off">Phuong-Dung Nguyen</a></h5>
+          <p class="role">Thuy Loi University</p>
+          <p class="description">Student activity recognition from classroom videos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thành viên 2 -->
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/phd_HieuLe.jpg" alt="Trung-Hieu">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="/team/tungufm" class="off">Trung-Hieu Le</a></h5>
+          <p class="role">Dai Nam University</p>
+          <p class="description">Activity recognition based on the combination of accelerometers and vision.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <!-- Thành viên 3 -->
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Chị Nhung.jpg" alt="Thi-Hoai Phan">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="https://nguyenvd-uit.github.io/" class="off">Thi-Nhung Le</a></h5>
+          <p class="role">Vietnam National University of Agriculture</p>
+          <p class="description">Research and develop the support method for assessing bee colony health from multi-modal information source.</p>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- <div class="row"> -->
+    <!-- Thành viên 4 -->
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Chị Loan.jpg" alt="Thi-Loan">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Thi-Loan Pham</a></h5>
+          <p class="role">Thai Nguyen University</p>
+          <p class="description">Detection and segmentation of ovarian tumors in ultrasound images using deep learning.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <!-- Thành viên 5 -->
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/phd_HoaiPhan.jpg" alt="Thi-Phuong-Dung Nguyen">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Thi-Hoai Phan</a></h5>
+          <p class="role">People's Security Academy</p>
+          <p class="description">Text-based object search using natural languages processing.</p>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Thành viên 6 -->
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Anh Dũng.jpg" alt="kieu-tuan-dung">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Tuan-Dung Kieu</a></h5>
+          <p class="role">Thuy Loi University</p>
+          <p class="description">Explores intelligent edge computing and IoT system design for industrial applications.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Chị Hương.jpg" alt="Thu-Huong Nguyen">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Thu-Huong Nguyen</a></h5>
+          <p class="role">Thuy Loi University</p>
+          <p class="description">Endoscopy images.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Chị Thủy.jpg" alt="ThiThuy">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Thi-Thuy Pham</a></h5>
+          <p class="role">Viet Tri University Of Industry</p>
+          <p class="description">Liver informations analysis.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/PhD - Anh Vị.jpg" alt="Quoc-Vi">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Quoc-Vi Tran</a></h5>
+          <p class="role">Vinh Phuc</p>
+          <p class="description">Ultrasound images analysis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/non-image.jpg" alt="Hoang-Bach">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Hoang-Bach Nguyen</a></h5>
+          <p class="role">Military Information Technology Institute</p>
+          <p class="description">Traumatic brain injury prognosis using multi-modal information and artificial intelligence.</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="row">
+
+    <!-- <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/non-image.jpg" alt="duy">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="#" class="off">Quang-Duy Pham</a></h5>
+          <p class="role">Vietnam Posts and Telecommunications</p>
+          <p class="description">Indentified plants using UAV.</p>
+        </div>
+      </div>
+    </div> -->
+  </div>  
+
 </div>
-</div> <!-- closing a row -->
 
 
-<div class="row mb-3"> <!-- opening of a new row -->
-    
-    <div class="col-sm memberbox">
-        <div class="media">
-            <a class="pull-left" href="#">
-              <div class="fix-size-prof item">
-                <img class="media-object member-photo px-2" src="/assets/images/team/phd_DungNguyen.jpg">
-              </div>
-            </a>
-            <div class="media-body">
-            <div class="head media-heading member-name"><a href="#" class="off">Thi-Phuong-Dung Nguyen</a></div>
-            <p style="font-weight: bold;"><b>PhD Student</b></p>
-            <!-- <p style="font-style: italic">Nghiên cứu và phát triển phương pháp tự động nhận dạng hoạt động của người học từ video ứng dụng trong quản lý lớp học thông minh</p> -->
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm memberbox">
-        <div class="media">
-            <a class="pull-left" href="#">
-              <div class="fix-size-prof item">
-                <img class="media-object member-photo px-2" src="/assets/images/team/phd_HieuLe.jpg">
-              </div>
-            </a>
-            <div class="media-body">
-            <div class="head media-heading member-name"><a href="#" class="off">Trung-Hieu Le</a></div>
-            <p style="font-weight: bold;"><b>PhD Student</b></p>
-            </div>
-        </div>
-    </div>
-</div> <!-- closing a row -->
 
 <!-- opening of a new row -->
 <!-- <div class="row mb-3"> 
@@ -354,8 +538,57 @@
  <!-- closing a row -->
 
 
-<h1 class="display-4 text-center">Students</h1>
+<!-- <h1 class="display-4 text-center">Students</h1> -->
+ <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> Master Students </h1>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/Master - SonBH.jpg" alt="Thi-Lich">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="/team/" class="off">Hoang-Son Bui</a></h5>
+          <p class="role" style="">Research Assistant at SigM Laboratory</p>
+          <p class="description">Ovarian tumor segmentation and morphological extraction from ultrasound images.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/Master - TungND.jpg" alt="Duy-Tung">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="/team/" class="off">Duy-Tung Nguyen</a></h5>
+          <p class="role">School of Information and Technology Communications</p>
+          <p class="description">Assessing the generalization ability of machine learning models using generative models, application to multi-object tracking.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thành viên 2 -->
+    <!-- <div class="row"> -->
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/Master - KhanhNT.JPG" alt="Thai-Khanh">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="/team/tungufm" class="off">Thai-Khanh Nguyen</a></h5>
+          <p class="role">Dai Nam University</p>
+          <p class="description">Prognosis of traumatic brain injury using multi-modal information based on deep learning.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 memberbox">
+      <div class="media">
+        <img class="media-object member-photo" src="/assets/images/team/Master - DucPD.jpg" alt="Doan-Duc">
+        <div class="media-body">
+          <h5 class="media-heading"><a href="/team/tungufm" class="off">Doan-Duc Phan</a></h5>
+          <p class="role">Developer in Samsung SDS Vietnam</p>
+          <p class="description">Plant identification in Unmanned Aerial Vehicle-collected Images, application for biodiversity monitoring.</p>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+</div>
 <style>
   .fix-size img {
     display: block;
@@ -391,179 +624,10 @@
 }
 </style>
 
-<a style="font-size:30px;padding-left:8px;">k2020</a>
+<!-- <a style="font-size:30px;padding-left:8px;">k2020</a> -->
 <div class="row mb-3"> <!-- opening of a new row -->
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2019/HongAnhNguyen.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Hoang Anh Nguyen</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
 
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2019/VanXungVu.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Van Xung Vu</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
-
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2019/DinhDucNguyen.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Dinh Duc Nguyen</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
-
-  <!-- <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2020/HuynhVietTuanKiet.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Kiet Huynh</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
-
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2020/LaiChiThien.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Thien Lai</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
-
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2020/LeThiPhuongVy.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Vy Le</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
-
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2020/LeTrongHao.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Hao Le</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div>
-
-  <div class="col-sm studentbox">
-    <div class="media">
-        <a class="pull-left" href="javascript:void(0)">
-          <div class="fix-size">
-            <figure>
-              <img class="media-object member-photo px-2" src="/assets/images/team/k2020/LeTruongNgocHai.jpg">
-              <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Hai Le</h1></a></div></figcaption>
-            </figure>
-          </div>
-        </a>
-        <div class="media-body"></div>
-    </div>
-  </div> -->
-
-  <!-- <div class="row mb-3"> opening of a new row -->
-
-    <!-- <div class="col-sm studentbox">
-      <div class="media">
-          <a class="pull-left" href="javascript:void(0)">
-            <div class="fix-size">
-              <figure>
-                <img class="media-object member-photo px-2" src="/assets/images/team/k2020/LeVietThinh.jpg">
-                <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Thinh Le</h1></a></div></figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="media-body"></div>
-      </div>
-    </div>
-
-    <div class="col-sm studentbox">
-      <div class="media">
-          <a class="pull-left" href="javascript:void(0)">
-            <div class="fix-size">
-              <figure>
-                <img class="media-object member-photo px-2" src="/assets/images/team/k2020/NgoVanTuanLuu.jpg">
-                <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Luu Ngo</h1></a></div></figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="media-body"></div>
-      </div>
-    </div>
-
-    <div class="col-sm studentbox">
-      <div class="media">
-          <a class="pull-left" href="javascript:void(0)">
-            <div class="fix-size">
-              <figure>
-                <img class="media-object member-photo px-2" src="/assets/images/team/k2020/NguyenDucAnhPhuc.jpg">
-                <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Phuc Nguyen</h1></a></div></figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="media-body"></div>
-      </div>
-    </div>
-
-    <div class="col-sm studentbox">
-      <div class="media">
-          <a class="pull-left" href="javascript:void(0)">
-            <div class="fix-size">
-              <figure>
-                <img class="media-object member-photo px-2" src="/assets/images/team/k2020/NguyenNhatTruong.jpg">
-                <figcaption><div class="student-name"><a href="javascript:void(0)" class="off"><h1 class="nameStudent">Truong Nguyen</h1></a></div></figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="media-body"></div>
-      </div>
-    </div> -->
-
-  
+  <div>
     <div class="row">
       <div class="col-md-12 mb-3">
           <div id="groupPhotos" class="carousel slide" data-ride="carousel">
@@ -582,9 +646,9 @@
               <div class="carousel-inner">
                   <!-- Note = W/H:2.24; H>537px  -->                  
                   <div class="carousel-item active">
-                      <img class="d-block w-100" src="/assets/images/team/team0.jpg" alt="Group escape room win in January 2019">
+                      <img class="d-block w-100" src="/assets/images/about/Lab20-11 - Copy.jpg" alt="Group escape room win in January 2019">
                       <div class="carousel-caption d-none d-md-block">
-                        <p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Meeting</p>
+                        <p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">20/11/2024</p>
                       </div>
                   </div>
                   
@@ -615,6 +679,9 @@
                   
       </div>
   </div>
+  </div>
+  </div>
+  
 
    <!-- Static bottom navbar -->
    <iframe src="/includes/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>

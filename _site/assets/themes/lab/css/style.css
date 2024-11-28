@@ -98,8 +98,8 @@ max-width: 225px; }
 
 .member-photo {
   height: 20vw;
-  min-height: 100px;
-  max-height: 225px; }
+  min-height: 150px;
+  max-height: 2250px; }
 
 .member-name {
   font-size: 20px; }
