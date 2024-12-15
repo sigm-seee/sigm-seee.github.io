@@ -65,7 +65,136 @@
 
 
     <script lang="javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        /* Container for the cards */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            /* Space between cards */
+        }
+
+        /* Individual card */
+        .hackathon-card {
+            width: calc(33.33% - 20px);
+            /* 3 cards per row, accounting for gap */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .hackathon-card:hover {
+            transform: scale(1.02);
+        }
+
+        /* Header */
+        .hackathon-header {
+            background: url('https://via.placeholder.com/400x200') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            position: relative;
+            height: 150px;
+        }
+
+        .hackathon-header::before {
+            content: '';
+            /* background: rgba(0, 128, 0, 0.6); */
+            /* Overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hackathon-header h1 {
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 2;
+            padding-top: 20px;
+        }
+
+        /* Date Box */
+        .date-box {
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 8px 10px;
+            border-radius: 8px;
+            z-index: 2;
+        }
+
+        .date-box span {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .date-box small {
+            display: block;
+            font-size: 1rem;
+        }
+
+        /* Content */
+        .hackathon-content {
+            padding: 20px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .hackathon-content h2 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .hackathon-content p {
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .hackathon-content .highlight {
+            color: #C00000;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hackathon-card {
+                width: calc(50% - 20px);
+                /* 2 cards per row */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hackathon-card {
+                width: 100%;
+                /* 1 card per row */
+            }
+        }
+    </style>
     <style>
         .column {
             float: left;
@@ -203,8 +332,61 @@
             </div>
         </div> -->
         <!-- <div class="hugespacer"></div> -->
+        <!-- Card -->
+        <!-- Container for Cards -->
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="hackathon-card">
+                <div class="hackathon-header" style="background-image: url('https://via.placeholder.com/400x200');">
+                    <!-- <h1>PhD Student Day</h1> -->
+                    <div class="date-box">
+                        <span>20</span>
+                        <small>Dec</small>
+                    </div>
+                </div>
+                <div class="hackathon-content">
+                    <h2>PhD Student Day 2024</h2>
+                    <p><span class="highlight">Time:</span> 1:30 PM - 20/12/2024</p>
+                    <p><span class="highlight">Address:</span> Room E.803 - C7 Building, HUST</p>
+                </div>
+            </div>
 
-        <h1 class="display-4 text-center member-name" style="margin-bottom: 20px; font-size: 2.5rem; font-weight: bold;"> Notifications
+            <!-- Card 2 -->
+            <div class="hackathon-card">
+                <div class="hackathon-header" style="background-image: url('/assets/images/notification/ACCV2024.jpg');">
+                    <!-- <h1>ACCV Conference</h1> -->
+                    <div class="date-box">
+                        <span>08</span>
+                        <small>Dec</small>
+                    </div>
+                </div>
+                <div class="hackathon-content">
+                    <h2>ACCV Conference 2024</h2>
+                    <p><span class="highlight">Time:</span> 9:00 AM - 08/12/2024</p>
+                    <p><span class="highlight">Address:</span> Landmark 72 building, Hanoi</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="hackathon-card">
+                <div class="hackathon-header" style="background-image: url('/assets/images/notification/APSIPA2024.png');">
+                    <!-- <h1>DATA CONF</h1> -->
+                    <div class="date-box">
+                        <span>03</span>
+                        <small>Dec</small>
+                    </div>
+                </div>
+                <div class="hackathon-content">
+                    <h2>APSIPA ASC 2024</h2>
+                    <p><span class="highlight">Time:</span> 8:00 AM - 03/12/2024</p>
+                    <p><span class="highlight">Address:</span> Adnex Center, Macao.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bigspacer"></div>
+        <h1 class="display-4 text-center member-name"
+            style="margin-bottom: 20px; font-size: 2.5rem; font-weight: bold;"> Notifications
         </h1>
         <div class="row">
             <div class="column">
@@ -336,7 +518,8 @@
         </div>
         <div class="bigspacer"></div>
 
-        <h1 class="display-4 text-center member-name" style="margin-top: 10px; font-size: 2.5rem; font-weight: bold;"> New Papers
+        <h1 class="display-4 text-center member-name" style="margin-top: 10px; font-size: 2.5rem; font-weight: bold;">
+            New Papers
         </h1>
         <div class="row">
             <!-- <div class="head">
