@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>StudentAct Dataset</title>
+        <meta name="description" content="StudentAct Dataset">
+        <meta name="author" content="Lan Le">
+
+        <!-- Enable responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap styles -->
+        <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Sticky Footer -->
+        <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet" />
+
+        <!-- Custom styles -->
+        <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all" />
+        <link rel="manifest" href="/assets/themes/lab/images/logo/manifest.json">
+        <link rel="mask-icon" href="/assets/themes/lab/images/logo/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png">
+        <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+        <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+        <link rel="stylesheet" href="/assets/css/academicons.min.css" />
+
+        <link rel="stylesheet" href="/assets/css/icon-list-group.css" />
+
+        <!-- Fonts via Google -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet'
+            type='text/css' />
+
+        <!-- Math via MathJax -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                margin: auto;
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+
+
+<body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+
+    <div class="container" style="text-align: justify;">
+        <section>
+            <h1 id="the-pollenbee-dataset">The Ovarian Tumor Dataset</h1>
+            <div class="row">
+                <p>
+                    The OvaTUS dataset was collected by the research team of the Signal, Information, and Multimedia
+                    Content Processing Laboratory (SigM Lab) in collaboration with the National Hospital of Obstetrics
+                    and Gynecology (NHOG) in Hanoi, Vietnam. This dataset comprises ultrasound images from women who
+                    visited the hospital for ovarian tumor assessment and consented to participate in the study.
+
+                    To ensure the effectiveness of data collection and analysis in research and pathological diagnosis,
+                    particularly in the management and evaluation of ovarian tumors via ultrasound, the documentation of
+                    essential data fields is crucial. These data fields not only facilitate the characterization and
+                    severity assessment of tumors but also support accurate and timely treatment decision-making.
+                    Detailed information regarding ovarian tumor characteristics is vital for diagnosis, severity
+                    assessment, and treatment planning.
+                </p>
+            </div>
+            <h1 id="the-pollenbee-dataset">Detail</h1>
+            <div class="row">
+                <p>
+                    The OvaTUS dataset contains high-quality ultrasound images of
+                    ovarian tumors, collected from consenting patients at the National Hospital of Obstetrics and
+                    Gynecology (NHOG) in Hanoi, Vietnam. The dataset is designed to aid in computer-aided diagnosis
+                    (CAD), deep learning-based image analysis, and clinical research related to ovarian tumor
+                    characterization. Below are sample images illustrating different tumor labels in the dataset:
+                </p>
+            </div>
+            <div class="row" style="margin-left: 20px;">
+                <div class="column">
+                    <h3><strong>Annotations:</strong> Expert-labeled tumor characteristics, including:</h3>
+                    <ul>
+                        <li><strong>Tumor type:</strong> Solid, cystic, multilocular, unilocular, hemorrhagic, etc.</li>
+                        <li><strong>Key ultrasound features:</strong> Acoustic shadowing, papillary projections,
+                            septations, ascites, Doppler signals</li>
+                        <!-- <li><strong>Diagnostic categories:</strong> Benign, borderline, malignant (if labeled)</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="row center">
+                <table>
+                    <tr>
+                        <th> # </th>
+                        <th>Categories</th>
+                        <th> # </th>
+                        <th>Categories</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Solid tumor</td>
+                        <td>11</td>
+                        <td>Hemorrhagic tumor</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Multilocular cyst</td>
+                        <td>12</td>
+                        <td>Solid multilocular cyst</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Unilocular cyst</td>
+                        <td>13</td>
+                        <td>Solid unilocular cyst</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Cyst with septation</td>
+                        <td>14</td>
+                        <td>Acoustic shadow</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Solid component</td>
+                        <td>15</td>
+                        <td>Hemorrhagic component</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Papillary projection</td>
+                        <td>16</td>
+                        <td>Septation</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ascites</td>
+                        <td>17</td>
+                        <td>White ball</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Irregular margin</td>
+                        <td>18</td>
+                        <td>Smooth margin</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Doppler cs1</td>
+                        <td>19</td>
+                        <td>Doppler cs2</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Doppler cs3</td>
+                        <td>20</td>
+                        <td>Doppler cs4</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bigspacer"></div>
+            <div class="bigspacer"></div>
+            <div class="row">
+
+
+                <a class="media-left" href="#">
+                    <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/ova1.png"
+                        alt="OvaTUS Dataset">
+                </a>
+            </div>
+            <div class="row">
+                <a class="media-left" href="#">
+                    <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/ov2.png"
+                        alt="OvaTUS Dataset">
+                </a>
+            </div>
+        </section>
+
+
+        <div class="bigspacer"></div>
+        <div class="bigspacer"></div>
+
+        <!-- Static bottom navbar -->
+        <iframe src="/includes/footer.html"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
