@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://dinhtus49.github.io/ -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>ForestSeg Dataset</title>
+        <meta name="description" content="StudentAct Dataset">
+        <meta name="author" content="Lan Le">
+
+        <!-- Enable responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap styles -->
+        <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Sticky Footer -->
+        <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet" />
+
+        <!-- Custom styles -->
+        <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all" />
+        <link rel="manifest" href="/assets/themes/lab/images/logo/icon-lab.jpg">
+        <link rel="mask-icon" href="/assets/themes/lab/images/logo/icon-lab.jpg" color="#5bbad5">
+        <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon-lab.jpg">
+        <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+        <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+        <link rel="stylesheet" href="/assets/css/academicons.min.css" />
+
+        <link rel="stylesheet" href="/assets/css/icon-list-group.css" />
+
+        <!-- Fonts via Google -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet'
+            type='text/css' />
+
+        <!-- Math via MathJax -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                margin: auto;
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+
+
+<body>
+    <!-- Static top navbar -->
+    <iframe src="/includes/menu_top.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+
+    <div class="container" style="text-align: justify;">
+        <section>
+            <h1 id="the-pollenbee-dataset">The ForestSeg Dataset</h1>
+            <div class="row">
+                <p>
+                    Our aerial forestry dataset (ForestSeg-T1) is a valuable resource comprising 1,832 high-resolution
+                    UAV images captured over the Vietnam National University of Forestry in Chuong My District, Hanoi.
+                    The dataset was collected through multiple drone surveys conducted at varying altitudes between 70m
+                    and 211m, enabling both detailed imagery and broad coverage of forested areas.
+                </p>
+
+                <p>
+                    The dataset includes key flight parameters such as altitude, image resolution, and total coverage
+                    area. Two drone models were used: DJI Phantom 4 RTK (5472 × 3648 px) and DJI Air 3 (8064 × 6048 px),
+                    with each flight covering between 7.1 and 24.5 hectares. Images contain between 1 to 17 annotated
+                    tree instances, most commonly 8 to 9 trees per image, reflecting moderate forest density.
+                </p>
+                <p>
+                    ForestSeg-T1 supports a wide range of applications, including forest monitoring, land cover
+                    classification, biomass estimation, and environmental change detection. The manually annotated tree
+                    crowns ensure high-quality ground truth for instance segmentation tasks, mimicking human perception.
+                    Unlike other datasets, ForestSeg‐T1 incorporates multi-seasonal imagery, making it particularly
+                    suitable for long-term forest analysis.
+                </p>
+                <p>
+                    The pictures in the dataset are taken in Hanoi, Vietnam in 2023.
+                </p>
+                <p>
+                    Some pictures of our dataset are shown below:
+                </p>
+            </div>
+            <!-- <div class="bigspacer"></div>
+            <div class="bigspacer"></div> -->
+            <div class="row d-flex justify-content-center">
+                <a class="media-left" href="#">
+                    <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/ForestSeg/Untitled.png"
+                        alt="OvaTUS Dataset">
+                </a>
+            </div>
+            <h1 id="the-pollenbee-dataset">Detail</h1>
+            <div class="row">
+                <p>
+                    The OvaTUS dataset contains high-quality ultrasound images of
+                    ovarian tumors, collected from consenting patients at the National Hospital of Obstetrics and
+                    Gynecology (NHOG) in Hanoi, Vietnam. The dataset is designed to aid in computer-aided diagnosis
+                    (CAD), deep learning-based image analysis, and clinical research related to ovarian tumor
+                    characterization. Below are sample images illustrating different tumor labels in the dataset:
+                </p>
+            </div>
+            <div class="row" style="text-align: justify;">
+                <div class="column">
+                    We investigated the impact of temporal variations on instance segmentation performance across four
+                    intervals: ForestSeg‐T1 to ForestSeg‐T4. Environmental factors such as lighting, shadow, and
+                    seasonal changes were considered to assess model robustness under different conditions.
+
+                    <br><br>
+
+                    The segmentation model achieved the best results on ForestSeg‐T4, with an AP of 60.82%, AP50 of
+                    64.71%, and AP70 of 57.13%, aligned with its highest classification accuracy of 71.32%. ForestSeg‐T2
+                    followed with 69.23% classification accuracy and moderate segmentation scores. In contrast,
+                    ForestSeg‐T3 yielded the lowest performance across all metrics, suggesting that data quality and
+                    timing significantly influence model effectiveness.
+
+                    <br><br>
+
+                    These findings demonstrate that selecting the appropriate temporal interval, particularly one with
+                    high-resolution imagery and favorable conditions, is crucial for enhancing both classification and
+                    segmentation performance. Incorporating temporal diversity into training can improve the model's
+                    generalizability and reliability in long-term forest monitoring applications.
+
+                    <br><br>
+
+                    The detailed performance results across the four intervals are summarized in the table below:
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 30px;">
+                <div class="col-md-10">
+                    <table class="table table-bordered table-striped text-center align-middle">
+                        <caption class="text-start mb-2">
+                            <strong>Table 01: Comparisons of segmentation performance of the proposed method with the
+                                state‐of‐the‐art methods.</strong>
+                            <br><em>**The best results for each metric are highlighted in bold.</em>
+                        </caption>
+                        <thead class="">
+                            <tr>
+                                <th>Method</th>
+                                <th>Number of Parameters (M)</th>
+                                <th>Inference Time (ms)</th>
+                                <th>AP</th>
+                                <th>AP50</th>
+                                <th>AP70</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mask-RCNN (ResNet-50)</td>
+                                <td>43.05</td>
+                                <td>8.3</td>
+                                <td>30.63</td>
+                                <td>46.23</td>
+                                <td>26.17</td>
+                            </tr>
+                            <tr>
+                                <td>Mask-RCNN (SwinT)</td>
+                                <td>48.55</td>
+                                <td>10.8</td>
+                                <td>56.72</td>
+                                <td>60.12</td>
+                                <td>54.64</td>
+                            </tr>
+                            <tr>
+                                <td>Detectree2</td>
+                                <td>62.86</td>
+                                <td>11.4</td>
+                                <td>22.33</td>
+                                <td>49.71</td>
+                                <td>20.22</td>
+                            </tr>
+                            <tr>
+                                <td>YOLOV11</td>
+                                <td>22.33</td>
+                                <td>7.5</td>
+                                <td>38.30</td>
+                                <td>52.78</td>
+                                <td>33.51</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ours</strong></td>
+                                <td><strong>10.81</strong></td>
+                                <td><strong>6.2</strong></td>
+                                <td><strong>57.01</strong></td>
+                                <td><strong>62.21</strong></td>
+                                <td><strong>55.32</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" style="margin-top: 30px;">
+                <div class="col-md-10">
+                    <table class="table table-bordered table-striped text-center align-middle">
+                        <caption class="text-start mb-2">
+                            <strong>Table 02: Experiment results in different intervals (The results are conducted
+                                without the area feature as described.)</strong>
+                            <!-- <br><em>**The best results for each metric are highlighted in bold.</em> -->
+                        </caption>
+                        <thead class="">
+                            <tr>
+                                <th>Forest Name</th>
+                                <th>Classification Acc.</th>
+                                <th>AP</th>
+                                <th>AP50</th>
+                                <th>AP70</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ForestSeg-T1</td>
+                                <td>65.37</td>
+                                <td>57.01</td>
+                                <td>62.21</td>
+                                <td>55.32</td>
+                            </tr>
+                            <tr>
+                                <td>ForestSeg-T2</td>
+                                <td>69.23</td>
+                                <td>59.72</td>
+                                <td>62.11</td>
+                                <td>55.12</td>
+                            </tr>
+                            <tr>
+                                <td>ForestSeg-T3</td>
+                                <td>59.01</td>
+                                <td>54.92</td>
+                                <td>57.28</td>
+                                <td>50.01</td>
+                            </tr>
+                            <tr>
+                                <td>ForestSeg-T4</td>
+                                <td>71.32</td>
+                                <td>60.82</td>
+                                <td>64.71</td>
+                                <td>57.13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h1 id="the-pollenbee-dataset">Terms & Conditions of Use</h1>
+            <div class="row">
+                <p>
+                    The datasets are released for academic research only, and are free to researchers from educational
+                    or research institutes for non-commercial purposes.
+                </p>
+            </div>
+        </section>
+
+
+        <div class="bigspacer"></div>
+        <div class="bigspacer"></div>
+
+        <!-- Static bottom navbar -->
+        <iframe src="/includes/footer.html"
+            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
