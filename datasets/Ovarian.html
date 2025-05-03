@@ -72,146 +72,392 @@
 
     <div class="container" style="text-align: justify;">
         <section>
-            <h1 id="the-pollenbee-dataset">The Ovarian Tumor Dataset</h1>
+            <h1 id="the-ovarian-tumor-dataset" class="section-title">The Ovarian Tumor Dataset</h1>
+            <h3>Introduction</h3>
             <div class="row">
-                <p>
+                <p class="content-text">
                     The OvaTUS dataset was collected by the research team of the Signal, Information, and Multimedia
                     Content Processing Laboratory (SigM Lab) in collaboration with the National Hospital of Obstetrics
-                    and Gynecology (NHOG) in Hanoi, Vietnam. This dataset comprises ultrasound images from women who
-                    visited the hospital for ovarian tumor assessment and consented to participate in the study.
+                    and Gynecology (NHOG) in Hanoi, Vietnam, as part of under grant number KC-4.0-45/19-25 "Research and
+                    development of a computer-aided support system for ovarian cancer diagnosis using ultrasound
+                    images". This dataset comprises ultrasound images from women who visited the hospital for ovarian
+                    tumor assessment and consented to participate in the study. To ensure the effectiveness of data
+                    collection and analysis in research and pathological diagnosis, particularly in the management and
+                    evaluation of ovarian tumors via ultrasound, the documentation of essential data fields is crucial.
+                    These data fields not only facilitate the characterization and severity assessment of tumors but
+                    also support accurate and timely treatment decision-making. Detailed information regarding ovarian
+                    tumor characteristics is vital for diagnosis, severity assessment, and treatment planning.
+                </p>
+            </div>
 
-                    To ensure the effectiveness of data collection and analysis in research and pathological diagnosis,
-                    particularly in the management and evaluation of ovarian tumors via ultrasound, the documentation of
-                    essential data fields is crucial. These data fields not only facilitate the characterization and
-                    severity assessment of tumors but also support accurate and timely treatment decision-making.
-                    Detailed information regarding ovarian tumor characteristics is vital for diagnosis, severity
-                    assessment, and treatment planning.
-                </p>
-            </div>
-            <h1 id="the-pollenbee-dataset">Detail</h1>
+            <h1 id="detail" class="section-title">Detail of the OvaTUS dataset</h1>
+
+            <h3 id="data-collection" class="sub-section-title">A. Data collection</h3>
+
             <div class="row">
-                <p>
-                    The OvaTUS dataset contains high-quality ultrasound images of
-                    ovarian tumors, collected from consenting patients at the National Hospital of Obstetrics and
-                    Gynecology (NHOG) in Hanoi, Vietnam. The dataset is designed to aid in computer-aided diagnosis
-                    (CAD), deep learning-based image analysis, and clinical research related to ovarian tumor
-                    characterization. Below are sample images illustrating different tumor labels in the dataset:
+                <p class="content-text">
+                    We introduce OvaTUS-V1, the first official release of our ovarian tumor ultrasound image dataset.
+                    This dataset is developed following a standardized pipeline for data collection, storage, and
+                    annotation, ensuring consistency and reliability across all samples. All procedures strictly comply
+                    with ethical guidelines for biomedical research involving human subjects. OvaTUS-V1 is designed to
+                    support ongoing and future research in medical image analysis and will continue to be expanded with
+                    additional cases and annotations, while preserving the integrity of the data and adherence to
+                    medical ethics throughout the dataset’s evolution. The process of collecting:
+                </p>
+
+                <ol class="steps-list">
+                    <li>Step 1: We recruit volunteers aged 20–70, inform them about the study, and obtain their consent
+                        to use their medical results. </li>
+                    <li>Step 2: Patients undergo preoperative CA125 and HE4 biomarker testing, along with ultrasound
+                        imaging. Only those diagnosed with organic ovarian tumors and indicated for surgery, with tumor
+                        evaluation based on the IOTA model, are included.</li>
+                    <li>Step 3: Patients with functional ovarian cysts, pregnancy, end-stage renal failure, or a history
+                        of organ transplantation are excluded. </li>
+                    <li>Step 4: Surgery and postoperative histopathological analysis confirm the tumor's final
+                        diagnosis, and retain samples from confirmed benign or malignant cases, excluding those with
+                        discrepant pre- and postoperative diagnoses. Surgery is performed, and postoperative
+                        histopathological analysis is conducted to confirm the final diagnosis of the tumor. We retain
+                        samples from patients diagnosed with benign or malignant tumors. Patients initially diagnosed
+                        with ovarian cancer preoperatively but later confirmed with a different pathology
+                        postoperatively are excluded.</li>
+                    <li>Step 5: We apply techniques to remove markers, and patients' personal data, as well as to
+                        control the quality of the images before passing them for annotation. The final dataset is
+                        stored on a cloud server.</li>
+                </ol>
+            </div>
+
+            <!-- <div class="row" style="text-align: center;">
+                <a class="media-left" href="#">
+                    <img class="pull-left mr-3 img-fluid"
+                        src="/assets/images/datasets/OvarianTumor/DataCollectionProcess_2.png"
+                        alt="The pipeline for Data Collection and Preprocessing" style="width: 60%; height: auto;">
+                </a>
+            </div> -->
+            <h3 id="data-collection" class="sub-section-title">B. Collection and storage process</h3>
+            <div class="row">
+                <p class="content-text">
+                    The dataset utilized in this study was collected at the National Hospital of Obstetrics and
+                    Gynecology (NHOG) in Hanoi, Vietnam, a leading institution specializing in maternal and reproductive
+                    healthcare. During the clinical workflow, particularly in the second step of the ultrasound imaging
+                    process, clinicians capture and store diagnostic images on a local computer system directly
+                    connected to the ultrasound machines. These images are saved in widely used medical image formats
+                    such as DICOM, PNG, and JPEG, ensuring compatibility for both clinical use and subsequent data
+                    analysis.
+                    The majority of ultrasound images included in our dataset were acquired using two commonly deployed
+                    diagnostic imaging systems in Vietnam: the Samsung Medison W80i and the GE Voluson S6. These devices
+                    are well-regarded for their reliability and imaging precision in obstetric and gynecological
+                    applications. Specifically, the Samsung W80i offers high-resolution 2D imaging along with advanced
+                    Doppler functionalities, while the Voluson S6 supports comprehensive 2D, 3D, and even 4D imaging
+                    capabilities, which are crucial for detailed visualization of ovarian structures. The combination of
+                    these technologies allows for accurate characterization of ovarian tumors in terms of size, shape,
+                    and internal structure, thereby enhancing both diagnostic accuracy and the quality of data used for
+                    computational analysis in this research.
                 </p>
             </div>
-            <div class="row" style="margin-left: 20px;">
-                <div class="column">
-                    <h3><strong>Annotations:</strong> Expert-labeled tumor characteristics, including:</h3>
-                    <ul>
-                        <li><strong>Tumor type:</strong> Solid, cystic, multilocular, unilocular, hemorrhagic, etc.</li>
-                        <li><strong>Key ultrasound features:</strong> Acoustic shadowing, papillary projections,
-                            septations, ascites, Doppler signals</li>
-                        <!-- <li><strong>Diagnostic categories:</strong> Benign, borderline, malignant (if labeled)</li> -->
-                    </ul>
+
+            <h3 id="data-collection" class="sub-section-title">C. Data pre-processing and annotation</h3>
+
+            <div class="row">
+                <p class="content-text" style="text-align: justify; color: #000000;">
+                    The captured images undergo pre-processing before annotation. This pre-processing step includes
+                    removing personal data and eliminating markers added by doctors during ultrasound imaging. We
+                    utilize available IOPaint tool for inpainting the images, ensuring a clean and standardized
+                    dataset for annotation. Then the doctors use LabelMe tool for tumor region annotation. LabelMe
+                    is a free and convenient tool developed by MIT CSCI labs presents the LabelMe interface as used
+                    by doctors, where the red line delineates the tumor boundary. During the annotation process,
+                    doctors followed Vietnamese standards and consulted the IOTA standards for ovarian tumor
+                    classification which includes 6 types of tumors: Solid tumor, Multilocular cyst, Unilocular
+                    cyst, Dermoid cyst, Multilocular-solid cyst and Unilocular-solid cyst. Number of samples per
+                    class in OVATUS-V1 dataset is summarized in table:
+                </p>
+
+                <div class="container">
+                    <div class="row">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Category</th>
+                                    <th>Description</th>
+                                    <th>Number of Images</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Solid tumor</td>
+                                    <td>A tumor with a cystic structure with only one lobe, without septa, solid
+                                        tissue,
+                                        or buds.</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Multilobular cyst</td>
+                                    <td>A cyst with at least one septation and no solid components or papillary
+                                        projections.</td>
+                                    <td>137</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Unilocular cyst</td>
+                                    <td>A tumor with a cystic structure with only one lobe, but with the presence of
+                                        a
+                                        solid part or at least one bud.</td>
+                                    <td>76</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Dermoid cyst</td>
+                                    <td>Cyst with a solid appearance and thin walls, typically unilocular and
+                                        exhibiting
+                                        a ground-glass pattern.</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Multilobular-solid cyst</td>
+                                    <td>A single-locule ovarian cyst that contains a solid component or at least one
+                                        papillary projection within its structure.</td>
+                                    <td>36</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Unilocular-solid cyst</td>
+                                    <td>A cyst with a single locule and a solid component or at least one papillary
+                                        projection.</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="row center">
-                <table>
-                    <tr>
-                        <th> # </th>
-                        <th>Categories</th>
-                        <th> # </th>
-                        <th>Categories</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Solid tumor</td>
-                        <td>11</td>
-                        <td>Hemorrhagic tumor</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Multilocular cyst</td>
-                        <td>12</td>
-                        <td>Solid multilocular cyst</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Unilocular cyst</td>
-                        <td>13</td>
-                        <td>Solid unilocular cyst</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Cyst with septation</td>
-                        <td>14</td>
-                        <td>Acoustic shadow</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Solid component</td>
-                        <td>15</td>
-                        <td>Hemorrhagic component</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Papillary projection</td>
-                        <td>16</td>
-                        <td>Septation</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Ascites</td>
-                        <td>17</td>
-                        <td>White ball</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Irregular margin</td>
-                        <td>18</td>
-                        <td>Smooth margin</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Doppler cs1</td>
-                        <td>19</td>
-                        <td>Doppler cs2</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Doppler cs3</td>
-                        <td>20</td>
-                        <td>Doppler cs4</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="bigspacer"></div>
-            <div class="bigspacer"></div>
+
+            <h3 id="data-collection" class="sub-section-title">D. Ethical considerations</h3>
+
             <div class="row">
+                <p class="content-text" style="text-align: justify; color: #000000;">
+                    Researchers conducting biomedical studies, particularly those involving human participants, are
+                    ethically and legally obligated to safeguard the rights, dignity, and privacy of all individuals
+                    contributing to the research. In alignment with these responsibilities, our study was designed and
+                    implemented with strict adherence to international and national ethical guidelines. A foundational
+                    principle guiding our research process is the respect for patient autonomy and confidentiality. We
+                    recognize that patients have an inalienable right to privacy and to be protected from unauthorized
+                    disclosure of any information related to their personal identity or medical condition. Accordingly,
+                    comprehensive efforts were undertaken to ensure that all data collected from patients at the
+                    National Hospital of Obstetrics and Gynecology (NHOG) in Hanoi, Vietnam, were handled with the
+                    highest standards of data protection and ethical responsibility.
+                </p>
+                <p class="content-text" style="text-align: justify; color: #000000;">
+                    Before the commencement of data collection, the objectives, scope, and intended use of the study
+                    were transparently communicated to both the hospital administration and relevant clinical
+                    departments. This communication included a full explanation of how the data would be used, the
+                    anonymization process, and the measures in place to prevent any misuse or accidental disclosure of
+                    sensitive information. Both institutional and patient-level consents were obtained where applicable,
+                    following established ethical protocols.
+                </p>
+                <p class="content-text" style="text-align: justify; color: #000000;"></p>
+                The study was officially approved by the Ethics Committee on Biomedical Research of the National
+                Hospital of Obstetrics and Gynecology, in accordance with Decision No. 1166/CN-PSTW, dated July 28,
+                2023. This decision provides formal recognition that the research meets the ethical standards
+                required under Vietnamese biomedical research regulations. Moreover, the ethical framework of this
+                study is firmly grounded in the principles of the Declaration of Helsinki, adopted by the World
+                Medical Association (WMA). The Helsinki Declaration serves as a globally recognized ethical
+                cornerstone for all research involving human subjects. It establishes clear guidance on issues such
+                as informed consent, beneficence, non-maleficence, and the necessity of maintaining confidentiality
+                throughout and beyond the duration of the research project. In Vietnam, as in many other countries,
+                the Declaration of Helsinki is used as a foundational document to guide Institutional Review Boards
+                (IRBs) and Ethics Committees (ECs) in the assessment of research proposals involving human
+                participants.
+                </p>
+                <p class="content-text" style="text-align: justify; color: #000000;"></p>
+                To uphold the confidentiality and integrity of patient data, the research team employed a series of
+                stringent data anonymization and protection protocols. All personally identifiable information
+                (PII), such as patient names, identification numbers, dates of birth, and medical record numbers,
+                was either permanently removed or masked using appropriate truncation and encryption techniques
+                prior to data processing. This anonymization process ensures that no individual patient can be
+                re-identified based on the information retained in the research dataset. The ultrasound images,
+                which form the core of this study, were curated to exclude any visual identifiers or embedded
+                metadata that could reveal the patient's identity or clinical background.
+                Furthermore, access to the dataset was strictly controlled and limited to authorized members of the
+                research team. All data were stored in secure servers with multi-layered protection mechanisms,
+                including password-protected systems, encrypted storage drives, and institutional firewall policies,
+                to mitigate the risk of data breaches or unauthorized access. The research team underwent training
+                on ethical data handling and privacy protection to ensure consistent adherence to best practices in
+                human subjects research.
+                </p>
+                <p class="content-text" style="text-align: justify; color: #000000;"></p>
+                In terms of data usage, the study was designed solely for academic and scientific purposes, with a
+                specific focus on advancing diagnostic techniques in ovarian tumor segmentation using ultrasound
+                imaging. No commercial exploitation or distribution of the patient data is permitted under the terms
+                approved by the Ethics Committee. Additionally, the research findings are presented in aggregate
+                form only, with no reference to individual patients or cases, thereby preserving the anonymity and
+                dignity of all study participants.
+                </p>
+                <p class="content-text" style="text-align: justify; color: #000000;"></p>
+                By implementing these safeguards, the research team not only complies with national and
+                international ethical regulations but also reinforces a culture of trust between medical researchers
+                and the patient community. Trust is fundamental in clinical research; it ensures continued
+                collaboration between medical institutions and researchers, and it encourages patients to contribute
+                to scientific progress by sharing their data under safe and respectful conditions.
+                In conclusion, this study exemplifies a rigorous approach to ethical biomedical research by
+                prioritizing the protection of personal data and ensuring transparency throughout the research
+                process. From the initial design phase to data acquisition, storage, and analysis, all steps were
+                conducted in accordance with the ethical principles set forth by the Declaration of Helsinki and the
+                directives issued by the Ethics Committee of NHOG. These efforts collectively guarantee that the
+                dignity, rights, and welfare of the patients involved remain fully protected throughout the duration
+                of the study and in any future dissemination of its results.
 
+                </p>
+            </div>
 
+            <h3 id="data-collection" class="sub-section-title">E. Data analysis</h3>
+
+            <div class="row">
+                <p class="content-text" style="text-align: justify; color: #000000;">
+                    In all datasets, the annotated tumor regions exhibit high variability in size, shape, and texture,
+                    reflecting the diverse nature of ovarian tumors. Some segmented regions are not homogeneous, as they
+                    contain a mixture of hypoechoic (dark) and hyperechoic (bright) areas, creating a complex internal
+                    structure. Additionally, the manually drawn boundaries using annotation tools are not always smooth
+                    or perfectly aligned with the actual tumor contours, especially for small-sized tumors where precise
+                    delineation is more challenging. In cases of heterogeneous or multilobulated tumors, the boundaries
+                    are often difficult to distinguish from surrounding tissues, leading to potential over-segmentation
+                    or under-segmentation. These challenges highlight the intricacies of ovarian tumor segmentation,
+                    emphasizing the need for advanced deep-learning models and boundary-aware loss functions to enhance
+                    accuracy and robustness. In the following, we analyze quantitatively the datasets in terms of
+                    distribution in number of samples per class as well as in the size of tumor regions.
+                </p>
+            </div>
+
+            <h3 id="data-collection" class="sub-section-title">F. Distribution of samples per class</h3>
+
+            <div class="row">
+                <p class="content-text" style="text-align: justify; color: #000000;">
+                    In the OVATUS-V1 dataset, the distribution of samples across categories is noticeably imbalanced.
+                    The OvaTUS-V1 dataset consists of six different tumor classes with a total of 439 images. The
+                    distribution of samples among the classes is highly imbalanced, with the "Multilocular cyst" having
+                    the highest number of images (137), whereas the "Unilocular-solid cyst" class has only 25 samples.
+                    The imbalance in class representation in OvaTUS-V1 may impact segmentation performance, requiring
+                    techniques like data augmentation or weighted loss functions to mitigate bias.
+                </p>
+            </div>
+
+            <h3 id="data-collection" class="sub-section-title">G. Distribution of tumor sizes</h3>
+
+            <div class="row">
+                <p class="content-text" style="text-align: justify; color: #000000;">
+                    OvaTUS-V1 has quite a balanced distribution, with the highest frequency in the 20-30% size range,
+                    suggesting that medium-sized tumors are the most common in this dataset. These differences suggest
+                    that each dataset may have been collected under different clinical conditions, possibly reflecting
+                    variations in patient demographics, imaging protocols, or tumor detection criteria.
+                </p>
+            </div>
+
+            <h3 id="data-collection" class="sub-section-title">H. Illustrate several images in the OvaTUS dataset</h3>
+
+            <div class="row" style="text-align: center;">
                 <a class="media-left" href="#">
-                    <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/ova1.png"
-                        alt="OvaTUS Dataset">
+                    <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/ovt.png"
+                        alt="OvaTUS Dataset" style="width: 80%; height: auto;">
                 </a>
             </div>
-            <div class="row">
-                <a class="media-left" href="#">
-                    <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/ov2.png"
-                        alt="OvaTUS Dataset">
-                </a>
-            </div>
-        </section>
 
 
-        <div class="bigspacer"></div>
-        <div class="bigspacer"></div>
 
-        <!-- Static bottom navbar -->
-        <iframe src="/includes/footer.html"
-            onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+            <!-- <div class="row" style="text-align: center;">
+                <p class="note"><strong>Note: This dataset is continuously updated with new cases and
+                        annotations.</strong></p>
+            </div> -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+            <!-- <div class="row">
+                    <a class="media-left" href="#">
+                        <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/ov2.png"
+                            alt="OvaTUS Dataset">
+                    </a>
+                </div> -->
+    </div>
+
+    <!-- CSS -->
+    <style>
+        .section-title {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .content-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .table-bordered {
+            border: 1px solid #ddd;
+        }
+
+        .table th,
+        .table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .table td {
+            background-color: #fff;
+            font-size: 14px;
+        }
+
+        .table tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        .note {
+            font-size: 14px;
+            font-style: italic;
+            color: #888;
+        }
+
+        .note strong {
+            color: #333;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+
+    </section>
+
+
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
 
 
 
