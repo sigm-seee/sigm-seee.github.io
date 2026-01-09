@@ -615,7 +615,8 @@
     <div class="row">
       <div class="col-md-6 memberbox">
         <div class="media">
-          <img class="media-object member-photo" src="/assets/images/team/PhD Students/PhD_QuangDuyPham.jpg" alt="Duy-Beo">
+          <img class="media-object member-photo" src="/assets/images/team/PhD Students/PhD_QuangDuyPham.jpg"
+            alt="Duy-Beo">
           <div class="media-body">
             <h5 class="media-heading">
               <p class="off" style="font-weight: bold; font-size: 1.4rem;">Quang-Duy Pham</p>
@@ -826,151 +827,171 @@
     </div>
   </div>
 
-  <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> Alumni Members
+  <style>
+    .memberbox {
+      padding: 15px;
+    }
+
+    .member-name {
+      font-weight: bold;
+      margin-bottom: 4px;
+      font-size: 1.0rem;
+    }
+
+    .alumni-slider {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .alumni-track {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .alumni-item {
+      flex: 0 0 25%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .alumni-item img {
+      width: 110px;
+      height: auto;
+      object-fit: cover;
+      /* border-radius: 50%; */
+      margin-bottom: 10px;
+    }
+
+    .member-name {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .alumni-track {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+      will-change: transform;
+    }
+
+    .alumni-slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .alumni-wrapper {
+      max-width: 100%;
+    }
+
+    .alumni-controls {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .alumni-btn {
+      padding: 8px 22px;
+      border: 1px solid #333;
+      background: #fff;
+      color: #333;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .alumni-btn:hover {
+      background: #333;
+      color: #fff;
+    }
+  </style>
+
+  <h1 class="display-4 text-center member-name mb-5" style="font-size:2.5rem;">
+    Alumni Members
   </h1>
+
   <div class="container">
 
-    <!-- HÀNG 1 -->
-    <div class="row mb-4">
+    <div class="alumni-slider">
+      <div class="alumni-track">
 
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/DoanThiHuongGiang.png" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Huong-Giang Doan</p>
-            <p class="note">Electrical Power University</p>
-          </div>
+        <!-- Alumni item -->
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/DoanThiHuongGiang.png">
+          <p class="member-name">Dr. Huong-Giang Doan</p>
+          <p class="note">Electrical Power University</p>
         </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/NguyenSinhHuy.png">
+          <p class="member-name">Dr. Sinh-Huy Nguyen</p>
+          <p class="note">Academy of Military Science and Technology</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/non-image.jpg">
+          <p class="member-name">Dr. Thanh-Huong Nguyen</p>
+          <p class="note"></p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/PhamThanhThuy.png">
+          <p class="member-name">Assoc.Prof. Thanh-Thuy Pham</p>
+          <p class="note">People's Security Academy</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/NguyenThanhNhan.png">
+          <p class="member-name">Dr. Thanh-Nhan Nguyuen</p>
+          <p class="note">Thai Nguyen University</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/LeVanHung.jpg">
+          <p class="member-name">Assoc.Prof. Van-Hung Le</p>
+          <p class="note">Tan Trao University</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/NguyenQuocHUng.png">
+          <p class="member-name">Dr. Quoc-Hung Nguyen</p>
+          <p class="note">University Of Economics Ho Chi Minh City</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/BuiHaiPhong.jpg">
+          <p class="member-name">Dr. Hai-Phong Bui</p>
+          <p class="note">Hanoi Architectural University</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Allumi Member/PhamDinhTan.png">
+          <p class="member-name">Dr. Dinh-Tan Pham</p>
+          <p class="note">International School, Vietnam National University</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Master Students/Master - MinhTQ.jpg">
+          <p class="member-name">Msc. Quang-Minh Tran</p>
+          <p class="note">S-Phenikaa</p>
+        </div>
+
+        <div class="alumni-item">
+          <img src="/assets/images/team/Master Students/Master - DucPD.jpg">
+          <p class="member-name">Doan-Duc Phan</p>
+          <p class="note">Samsung SDS Vietnam</p>
+        </div>"
+
       </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/NguyenSinhHuy.png" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Sinh-Huy Nguyen</p>
-            <p class="note">Academy of Military Science and Technology</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/non-image.jpg" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Thanh-Huong Nguyen</p>
-            <p class="note"></p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- HÀNG 2 -->
-    <div class="row mb-4">
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/PhamThanhThuy.png" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Assoc.Prof. Thanh-Thuy Pham</p>
-            <p class="note">People's Security Academy</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/NguyenThanhNhan.png" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Thanh-Nhan Nguyuen</p>
-            <p class="note">Thai Nguyen University</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/LeVanHung.jpg" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Assoc.Prof. Van-Hung Le</p>
-            <p class="note">Tan Trao University</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- HÀNG 3 -->
-    <div class="row mb-4">
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/NguyenQuocHUng.png" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Quoc-Hung Nguyen</p>
-            <p class="note">University Of Economics Ho Chi Minh City</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/BuiHaiPhong.jpg" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Hai-Phong Bui</p>
-            <p class="note">Hanoi Architectural University</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Allumi Member/PhamDinhTan.png" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Dinh-Tan Pham</p>
-            <p class="note">International School, Vietnam National University</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- HÀNG 4 -->
-    <div class="row mb-4">
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Master Students/Master - MinhTQ.jpg" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Msc. Quang-Minh Tran</p>
-            <p class="note">S-Phenikaa</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/Master Students/Master - DucPD.jpg" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Msc. Doan-Duc Phan</p>
-            <p class="note">Samsung SDS Vietnam</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="col-md-4 col-sm-12 memberbox">
-        <div class="media align-items-center">
-          <img src="/assets/images/team/non-image.jpg" class="member-photo">
-          <div class="media-body ms-3">
-            <p class="member-name">Dr. Dinh-Tan Pham</p>
-            <p class="note">International School, Vietnam National University</p>
-          </div>
-        </div>
-      </div> -->
-
+      <figure class="alumni-controls">
+        <button class="alumni-btn prev">Previous</button>
+        <button class="alumni-btn next">Next</button>
+      </figure>
     </div>
 
   </div>
+
   <h3 style="margin-bottom: 30px;"></h3>
 
   <style>
@@ -1105,6 +1126,92 @@
     crossorigin="anonymous"></script>
 
   <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const slider = document.querySelector('.alumni-slider');
+      const track = document.querySelector('.alumni-track');
+      const prevBtn = document.querySelector('.alumni-btn.prev');
+      const nextBtn = document.querySelector('.alumni-btn.next');
+
+      const visibleCount = 3;
+      let index = 0;
+      let autoTimer;
+
+      const items = Array.from(track.children);
+
+      /* ===== CLONE FIRST ITEMS ===== */
+      items.slice(0, visibleCount).forEach(item => {
+        track.appendChild(item.cloneNode(true));
+      });
+
+      const allItems = track.children;
+      let itemWidth = allItems[0].offsetWidth;
+
+      function move(withTransition = true) {
+        track.style.transition = withTransition
+          ? 'transform 0.6s ease-in-out'
+          : 'none';
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+      }
+
+      function next() {
+        index++;
+        move();
+
+        if (index === items.length) {
+          setTimeout(() => {
+            index = 0;
+            move(false);
+          }, 600);
+        }
+      }
+
+      function prev() {
+        if (index === 0) {
+          index = items.length;
+          move(false);
+        }
+
+        index--;
+        setTimeout(() => move(), 20);
+      }
+
+      function startAuto() {
+        autoTimer = setInterval(next, 3000);
+      }
+
+      function stopAuto() {
+        clearInterval(autoTimer);
+      }
+
+      /* ===== EVENTS ===== */
+      nextBtn.addEventListener('click', () => {
+        stopAuto();
+        next();
+        startAuto();
+      });
+
+      prevBtn.addEventListener('click', () => {
+        stopAuto();
+        prev();
+        startAuto();
+      });
+
+      slider.addEventListener('mouseenter', stopAuto);
+      slider.addEventListener('mouseleave', startAuto);
+
+      window.addEventListener('resize', () => {
+        itemWidth = allItems[0].offsetWidth;
+        move(false);
+      });
+
+      startAuto();
+    });
+  </script>
+
+
 
 </body>
 
