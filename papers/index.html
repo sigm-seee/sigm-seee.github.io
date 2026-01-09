@@ -72,6 +72,98 @@
       background: #555;
     }
   </style>
+
+  <style>
+    .paper-slider {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .paper-viewport {
+      overflow: hidden;
+    }
+
+    .paper-track {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .paper-item {
+      min-width: 100%;
+      display: flex;
+      gap: 30px;
+      padding: 25px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+
+    .paper-item img {
+      width: 360px;
+      /* cố định chiều rộng */
+      max-width: 100%;
+      height: auto;
+      /* tự co theo tỉ lệ */
+      max-height: 260px;
+      /* chặn ảnh quá cao */
+      object-fit: contain;
+      /* giữ nguyên hình, không cắt */
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .paper-title a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .paper-title a:hover {
+      text-decoration: underline;
+    }
+
+    .paper-authors {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .paper-pub {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Buttons */
+    .paper-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #fff;
+      border: 1px solid #ccc;
+      width: 45px;
+      height: 45px;
+      font-size: 26px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .paper-btn:hover {
+      background: #eee;
+    }
+
+    .paper-btn.prev {
+      left: -60px;
+    }
+
+    .paper-btn.next {
+      right: -60px;
+    }
+  </style>
 </head>
 
 <body>
@@ -87,100 +179,94 @@
     <!-- opening of a new row -->
     <div class="bigspacer"></div>
     <h3 style="margin-left: 15px;margin-top: 10px;">2025</h3>
-    <div
-      style="max-height: 500px; overflow-y: auto; overflow-x: hidden; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;">
 
-      <div class="row">
+    <div class="paper-slider">
 
-        <!-- Paper -->
-        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
-          <div class="d-flex align-items-center">
-            <img src="/assets/images/papers/Paper/Paper 2025/EMD-based.png" class="img-fluid me-3" alt="Paper Image"
-              style="width: 450px; height: auto; margin-right: 10px;">
-            <div>
-              <div class="smallhead media-heading">
-                <p style="font-weight: bold;">
-                  <a href="https://doi.org/10.1016/j.mlwa.2025.100663" class="off">EMD-based local matching for occluded
-                    person re-identification</a>
-                </p>
-              </div>
-              <p class="note">Hoang-Anh Nguyen,Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan Le </p>
-              <p>
-                <i>Published: 6 May 2025 - Machine Learning with Applications </i>
+      <!-- PREV -->
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <!-- Paper -->
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/EMD-based.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1016/j.mlwa.2025.100663">
+                  EMD-based local matching for occluded person re-identification
+                </a>
+              </p>
+              <p class="paper-authors">
+                Hoang-Anh Nguyen, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 6 May 2025 – Machine Learning with Applications
               </p>
             </div>
           </div>
-        </div>
-        <!--End Paper-->
 
-        <!-- Paper -->
-        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
-          <div class="d-flex align-items-center">
-            <img src="/assets/images/papers/Paper/personsearch.png" class="img-fluid me-3" alt="Paper Image"
-              style="width: 450px; height: auto; margin-right: 10px;">
-            <div>
-              <div class="smallhead media-heading">
-                <p style="font-weight: bold;">
-                  <a href="https://doi.org/10.1145/3721979" class="off">Towards an online text-based
-                    person search in Vietnamese language</a>
-                </p>
-              </div>
-              <p class="note">Thi-Hoai Phan, Hoang-Son Bui, Tri Trung Kien Le, Thi-Ngoc-Diep Do, Thuy-Binh Nguyen,
-                Hong-Quan Nguyen, Thhanh-Hai Tran, Thi Thanh Thuy Pham, Thi-Lan Le</p>
-              <p>
-                <i>Published: 22 April 2025 - ACM Transactions on Asian and Low-Resource Language Information
-                  Processing
-                </i>
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/personsearch.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1145/3721979">
+                  Towards an online text-based person search in Vietnamese language
+                </a>
+              </p>
+              <p class="paper-authors">
+                Thi-Hoai Phan, Hoang-Son Bui, Tri Trung Kien Le, Thi-Ngoc-Diep Do, Thuy-Binh Nguyen,
+                Hong-Quan Nguyen, Thhanh-Hai Tran, Thi Thanh Thuy Pham, Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 22 April 2025 - ACM Transactions on Asian and Low-Resource Language Information Processing
               </p>
             </div>
           </div>
-        </div>
-        <!--End Paper-->
 
-        <!-- Paper -->
-        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
-          <div class="d-flex align-items-center">
-            <img src="/assets/images/papers/Paper/Paper 2025/Flower-Action.png" class="img-fluid me-3" alt="Paper Image"
-              style="width: 450px; height: auto; margin-right: 10px;">
-            <div>
-              <div class="smallhead media-heading">
-                <p style="font-weight: bold;">
-                  <a href="https://doi.org/10.1007/s12652-025-04958-4" class="off">FlowerAction: a federated deep
-                    learning framework for video-based human action recognition</a>
-                </p>
-              </div>
-              <p class="note">Thi Quynh Khanh Dinh, Thanh-Hai Tran, Trung-Kien Tran & Thi-Lan Le </p>
-              <p>
-                <i>Published: 4 March 2025 - Journal of Ambient Intelligence and Humanized Computing </i>
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/Flower-Action.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1007/s12652-025-04958-4">
+                  FlowerAction: a federated deep learning framework
+                </a>
+              </p>
+              <p class="paper-authors">
+                Thi Quynh Khanh Dinh, Thanh-Hai Tran, Trung-Kien Tran & Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 4 March 2025 - Journal of Ambient Intelligence and Humanized Computing
               </p>
             </div>
           </div>
-        </div>
-        <!--End Paper-->
 
-        <!-- Paper -->
-        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
-          <div class="d-flex align-items-center">
-            <img src="/assets/images/papers/Paper/Paper 2025/Chams-Docs-MTAP.png" class="img-fluid me-3"
-              alt="Paper Image" style="width: 450px; height: auto; margin-right: 10px;">
-            <div>
-              <div class="smallhead media-heading">
-                <p style="font-weight: bold;">
-                  <a href="https://doi.org/10.1007/s11042-025-20602-x" class="off">Text line segmentation approach
-                    combining deep learning model and traditional image processing techniques - application to
-                    transliteration of Cham manuscripts</a>
-                </p>
-              </div>
-              <p class="note">Tien Nam Nguyen, Jean Christophe Burie, Thi Lan Le & Anne-Valerie Schweyer</p>
-              <p>
-                <i>Published: 21 January 2025 - Multimedia Tools and Applications </i>
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/Chams-Docs-MTAP.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1007/s12652-025-04958-4">
+                  Text line segmentation approach combining deep learning model and traditional image processing
+                  techniques - application to transliteration of Cham manuscripts
+                </a>
+              </p>
+              <p class="paper-authors">
+                Tien Nam Nguyen, Jean Christophe Burie, Thi Lan Le & Anne-Valerie Schweyer
+              </p>
+              <p class="paper-pub">
+                Published: 21 January 2025 - Multimedia Tools and Applications
               </p>
             </div>
           </div>
+
+
         </div>
-        <!--End Paper-->
       </div>
+
+      <!-- NEXT -->
+      <button class="paper-btn next">›</button>
     </div>
+
 
     <h3 style="margin-left: 15px;margin-top: 20px;">2024</h3>
     <div
@@ -1055,6 +1141,60 @@
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"></script>
     <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        const track = document.querySelector('.paper-track');
+        const prev = document.querySelector('.paper-btn.prev');
+        const next = document.querySelector('.paper-btn.next');
+
+        let index = 0;
+        const items = Array.from(track.children);
+
+        // clone first slide
+        track.appendChild(items[0].cloneNode(true));
+
+        const total = items.length;
+        let width = items[0].offsetWidth;
+
+        function move(withTransition = true) {
+          track.style.transition = withTransition
+            ? 'transform 0.6s ease-in-out'
+            : 'none';
+          track.style.transform = `translateX(-${index * width}px)`;
+        }
+
+        function nextSlide() {
+          index++;
+          move();
+
+          if (index === total) {
+            setTimeout(() => {
+              index = 0;
+              move(false);
+            }, 600);
+          }
+        }
+
+        function prevSlide() {
+          if (index === 0) {
+            index = total;
+            move(false);
+          }
+          index--;
+          setTimeout(() => move(), 20);
+        }
+
+        next.addEventListener('click', nextSlide);
+        prev.addEventListener('click', prevSlide);
+
+        window.addEventListener('resize', () => {
+          width = items[0].offsetWidth;
+          move(false);
+        });
+      });
+    </script>
+
 </body>
 
 </html>
