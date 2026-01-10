@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Papers</title>
+  <meta name="description" content="Research papers from the lab">
+  <meta name="author" content="Kyle E. Niemeyer">
+
+  <!-- Enable responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap styles -->
+  <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Sticky Footer -->
+  <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- icon -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/themes/lab/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/themes/lab/images/logo/favicon-16x16.png" sizes="16x16"> -->
+  <link rel="manifest" href="/assets/themes/lab/images/logo/icon-lab.jpg">
+  <link rel="mask-icon" href="/assets/themes/lab/images/logo/icon-lab.jpg" color="#5bbad5">
+  <!-- <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon32x32.png"> -->
+  <link rel="shortcut icon" href="/assets/themes/lab/images/logo/icon-lab.jpg">
+  <meta name="msapplication-config" content="/assets/themes/lab/images/logo/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+  <!--<script src="https://use.fontawesome.com/51d391e302.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <!-- Academicons: https://jpswalsh.github.io/academicons/ -->
+  <link rel="stylesheet" href="/assets/css/academicons.min.css" />
+
+  <link rel="stylesheet" href="/assets/css/icon-list-group.css" />
+
+  <!-- Fonts via Google -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet'
+    type='text/css' />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+  <!-- Math via MathJax -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+
+  <style>
+    .paper-slider {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .paper-viewport {
+      overflow: hidden;
+    }
+
+    .paper-track {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .paper-item {
+      min-width: 100%;
+      display: flex;
+      gap: 30px;
+      padding: 25px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+
+    .paper-item img {
+      width: 360px;
+      /* cố định chiều rộng */
+      max-width: 100%;
+      height: auto;
+      /* tự co theo tỉ lệ */
+      max-height: 260px;
+      /* chặn ảnh quá cao */
+      object-fit: contain;
+      /* giữ nguyên hình, không cắt */
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .paper-title a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .paper-title a:hover {
+      text-decoration: underline;
+    }
+
+    .paper-authors {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .paper-pub {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Buttons */
+    .paper-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #fff;
+      border: 1px solid #ccc;
+      width: 45px;
+      height: 45px;
+      font-size: 26px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .paper-btn:hover {
+      background: #eee;
+    }
+
+    .paper-btn.prev {
+      left: -60px;
+    }
+
+    .paper-btn.next {
+      right: -60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Static top navbar -->
+  <iframe src="/includes/menu_top.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+  <!-- Content -->
+  <div class="container">
+
+    <div class="bigspacer"></div>
+    <h2 style="color: #C00000;"><i class="far fa-file-alt fa-fw"></i> International Journal Articles</h2>
+    <!-- opening of a new row -->
+    <div class="bigspacer"></div>
+    <h3 style="margin-left: 15px;margin-top: 10px;">2025</h3>
+
+    <div class="paper-slider">
+
+      <!-- PREV -->
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <!-- Paper -->
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/EMD-based.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1016/j.mlwa.2025.100663">
+                  EMD-based local matching for occluded person re-identification
+                </a>
+              </p>
+              <p class="paper-authors">
+                Hoang-Anh Nguyen, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 6 May 2025 – Machine Learning with Applications
+              </p>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/personsearch.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1145/3721979">
+                  Towards an online text-based person search in Vietnamese language
+                </a>
+              </p>
+              <p class="paper-authors">
+                Thi-Hoai Phan, Hoang-Son Bui, Tri Trung Kien Le, Thi-Ngoc-Diep Do, Thuy-Binh Nguyen,
+                Hong-Quan Nguyen, Thhanh-Hai Tran, Thi Thanh Thuy Pham, Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 22 April 2025 - ACM Transactions on Asian and Low-Resource Language Information Processing
+              </p>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/Flower-Action.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1007/s12652-025-04958-4">
+                  FlowerAction: a federated deep learning framework
+                </a>
+              </p>
+              <p class="paper-authors">
+                Thi Quynh Khanh Dinh, Thanh-Hai Tran, Trung-Kien Tran & Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 4 March 2025 - Journal of Ambient Intelligence and Humanized Computing
+              </p>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2025/Chams-Docs-MTAP.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://doi.org/10.1007/s12652-025-04958-4">
+                  Text line segmentation approach combining deep learning model and traditional image processing
+                  techniques - application to transliteration of Cham manuscripts
+                </a>
+              </p>
+              <p class="paper-authors">
+                Tien Nam Nguyen, Jean Christophe Burie, Thi Lan Le & Anne-Valerie Schweyer
+              </p>
+              <p class="paper-pub">
+                Published: 21 January 2025 - Multimedia Tools and Applications
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- NEXT -->
+      <button class="paper-btn next">›</button>
+    </div>
+
+
+    <h3 style="margin-left: 15px;margin-top: 20px;">2024</h3>
+
+
+    <div class="paper-slider">
+
+      <!-- PREV -->
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <!-- Paper -->
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2024/feddc.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://ieeexplore.ieee.org/document/10772240" class="off">
+                  FedDC: Label Noise Correction
+                  with Dynamic Clients for Federated Learning</a>
+              </p>
+              <p class="paper-authors">
+                Thanh-Trung Giap, Tuan-Dung Kieu, Thi-Lan Le, Thanh-Hai Tran
+              </p>
+              <p class="paper-pub">
+                Published: 29/11/2024 - IEEE Internet of Things Journal
+              </p>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2024/PollenBea2024.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://www.sciencedirect.com/science/article/pii/S1574954124002863" class="off">Improving
+                  pollen-bearing honey bee detection from videos captured at hive entrance by combining deep learning
+                  and handling imbalance techniques</a>
+              </p>
+              <p class="paper-authors">
+                Dinh-Tu Nguyen, Thi-Nhung Le, Thi-Huong Phung, Duc-Manh Nguyen, Hong-Quan Nguyen,
+                Hong-Thai Pham, Thi-Thu-Hong Phan, Vu-Hai, Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 31/08/2024 - Ecological Informatics
+              </p>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2024/PlanID2024.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://ieeexplore.ieee.org/document/10529230/authors#authors" class="off">
+                  Robust Plant Identification Based on the Combination of Multiple Images and Taxonomic
+                  Information</a>
+              </p>
+              <p class="paper-authors">
+                Thi-Lan Le, Mai Viet Hoang Do, Nam-Hoang Van, Hong-Quan Nguyen, Tinh-Trinh Trong, Doan-Duc
+                Phan, and Van-Sam Hoang
+              </p>
+              <p class="paper-pub">
+                Published: 13/05/2024 - IEEE Access
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- NEXT -->
+      <button class="paper-btn next">›</button>
+    </div>
+
+    <h3 style="margin-left: 15px;margin-top: 20px;">2023</h3>
+
+    <div class="paper-slider">
+
+      <!-- PREV -->
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2023/Novel-CNN-PolenBee.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://www.sciencedirect.com/science/article/pii/S1574954124002863" class="off">Improving
+                  pollen-bearing honey bee detection from videos captured at hive entrance by combining deep learning
+                  and handling imbalance techniques</a>
+              </p>
+              <p class="paper-authors">
+                Thi-Nhung Le, Thi-Minh-Thuy Le , Thi-Thu-Hong Phan, Huu-Du Nguyen, Thi-Lan Le
+              </p>
+              <p class="paper-pub">
+                Published: 03 August 2023 - International Journal of Advanced Computer Science and Applications
+              </p>
+            </div>
+          </div>
+
+          <div class="paper-item">
+            <img src="/assets/images/papers/Paper/Paper 2023/Hand-Gesture.png">
+            <div class="paper-info">
+              <p class="paper-title">
+                <a href="https://thesai.org/Downloads/Volume14No8/Paper_112-A_Novel_Convolutional_Neural_Network_Architecture.pdf"
+                  class="off">
+                  Hand Gesture Recognition From Wrist-Worn Camera for Human–Machine Interaction</a>
+              </p>
+              <p class="paper-authors">
+                Hong-Quan Nguyen, Trung-Hieu Le, Trung-Kien Tran, Hoang-Nhat Tran, Thanh-Hai Tran, Thi-Lan
+                Le, Hai Vu, Cuong Pham, Thanh Phuong Nguyen, Huu Thanh Nguyen
+              </p>
+              <p class="paper-pub">
+                Published: 25 May 2023 - IEEE Access
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- NEXT -->
+      <button class="paper-btn next">›</button>
+    </div>
+
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+
+
+    <!-- NAIONAL JOURNAL-->
+    <h2 style="color: #C00000;"><i class="far fa-file-alt fa-fw"></i> National Journal Articles</h2>
+    <div class="bigspacer"></div>
+    <h3 style="margin-left: 15px;margin-top: 10px;">2025</h3>
+    <div class="paper-slider">
+
+      <!-- PREV -->
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <!-- Paper -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/Paper/Paper 2025/Vehical-Search.png" alt="Paper Image">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://doi.org/10.47869/tcsj.76.1.2">
+                    A clip-based dual-stream method for text based vehicle search
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Can Quang Huy, Nguyen Phuong Dung, Nguyen Thuy Binh,
+                  Nguyen Hong Quan, Vo Thien Linh, Le Thi Lan
+                </p>
+                <p class="paper-pub">
+                  Published: January 2025 – Transport and Communications Science Journal
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End Paper -->
+
+          <!-- 👉 sau này thêm paper chỉ cần copy block này -->
+
+        </div>
+      </div>
+
+      <!-- NEXT -->
+      <button class="paper-btn next">›</button>
+
+    </div>
+
+    <h3 style="margin-left: 15px;margin-top: 10px;">2024</h3>
+    <div class="paper-slider">
+
+      <!-- PREV -->
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <!-- Paper 1 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/Paper/Paper 2025/Bee-Activities.png" alt="Paper Image">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://doi.org/10.54939/1859-1043.j.mst.CSCE8.2024.3-13">
+                    A method for bee activities recognition from videos captured at the beehive entrance
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Nhung Le, Thi Hong Phan Thi, Thi-Lan Le
+                </p>
+                <p class="paper-pub">
+                  Published: 30 December 2024 – JMST's Section on Computer Science and Control Engineering
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End Paper -->
+
+          <!-- Paper 2 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/Paper/Paper 2024/Ovarian-Detection.png" alt="Paper Image">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://ictmag.vn/ict/article/view/1237">
+                    Empirical Study of Ovarian Tumors Detection and Classification in Ultrasound Images
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Thi-Loan Pham, Van-Hung Le
+                </p>
+                <p class="paper-pub">
+                  Published: 15 September 2024 – Journal on Information Technologies and Communications
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End Paper -->
+
+          <!-- Paper 3 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/Paper/Paper 2024/Tabular-Text-Embedding.png" alt="Paper Image">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://doi.org/10.54939/1859-1043.j.mst.93.2024.128-136">
+                    Tabular text embedding for Vietnamese text-based person search
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Phan Thi Hoai, Nguyen Minh Phuc, Nguyen Huu Hieu,
+                  Pham Thi Thanh Thuy, Le Thi Lan
+                </p>
+                <p class="paper-pub">
+                  Published: 23 February 2024 – Journal of Military Science and Technology
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End Paper -->
+
+        </div>
+      </div>
+
+      <!-- NEXT -->
+      <button class="paper-btn next">›</button>
+
+    </div>
+
+    <!-- <h3 style="margin-left: 15px;margin-top: 10px;">2022</h3> -->
+
+    <div class="bigspacer"></div>
+
+    <h2 style="color: #C00000;"><i class="far fa-file-alt fa-fw"></i> International Conference Papers</h2>
+    <div class="bigspacer"></div>
+    <!--2024-->
+    <h3 style="margin-left: 15px;margin-top: 10px;">2024</h3>
+
+    <div class="paper-slider">
+
+      <button class="paper-btn prev">‹</button>
+
+      <div class="paper-viewport">
+        <div class="paper-track">
+
+          <!-- PAPER 1 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title"><a href="#">Marker-Aware Ovarian Tumor Segmentation from Ultrasound Images</a>
+                </p>
+                <p class="paper-authors">Hoang-Son Bui, Sy-Hoang Tran, Thuy-Binh Nguyen, Thanh-Hai Tran, Hai Vu, Thi-Lan
+                  Le</p>
+                <p class="paper-pub">Accepted – APSIPA ASC 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 2 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title"><a href="#">M-IRRA: A Multilingual Model for Text-based Person Search</a></p>
+                <p class="paper-authors">
+                  Hung-Phong Tran, Thi-Hoai Phan, Thuy-Binh Nguyen, Thi-Ngoc-Diep Do,
+                  Hong-Quan Nguyen, Thanh-Hai Tran, Hien-Thanh Duong, Thi-Lan Le
+                </p>
+                <p class="paper-pub">Accepted – APSIPA ASC 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 3 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title"><a href="#">Data Augmentation and Assessment for Enhanced Ovarian Tumor
+                    Classification</a></p>
+                <p class="paper-authors">
+                  Thi-Loan Pham, Gia-Minh Pham, Tien-Dat Nguyen, Van-Hung Le,
+                  Thi-Lan Le, Duy-Hai Vu, Hai Vu, Chi-Mai Pham, Thanh-Hai Tran
+                </p>
+                <p class="paper-pub">Accepted – APSIPA ASC 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 4 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title"><a href="#">GILED: Lesion Detection of Gastrointestinal Tract from Endoscopic
+                    Images</a></p>
+                <p class="paper-authors">Vu-An Hoang, Minh-Hanh Tran, Viet-Hang Dao, Thanh-Hai Tran</p>
+                <p class="paper-pub">Accepted – APSIPA ASC 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 5 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10647995">
+                    SovaSeg-Net: Scale Invariant Ovarian Tumors Segmentation from Ultrasound Images
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Huu-Phong Luong, Hoang-Son Bui, Nam-Khanh Nguyen, Thi-Loan Pham,
+                  Gia-Minh Pham, Sy-Hoang Tran, Thanh-Hai Tran, Thi-Lan Le
+                </p>
+                <p class="paper-pub">27/09/2024 – IEEE ICIP</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 6 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://ieeexplore.ieee.org/document/10660783">
+                    A Method for Ovarian Tumor Segmentation based on Segment Anything Model
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Nam-Khanh Nguyen, Hoang-Son Bui, Thi-Loan Pham, Thi Thanh Thao Nguyen,
+                  Vu Hai, Thanh-Hai Tran, Van-Thang Nguyen, Chi-Mai Pham, Hong-Thien Dang, Thi-Lan Le
+                </p>
+                <p class="paper-pub">10/09/2024 – MAPR</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 7 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://ieeexplore.ieee.org/document/10660947">
+                    BKSeg-Net: Segmentation of Ovarian Tumors from Ultrasound Images
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Thi-Loan Pham, Hoang-Son Bui, Van-Hung Le, Thi-Lan Le, Van-Thang Nguyen,
+                  Chi-Mai Pham, Hong-Thien Dang, Tuan-Anh Nguyen, Duy-Hai Vu, Hai Vu, Thanh-Hai Tran
+                </p>
+                <p class="paper-pub">10/09/2024 – MAPR</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 8 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://ieeexplore.ieee.org/document/10660866">
+                    Systematic Evaluation of Language Characteristic and Data Enrichment in Text-based Person Search
+                  </a>
+                </p>
+                <p class="paper-authors">
+                  Thi-Hoai Phan, Hung-Phong Tran, Hoang-Son Bui, Thi-Ngoc-Diep Do,
+                  Thanh-Hai Tran, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi Thanh Thuy Pham, Thi-Lan Le
+                </p>
+                <p class="paper-pub">10/09/2024 – MAPR</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 9 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://ieeexplore.ieee.org/document/10660707">
+                    FedNTProto: A Prototype-Based Approach for Personalized Federated Learning
+                  </a>
+                </p>
+                <p class="paper-authors">Trung-Kien Tran, Ha-Phuong Tran, Thi-Lan Le, Thanh-Hai Tran</p>
+                <p class="paper-pub">10/09/2024 – MAPR</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER 10 -->
+          <div class="paper-item">
+            <div class="d-flex align-items-center">
+              <img src="/assets/images/papers/placeholder.png">
+              <div class="paper-info">
+                <p class="paper-title">
+                  <a href="https://link.springer.com/chapter/10.1007/978-981-97-5504-2_70">
+                    Improving Flight Trajectory Predictions with Bayesian-Optimized ConvLSTM Models
+                  </a>
+                </p>
+                <p class="paper-authors">Thi-Lich Nghiem, Thi-Lan Le, Viet-Duc Le, Pierre Maréchal, Daniel Delahaye</p>
+                <p class="paper-pub">01/09/2024 – ICISN</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 👉 CÁC BÀI ICCE, ICHST CÒN LẠI CỨ COPY paper-item THEO MẪU NÀY -->
+
+        </div>
+      </div>
+
+      <button class="paper-btn next">›</button>
+    </div>
+
+
+    <div
+      style="max-height: 500px; overflow-x: hidden ; overflow-y: auto; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;">
+      <div class="row">
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="#" class="off">Marker-Aware Ovarian Tumor Segmentation from Ultrasound Images</a>
+                </p>
+              </div>
+              <p class="note">Hoang-Son Bui, Sy-Hoang Tran, Thuy-Binh Nguyen, Thanh-Hai Tran, Hai Vu, Thi-Lan Le</p>
+              <p>
+                <i>Published: Accepted - Asia-Pacific Signal and Information Processing Association (APSIPA) Annual
+                  Summit and Conference (ASC) 2024.</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="#" class="off">M-IRRA: A Multilingual Model for Text-based Person Search</a>
+                </p>
+              </div>
+              <p class="note">Hung-Phong Tran, Thi-Hoai Phan, Thuy-Binh Nguyen, Thi-Ngoc-Diep Do, Hong-Quan Nguyen,
+                Thanh-Hai Tran, Hien-Thanh Duong, Thi-Lan Le</p>
+              <p>
+                <i>Published: Accepted - Asia-Pacific Signal and Information Processing Association (APSIPA) Annual
+                  Summit and Conference (ASC) 2024.</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="#" class="off">Data Augmentation and Assessment for Enhanced Ovarian Tumor Classification</a>
+                </p>
+              </div>
+              <p class="note">Thi-Loan Pham, Gia-Minh Pham, Tien-Dat Nguyen, Van-Hung Le, Thi-Lan Le, Duy-Hai Vu, Hai
+                Vu, Chi-Mai Pham, Thanh-Hai Tran</p>
+              <p>
+                <i>Published: Accepted - Asia-Pacific Signal and Information Processing Association (APSIPA) Annual
+                  Summit and Conference (ASC) 2024.</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="#" class="off">GILED: Lesion Detection of Gastrointestinal Tract from Endoscopic Images and
+                    Medical</a>
+                </p>
+              </div>
+              <p class="note">Vu-An Hoang, Minh-Hanh Tran, Viet-Hang Dao, Thanh-Hai Tran</p>
+              <p>
+                <i>Published: Accepted - Asia-Pacific Signal and Information Processing Association (APSIPA) Annual
+                  Summit and Conference (ASC) 2024.</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10647995/authors#authors"
+                    class="off">SovaSeg-Net: Scale Invariant Ovarian Tumors Segmentation from Ultrasound Images</a>
+                </p>
+              </div>
+              <p class="note">Huu-Phong Luong, Hoang-Son Bui, Nam-Khanh Nguyen, Thi-Loan Pham, Gia-Minh Pham, Sy-Hoang
+                Tran, Thanh-Hai Tran, Thi-Lan Le</p>
+              <p>
+                <i>Published: 27/09/2024 - 2024 IEEE International Conference on Image Processing (ICIP)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10660783" class="off">A Method for Ovarian Tumor
+                    Segmentation based on Segment Anything Model</a>
+                </p>
+              </div>
+              <p class="note">Nam-Khanh Nguyen, Hoang-Son Bui, Thi-Loan Pham, Thi Thanh Thao Nguyen, Vu Hai, Thi Thanh
+                Hai Tran, Van-Thang Nguyen, Chi-Mai Pham, Hong-Thien Dang, Thi-Lan Le</p>
+              <p>
+                <i>Published: 10/09/2024 - 2024 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10660947" class="off">BKSeg-Net: Segmentation of Ovarian
+                    Tumors from Ultrasound Images with Boundary Keypoints Loss</a>
+                </p>
+              </div>
+              <p class="note">Thi-Loan Pham, Hoang-Son Bui, Van-Hung Le, Thi-Lan Le, Van-Thang Nguyen, Chi-Mai Pham,
+                Hong-Thien Dang, Tuan-Anh Nguyen, Duy-Hai Vu, Hai Vu, and Thanh-Hai Tran</p>
+              <p>
+                <i>Published: 10/09/2024 - 2024 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10660866" class="off">Systematic Evaluation of Language
+                    Characteristic and Data Enrichment in Text-based Person Search</a>
+                </p>
+              </div>
+              <p class="note">Thi-Hoai Phan; Hung-Phong Tran; Hoang-Son Bui; Thi-Ngoc-Diep Do; Thanh-Hai Tran; Thuy-Binh
+                Nguyen; Hong-Quan Nguyen; Thi Thanh Thuy Pham; Thi-Lan Le</p>
+              <p>
+                <i>Published: 10/09/2024 - 2024 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10660707" class="off">FedNTProto: A Prototype-Based
+                    Approach for Personalized Federated Learning</a>
+                </p>
+              </div>
+              <p class="note">Trung-Kien Tran; Ha-Phuong Tran; Thi-Lan Le; Thanh-Hai Tran</p>
+              <p>
+                <i>Published: 10/09/2024 - 2024 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://link.springer.com/chapter/10.1007/978-981-97-5504-2_70" class="off">Improving Flight
+                    Trajectory Predictions with Bayesian-Optimized ConvLSTM Models</a>
+                </p>
+              </div>
+              <p class="note">Thi-Lich Nghiem, Thi-Lan Le, Viet-Duc Le, Pierre Maréchal, Daniel Delahaye</p>
+              <p>
+                <i>Published: 01/09/2024 - The International Conference on Intelligent Systems & Networks (ICISN
+                  2024)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://doi.org/10.1007/978-981-97-5504-2_56" class="off">Improvement of ovarian detection
+                    from ultrasound images using ensemble learning</a>
+                </p>
+              </div>
+              <p class="note">Van Anh Ngo, Nam Anh Ta, Thi Loan Pham, Van Hung Le, Duy Hai Vu, Thi Lan Le, Hai Vu, Thanh
+                Hai Tran</p>
+              <p>
+                <i>Published: 01/09/2024 - The International Conference on Intelligent Systems & Networks (ICISN
+                  2024)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10634737" class="off">Weighted Fusion Architecture for
+                    Improved Ovarian Tumor Segmentation from Ultrasound Images</a>
+                </p>
+              </div>
+              <p class="note">Nam-Anh Ta, Van-Anh Ngo, Thi-Loan Pham, Duy-Hai Vu, Thi-Lan Le, Hai Vu, Quang -Duy Pham,
+                Than-Hai Tran</p>
+              <p>
+                <i>Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics
+                  (ICCE)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10634596" class="off">Improvement of Vietnamese noun
+                    phrases chunking in text-based person image search</a>
+                </p>
+              </div>
+              <p class="note">Khanh-Toan Luong; Thi-Hoai Phan; Thi-Ngoc-Diep Do; Thi-Lan Le</p>
+              <p>
+                <i>Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics
+                  (ICCE)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10634613" class="off">A method for missing joint
+                    recovery and its application in skeleton-based activity recognition</a>
+                </p>
+              </div>
+              <p class="note">Phuong-Dung Nguyen; Huu-Linh Nguyen; Van-Thang Tran; Viet-Duc Le; Huu-Quynh Nguyen;
+                Thi-Lan Le</p>
+              <p>
+                <i>Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics
+                  (ICCE)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10634639" class="off">A Unified Framework for Plant
+                    Identification from UAV Images</a>
+                </p>
+              </div>
+              <p class="note">Mai Viet Hoang Do; Doan-Duc Phan; Cong Tuan Minh Le; Van-Nam Hoang; Hong-Quan Nguyen;
+                Thanh-Hai Tran; Hai Vu; Xuan-Dinh Vu, Van-Sam Hoang; Michiel Vlaminck; Wouter Maes; Hiep Luong; Thi-Lan
+                Le</p>
+              <p>
+                <i>Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics
+                  (ICCE)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10634737" class="off">Weighted Fusion Architecture for
+                    Improved Ovarian Tumor Segmentation from Ultrasound Images</a>
+                </p>
+              </div>
+              <p class="note">Nam-Anh Ta; Van-Anh Ngo; Thi-Loan Pham; Duy-Hai Vu; Thi-Lan Le; Hai Vu; Quang-Duy Pham;
+                Thanh-Hai Tran</p>
+              <p>
+                <i>Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics
+                  (ICCE)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://link.springer.com/chapter/10.1007/978-981-97-5504-2_11" class="off">A Real-Time and
+                    Continuous Fall Detection Based on Skeleton Sequence</a>
+                </p>
+              </div>
+              <p class="note">Thuy-Binh Nguyen, Duc-Lam Nguyen, Hong-Quan Nguyen and Thi-Lan Le</p>
+              <p>
+                <i>Published: 08/08/2024 - International Conference on Intelligent Systems & Networks (ICISN)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10565336" class="off">Systematic Evaluation of Loss
+                    Functions for Ovarian Tumors Segmentation from Ultrasound Images</a>
+                </p>
+              </div>
+              <p class="note">Thi-Huong Nguyen, Thi-Loan Pham, Quoc-Vi Tran, Thi-Lan Le, Thanh-Hai Tran, Duy-Hai Vu, Hai
+                Vu, Hong-Thien Dang, Van-Thang Nguyen, Chi-Mai Pham, Phuong-Thao Nguyen</p>
+              <p>
+                <i>Published: 25/06/2024 - 2023 1st International Conference on Health Science and Technology
+                  (ICHST)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+      </div>
+    </div>
+
+    <!--2023-->
+    <h3 style="margin-left: 15px;margin-top: 30px;">2023</h3>
+    <div
+      style="max-height: 500px; overflow-y: auto; overflow-x: hidden; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;">
+
+      <div class="row">
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10565322" class="off">Comprehensive Study of Liver
+                    Disease Prediction using Machine Learning </a>
+                </p>
+              </div>
+              <p class="note">Vu-An Hoang, Duy-Tung Nguyen, Hanh-Trang Bui, Vu-Khanh-An Le, Thi-Lan Le, Duy-Hai Vu,
+                Binh-Giang Tran, Gia-Anh Pham, Hung N. Luu, Thanh-Hai Tran, Hai Vu</p>
+              <p>
+                <i>Published: 29/12/2023 - International Conference on Health Science and Technology - ICHST</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10471863" class="off">Printed mathematical expression
+                    recognition from document images based on augmentation techniques and transformer</a>
+                </p>
+              </div>
+              <p class="note">Tran-Huy Le, Minh-Dzung Vo, Huu-Hung Nguyen, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan
+                Le</p>
+              <p>
+                <i>Published: 22/12/2023 - 2023 RIVF International Conference on Computing and Communication
+                  Technologies</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-50818-9_32" class="off">Skeleton-based
+                    student activities recognition from classroom videos</a>
+                </p>
+              </div>
+              <p class="note">Phuong-Dung Nguyen, Xuan-Vuong Le, Viet-Duc Le, Huu-Linh Nguyen, Ngoc-Trang Le, Tuan-Dung
+                Kieu, Thanh-Hai Tran, Huu-Quynh Nguyen, and Thi-Lan Le</p>
+              <p>
+                <i>Published: 13/12/2023 - the 2nd International Conference ICTA 2023</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10317368" class="off">Accurate continuous action and
+                    gesture recognition method based on skeleton and sliding windows techniques</a>
+                </p>
+              </div>
+              <p class="note">Viet-Duc Le; Thi-Lich Nghiem; Thi-Lan Le</p>
+              <p>
+                <i>Published: 22/11/2023 - 2023 Asia Pacific Signal and Information Processing Association Annual
+                  Summit and Conference (APSIPA ASC)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10317504" class="off">Investigating the Role of Human
+                    Action Detector in Visual-guide Audio Source Separation System</a>
+                </p>
+              </div>
+              <p class="note">Thanh Thi-Hien Duong; Trung-Hieu Nguyen; The Thanh-Dat Le; Thi-Lich Nghiem; Duc-Huy Pham;
+                Thi-Lan Le</p>
+              <p>
+                <i>Published: 20/11/2023 - 2023 Asia Pacific Signal and Information Processing Association Annual
+                  Summit and Conference (APSIPA ASC)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10289105" class="off">A Robust Multiple Honeybee
+                    Tracking Method from Videos Captured at Beehive Entrance</a>
+                </p>
+              </div>
+              <p class="note">Thi-Nhung Le; Duc-Ngoc Tran; Thi-Thu-Hong Phan; Hong-Thai Pham; Thi-Lan Le; Hai Vu</p>
+              <p>
+                <i>Published: 26/10/2023 - 2023 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10288763" class="off">A method for text-based person
+                    search in Vietnamese language based on correlation filtering</a>
+                </p>
+              </div>
+              <p class="note">Thi-Hoai Phan; Tri Trung Kien Le; Hoang-Son Bui; Thi-Ngoc-Diep Do; Thuy-Binh Nguyen;
+                Hong-Quan Nguyen; Thi Thanh Thuy Pham; Thanh-Hai Tran; Thi-Lan Le</p>
+              <p>
+                <i>Published: 26/10/2023 - 2023 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://ieeexplore.ieee.org/document/10288847" class="off">An adaptive hierarchical loss for
+                    taxonomic labels and its application for plant identification</a>
+                </p>
+              </div>
+              <p class="note">Van-Nam Hoang; Thi-Lan Le; Hong-Quan Nguyen; Thi Thanh-Nhan Nguyen; Van-Sam Hoang</p>
+              <p>
+                <i>Published: 26/10/2023 - 2023 International Conference on Multimedia Analysis and Pattern
+                  Recognition (MAPR)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="https://doi.org/10.1145/3604951.3605525" class="off">Two-step sequence transformer based
+                    method for Cham to Latin script transliteration</a>
+                </p>
+              </div>
+              <p class="note">Tien-Nam Nguyen, Jean-Christophe Burie, Thi-Lan Le, Anne-Valérie Schweyer</p>
+              <p>
+                <i>Published: 25/08/2023 - HIP'23: Proceedings of the 7th International Workshop on Historical
+                  Document Imaging and Processing</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+      </div>
+    </div>
+
+    <div class="bigspacer"></div>
+    <h2 style="color: #C00000;"><i class="far fa-file-alt fa-fw"></i> National Conference Papers</h2>
+    <div class="bigspacer"></div>
+    <h3 style="margin-left: 15px;margin-top: 10px;">2022</h3>
+    <div
+      style="max-height: 500px; overflow-y: auto; overflow-x: hidden; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;">
+      <div class="row">
+        <!-- Paper -->
+        <div class="col-md-12 paperbox" style="margin-bottom: 15px;">
+          <div class="media">
+            <div class="media-body">
+              <div class="smallhead media-heading">
+                <p style="font-weight: bold;">
+                  <a href="h#" class="off">Phương pháp tự động đánh giá tương
+                    tác trong lớp học dựa trên video lớp học</a>
+                </p>
+              </div>
+              <p class="note">Phuong-Dung Nguyen, Khoi-Nguyen Dam, Ngoc-Trang Le, Tien-Thanh Nguyen, Huu-Quynh Nguyen,
+                Thi-Lan Le</p>
+              <p>
+                <i>Published: 16/12/2023 - The 26th National Conference on Electronics, Communications and Information
+                  Technology (REV-ECIT2023)</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End Paper-->
+      </div>
+    </div>
+
+    <div class="row">
+
+    </div>
+
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+    <!-- Static bottom navbar -->
+    <iframe src="/includes/footer.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        document.querySelectorAll('.paper-slider').forEach(slider => {
+
+          const track = slider.querySelector('.paper-track');
+          const items = Array.from(track.children);
+          const prevBtn = slider.querySelector('.paper-btn.prev');
+          const nextBtn = slider.querySelector('.paper-btn.next');
+
+          if (items.length <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            return;
+          }
+
+          let index = 0;
+          let itemWidth;
+
+          /* clone 1 item cho infinite */
+          track.appendChild(items[0].cloneNode(true));
+
+          const allItems = track.children;
+
+          function updateWidth() {
+            itemWidth = slider.querySelector('.paper-viewport').offsetWidth;
+            Array.from(allItems).forEach(i => {
+              i.style.flex = `0 0 ${itemWidth}px`;
+            });
+            move();
+          }
+
+          function move() {
+            track.style.transform = `translateX(-${index * itemWidth}px)`;
+          }
+
+          function next() {
+            index++;
+            move();
+
+            if (index === items.length) {
+              setTimeout(() => {
+                track.style.transition = 'none';
+                index = 0;
+                move();
+                track.offsetHeight;
+                track.style.transition = 'transform .6s ease';
+              }, 600);
+            }
+          }
+
+          function prev() {
+            if (index === 0) {
+              track.style.transition = 'none';
+              index = items.length;
+              move();
+              track.offsetHeight;
+              track.style.transition = 'transform .6s ease';
+            }
+            index--;
+            move();
+          }
+
+          prevBtn.onclick = prev;
+          nextBtn.onclick = next;
+
+          window.addEventListener('resize', updateWidth);
+          updateWidth();
+        });
+
+      });
+    </script>
+
+
+</body>
+
+</html>

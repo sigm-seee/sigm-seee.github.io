@@ -1,0 +1,305 @@
+{
+    "International Journal": {
+        "2025": [
+            {
+                "title": "EMD-based local matching for occluded person re-identification",
+                "authors": "Hoang-Anh Nguyen, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan Le",
+                "published": "Published: 6 May 2025 – Machine Learning with Applications",
+                "link": "https://doi.org/10.1016/j.mlwa.2025.100663",
+                "image": "/assets/images/papers/Paper/Paper 2025/EMD-based.png"
+            },
+            {
+                "title": "Towards an online text-based person search in Vietnamese language",
+                "authors": "Thi-Hoai Phan, Hoang-Son Bui, Tri Trung Kien Le, Thi-Ngoc-Diep Do, Thuy-Binh Nguyen,                Hong-Quan Nguyen, Thanh-Hai Tran, Thi Thanh Thuy Pham, Thi-Lan Le",
+                "published": "Published: 22 April 2025 - ACM Transactions on Asian and Low-Resource Language Information Processing",
+                "link": "https://doi.org/10.1145/3721979",
+                "image": "/assets/images/papers/Paper/Paper 2025/personsearch.png"
+            },
+            {
+                "title": "FlowerAction: a federated deep learning framework",
+                "authors": "Thi Quynh Khanh Dinh, Thanh-Hai Tran, Trung-Kien Tran & Thi-Lan Le",
+                "published": "Published: 4 March 2025 - Journal of Ambient Intelligence and Humanized Computing",
+                "link": "https://doi.org/10.1007/s12652-025-04958-4",
+                "image": "/assets/images/papers/Paper/Paper 2025/Flower-Action.png"
+            },
+            {
+                "title": "Text line segmentation approach combining deep learning model and traditional image processing techniques - application to transliteration of Cham manuscripts",
+                "authors": "Tien Nam Nguyen, Jean Christophe Burie, Thi Lan Le & Anne-Valerie Schweyer",
+                "published": "Published: 21 January 2025 - Multimedia Tools and Applications",
+                "link": "https://doi.org/10.1007/s12652-025-04958-4",
+                "image": "/assets/images/papers/Paper/Paper 2025/Chams-Docs-MTAP.png"
+            }
+        ],
+        "2024": [
+            {
+                "title": "FedDC: Label Noise Correction with Dynamic Clients for Federated Learning",
+                "authors": "Thanh-Trung Giap, Tuan-Dung Kieu, Thi-Lan Le, Thanh-Hai Tran",
+                "published": "Published: 29/11/2024 - IEEE Internet of Things Journal",
+                "link": "https://ieeexplore.ieee.org/document/10772240",
+                "image": "/assets/images/papers/Paper/Paper 2024/feddc.png"
+            },
+            {
+                "title": "Improving pollen-bearing honey bee detection from videos captured at hive entrance by combining deep learning and handling imbalance techniques",
+                "authors": "Dinh-Tu Nguyen, Thi-Nhung Le, Thi-Huong Phung, Duc-Manh Nguyen, Hong-Quan Nguyen, Hong-Thai Pham, Thi-Thu-Hong Phan, Vu-Hai, Thi-Lan Le",
+                "published": "Published: 03/08/2024 - Ecological Informatics",
+                "link": "https://www.sciencedirect.com/science/article/pii/S1574954124002863",
+                "image": "/assets/images/papers/Paper/Paper 2024/PollenBea2024.png"
+            },
+            {
+                "title": "Robust Plant Identification Based on the Combination of Multiple Images and Taxonomic Information",
+                "authors": "Thi-Lan Le, Mai Viet Hoang Do, Nam-Hoang Van, Hong-Quan Nguyen, Tinh-Trinh Trong, Doan-Duc Phan, and Van-Sam Hoang",
+                "published": "Published: 13/05/2024 - IEEE Access",
+                "link": "https://ieeexplore.ieee.org/document/10529230/authors#authors",
+                "image": "/assets/images/papers/Paper/Paper 2024/PlanID2024.png"
+            }
+        ],
+        "2023": [
+            {
+                "title": "A Novel Convolutional Neural Network Architecture for Pollen-Bearing Honeybee Recognition",
+                "authors": "Thi-Nhung Le, Thi-Minh-Thuy Le , Thi-Thu-Hong Phan, Huu-Du Nguyen, Thi-Lan Le",
+                "published": "Published: 30 August 2023 - International Journal of Advanced Computer Science and Applications",
+                "link": "https://thesai.org/Publications/ViewPaper?Volume=14&Issue=8&Code=IJACSA&SerialNo=112",
+                "image": "/assets/images/papers/Paper/Paper 2023/Novel-CNN-PolenBee.png"
+            },
+            {
+                "title": "Hand Gesture Recognition From Wrist-Worn Camera for Human–Machine Interaction",
+                "authors": "Hong-Quan Nguyen, Trung-Hieu Le, Trung-Kien Tran, Hoang-Nhat Tran, Thanh-Hai Tran, Thi-Lan Le, Hai Vu, Cuong Pham, Thanh Phuong Nguyen, Huu Thanh Nguyen",
+                "published": "Published: 25 May 2023 - IEEE Access",
+                "link": "https://dl.acm.org/doi/10.1145/3623223",
+                "image": "/assets/images/papers/Paper/Paper 2023/Hand-Gesture.png"
+            }
+        ]
+    },
+    "National Journals": {
+        "2024": [
+            {
+                "title": "A clip-based dual-stream method for text based vehicle search",
+                "authors": "Can Quang Huy, Nguyen Phuong Dung, Nguyen Thuy Binh, Nguyen Hong Quan, Vo Thien Linh, Le Thi Lan",
+                "published": "Published: 05/01/2025 – Transport and Communications Science Journal",
+                "link": "https://doi.org/10.47869/tcsj.76.1.2",
+                "image": "/assets/images/papers/Paper/Paper 2025/Vehical-Search.png"
+            },
+            {
+                "title": "A method for bee activities recognition from videos captured at the beehive entrance",
+                "authors": "Nhung Le, Thi Hong Phan Thi, Thi-Lan Le",
+                "published": "Published: 30 December 2024 – JMST's Section on Computer Science and Control Engineering",
+                "link": "https://doi.org/10.54939/1859-1043.j.mst.CSCE8.2024.3-13",
+                "image": "/assets/images/papers/Paper/Paper 2025/Bee-Activities.png"
+            },
+            {
+                "title": "Empirical Study of Ovarian Tumors Detection and Classification in Ultrasound Images",
+                "authors": "Thi-Loan Pham, Van-Hung Le",
+                "published": "Published: 15 September 2024 – Journal on Information Technologies and Communications",
+                "link": "https://ictmag.vn/ict/article/view/1237",
+                "image": "/assets/images/papers/Paper/Paper 2024/Ovarian-Detection.png"
+            }
+        ]
+    },
+    "International Conferences": {
+        "2024": [
+            {
+                "title": "Marker-Aware Ovarian Tumor Segmentation from Ultrasound Images",
+                "authors": "Hoang-Son Bui, Sy-Hoang Tran, Thuy-Binh Nguyen, Thanh-Hai Tran, Hai Vu, Thi-Lan Le",
+                "published": "APSIPA ASC 2024",
+                "link": "https://doi.org/10.1109/APSIPAASC63619.2025.10848960",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_Marker-Aware.png"
+            },
+            {
+                "title": "M-IRRA: A Multilingual Model for Text-based Person Search",
+                "authors": "Hung-Phong Tran, Thi-Hoai Phan, Thuy-Binh Nguyen, Thi-Ngoc-Diep Do, Hong-Quan Nguyen, Thanh-Hai Tran, Hien-Thanh Duong, Thi-Lan Le",
+                "published": "APSIPA ASC 2024",
+                "link": "https://doi.org/10.1109/APSIPAASC63619.2025.10848834",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_M-IRRA.png"
+            },
+            {
+                "title": "GILED: Lesion Detection of Gastrointestinal Tract from Endoscopic Images",
+                "authors": "Vu-An Hoang, Minh-Hanh Tran, Viet-Hang Dao, Thanh-Hai Tran",
+                "published": "APSIPA ASC 2024",
+                "link": "https://ieeexplore.ieee.org/document/10849140",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_AN_APSIPA.png"
+            },
+            {
+                "title": "Data Augmentation and Assessment for Enhanced Ovarian Tumor Classification",
+                "authors": "Thi-Loan Pham, Gia-Minh Pham, Tien-Dat Nguyen, Van-Hung Le, Thi-Lan Le, Duy-Hai Vu, Hai Vu, Chi-Mai Pham, Thanh-Hai Tran",
+                "published": "27/09/2024 – IEEE ICIP 2024",
+                "link": "https://ieeexplore.ieee.org/document/10848688",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_DataAug-Classify.png"
+            },
+            {
+                "title": "SovaSeg-Net: Scale Invariant Ovarian Tumors Segmentation from Ultrasound Images",
+                "authors": "Huu-Phong Luong, Hoang-Son Bui, Nam-Khanh Nguyen, Thi-Loan Pham, Gia-Minh Pham, Sy-Hoang Tran, Thanh-Hai Tran, Thi-Lan Le",
+                "published": "27/09/2024 – IEEE ICIP 2024",
+                "link": "https://ieeexplore.ieee.org/abstract/document/10647995",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_SovaSegNet.png"
+            },
+            {
+                "title": "A Method for Ovarian Tumor Segmentation based on Segment Anything Model",
+                "authors": " Nam-Khanh Nguyen, Hoang-Son Bui, Thi-Loan Pham, Thi Thanh Thao Nguyen, Vu Hai, Thanh-Hai Tran, Van-Thang Nguyen, Chi-Mai Pham, Hong-Thien Dang, Thi-Lan Le",
+                "published": "10/09/2024 – MAPR 2024",
+                "link": "https://ieeexplore.ieee.org/document/10660783",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_SAM.PNG"
+            },
+            {
+                "title": "BKSeg-Net: Segmentation of Ovarian Tumors from Ultrasound Images",
+                "authors": "Thi-Loan Pham, Hoang-Son Bui, Van-Hung Le, Thi-Lan Le, Van-Thang Nguyen, Chi-Mai Pham, Hong-Thien Dang, Tuan-Anh Nguyen, Duy-Hai Vu, Hai Vu, Thanh-Hai Tran",
+                "published": "10/09/2024 – MAPR 2024",
+                "link": "https://ieeexplore.ieee.org/document/10660947",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_BKSeg.png"
+            },
+            {
+                "title": "Systematic Evaluation of Language Characteristic and Data Enrichment in Text-based Person Search",
+                "authors": "Thi-Hoai Phan, Hung-Phong Tran, Hoang-Son Bui, Thi-Ngoc-Diep Do, Thanh-Hai Tran, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi Thanh Thuy Pham, Thi-Lan Le",
+                "published": "10/09/2024 – MAPR 2024",
+                "link": "https://ieeexplore.ieee.org/document/10660866",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_Multi.png"
+            },
+            {
+                "title": "FedNTProto: A Prototype-Based Approach for Personalized Federated Learning",
+                "authors": "Trung-Kien Tran, Ha-Phuong Tran, Thi-Lan Le, Thanh-Hai Tran",
+                "published": "10/09/2024 – MAPR 2024",
+                "link": "https://ieeexplore.ieee.org/document/10660707",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Improving Flight Trajectory Predictions with Bayesian-Optimized ConvLSTM Models",
+                "authors": "Thi-Lich Nghiem, Thi-Lan Le, Viet-Duc Le, Pierre Maréchal, Daniel Delahaye",
+                "published": "01/09/2024 – ICISNA 2024",
+                "link": "https://link.springer.com/chapter/10.1007/978-981-97-5504-2_70",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Improvement of ovarian detection from ultrasound images using ensemble learning",
+                "authors": "Van Anh Ngo, Nam Anh Ta, Thi Loan Pham, Van Hung Le, Duy Hai Vu, Thi Lan Le, Hai Vu, Thanh Hai Tran",
+                "published": "Published: 01/09/2024 - The International Conference on Intelligent Systems & Networks (ICISN 2024)",
+                "link": "https://doi.org/10.1007/978-981-97-5504-2_56",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_OvaDec-ICISN.png"
+            },
+            {
+                "title": "Weighted Fusion Architecture for Improved Ovarian Tumor Segmentation from Ultrasound Images",
+                "authors": "Nam-Anh Ta, Van-Anh Ngo, Thi-Loan Pham, Duy-Hai Vu, Thi-Lan Le, Hai Vu, Quang -Duy Pham, Thanh-Hai Tran",
+                "published": "Published: 01/09/2024 - The International Conference on Intelligent Systems & Networks (ICISN 2024)",
+                "link": "https://ieeexplore.ieee.org/document/10634737",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Improvement of Vietnamese noun phrases chunking in text-based person image search",
+                "authors": "Khanh-Toan Luong; Thi-Hoai Phan; Thi-Ngoc-Diep Do; Thi-Lan Le",
+                "published": "Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics (ICCE)",
+                "link": "https://ieeexplore.ieee.org/document/10634596",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "A method for missing joint recovery and its application in skeleton-based activity recognition",
+                "authors": "Phuong-Dung Nguyen; Huu-Linh Nguyen; Van-Thang Tran; Viet-Duc Le; Huu-Quynh Nguyen; Thi-Lan Le",
+                "published": "Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics (ICCE)",
+                "link": "https://ieeexplore.ieee.org/document/10634613",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "A Unified Framework for Plant Identification from UAV Images",
+                "authors": "Mai Viet Hoang Do; Doan-Duc Phan; Cong Tuan Minh Le; Van-Nam Hoang; Hong-Quan Nguyen; Thanh-Hai Tran; Hai Vu; Xuan-Dinh Vu, Van-Sam Hoang; Michiel Vlaminck; Wouter Maes; Hiep Luong; Thi-Lan Le",
+                "published": "Published: 21/08/2024 - 2024 Tenth International Conference on Communications and Electronics (ICCE)",
+                "link": "https://ieeexplore.ieee.org/document/10634639",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "A Real-Time and Continuous Fall Detection Based on Skeleton Sequence",
+                "authors": "Thuy-Binh Nguyen, Duc-Lam Nguyen, Hong-Quan Nguyen and Thi-Lan Le",
+                "published": "Published: 08/08/2024 - International Conference on Intelligent Systems & Networks (ICISN)",
+                "link": "https://link.springer.com/chapter/10.1007/978-981-97-5504-2_11",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            }
+        ],
+        "2023": [
+            {
+                "title": "Systematic Evaluation of Loss Functions for Ovarian Tumors Segmentation from Ultrasound Images",
+                "authors": "Thi-Huong Nguyen, Thi-Loan Pham, Quoc-Vi Tran, Thi-Lan Le, Thanh-Hai Tran, Duy-Hai Vu, Hai Vu, Hong-Thien Dang, Van-Thang Nguyen, Chi-Mai Pham, Phuong-Thao Nguyen",
+                "published": "Published: 25/06/2024 - 2023 1st International Conference on Health Science and Technology (ICHST)",
+                "link": "https://ieeexplore.ieee.org/document/10565336",
+                "image": "/assets/images/papers/Paper/Paper 2023/Conf_ICHST.png"
+            },
+            {
+                "title": "Comprehensive Study of Liver Disease Prediction using Machine Learning",
+                "authors": "Vu-An Hoang, Duy-Tung Nguyen, Hanh-Trang Bui, Vu-Khanh-An Le, Thi-Lan Le, Duy-Hai Vu, Binh-Giang Tran, Gia-Anh Pham, Hung N. Luu, Thanh-Hai Tran, Hai Vu",
+                "published": "Published: 25/06/2024 - 2023 1st International Conference on Health Science and Technology (ICHST)",
+                "link": "https://ieeexplore.ieee.org/document/10565322",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Applications of REDCap for Health Care Data Collection and Management: Ovarian Cyst and Liver Diseases Case Study",
+                "authors": "Quoc-Vi Tran, Dinh-Duc Vu, Duy-Tung Nguyen, Hanh-Trang Bui, Diep-Anh Truong, Anh-Hao Kieu, Phuoc-Duong Van, Duy-Hai Vu, Hai Vu",
+                "published": "Published: 25/06/2024 - 2023 1st International Conference on Health Science and Technology (ICHST)",
+                "link": "https://ieeexplore.ieee.org/abstract/document/10565350",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Printed mathematical expression recognition from document images based on augmentation techniques and transformer",
+                "authors": "Tran-Huy Le, Minh-Dzung Vo, Huu-Hung Nguyen, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan Le",
+                "published": "Published: 22/12/2023 - 2023 RIVF International Conference on Computing and Communication Technologies (RIVF)",
+                "link": "https://ieeexplore.ieee.org/document/10471863",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Skeleton-based student activities recognition from classroom videos",
+                "authors": "Phuong-Dung Nguyen, Xuan-Vuong Le, Viet-Duc Le, Huu-Linh Nguyen, Ngoc-Trang Le, Tuan-Dung Kieu, Thanh-Hai Tran, Huu-Quynh Nguyen, and Thi-Lan Le",
+                "published": "Published: 13/12/2023 - the 2nd International Conference ICTA 2023",
+                "link": "https://link.springer.com/chapter/10.1007/978-3-031-50818-9_32",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Accurate continuous action and gesture recognition method based on skeleton and sliding windows techniques",
+                "authors": "Viet-Duc Le; Thi-Lich Nghiem; Thi-Lan Le",
+                "published": "Published: 22/11/2023 - 2023 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)",
+                "link": "https://ieeexplore.ieee.org/document/10317368",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "Investigating the Role of Human Action Detector in Visual-guide Audio Source Separation System",
+                "authors": "Thanh Thi-Hien Duong; Trung-Hieu Nguyen; The Thanh-Dat Le; Thi-Lich Nghiem; Duc-Huy Pham; Thi-Lan Le",
+                "published": "Published: 20/11/2023 - 2023 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)",
+                "link": "https://ieeexplore.ieee.org/document/10317504",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "A Robust Multiple Honeybee Tracking Method from Videos Captured at Beehive Entrance",
+                "authors": "Thi-Nhung Le; Duc-Ngoc Tran; Thi-Thu-Hong Phan; Hong-Thai Pham; Thi-Lan Le; Hai Vu",
+                "published": "Published: 26/10/2023 - 2023 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+                "link": "https://ieeexplore.ieee.org/document/10289105",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            },
+            {
+                "title": "A method for text-based person search in Vietnamese language based on correlation filtering",
+                "authors": "Thi-Hoai Phan; Tri Trung Kien Le; Hoang-Son Bui; Thi-Ngoc-Diep Do; Thuy-Binh Nguyen; Hong-Quan Nguyen; Thi Thanh Thuy Pham; Thanh-Hai Tran; Thi-Lan Le",
+                "published": "Published: 26/10/2023 - 2023 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+                "link": "https://ieeexplore.ieee.org/document/10288763",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_SysNLP.png"
+            },
+            {
+                "title": "An adaptive hierarchical loss fortaxonomic labels and its application for plant identification",
+                "authors": "Van-Nam Hoang; Thi-Lan Le; Hong-Quan Nguyen; Thi Thanh-Nhan Nguyen; Van-Sam Hoang",
+                "published": "Published: 26/10/2023 - 2023 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+                "link": "https://ieeexplore.ieee.org/document/10288847",
+                "image": "/assets/images/papers/Paper/Paper 2024/Conf_ANAm.png"
+            },
+            {
+                "title": "Two-step sequence transformer based                    method for Cham to Latin script transliteration",
+                "authors": "Tien-Nam Nguyen, Jean-Christophe Burie, Thi-Lan Le, Anne-Valérie Schweyer",
+                "published": "Published: 25/08/2023 - HIP'23: Proceedings of the 7th International Workshop on Historical Document Imaging and Processing",
+                "link": "https://doi.org/10.1145/3604951.3605525",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            }
+
+        ]
+    },
+    "National Conferences": {
+        "2022": [
+            {
+                "title": "Phương pháp tự động đánh giá tương tác trong lớp học dựa trên video lớp học",
+                "authors": "Phuong-Dung Nguyen, Khoi-Nguyen Dam, Ngoc-Trang Le, Tien-Thanh Nguyen, Huu-Quynh Nguyen, Thi-Lan Le",
+                "published": "Published: 16/12/2023 - The 26th National Conference on Electronics, Communications and Information Technology (REV-ECIT2023)",
+                "link": "https://doi.org/10.1109/NICS56349.2024.10430397",
+                "image": "/assets/images/papers/Paper/404.jpg"
+            }
+        ]
+    }
+}
