@@ -96,6 +96,43 @@
         ]
     },
     "International Conferences": {
+        "2025": [
+            {
+                "title": "Leveraging Text and Image Information for Ovarian Tumors Segmentation in Ultrasound Images",
+                "authors": "Nam-Anh Ta, Van-Anh Ngo, Thi-Loan Pham, Hai Vu, Thi-Lan Le, and Thanh-Hai Tran",
+                "published": "Published: 16/12/2025 - The 28th International Conference on Communications and Electronics (ICCE)",
+                "link": "",
+                "image": "/assets/images/papers/Paper/Paper 2025/Conf_NA_ITM.png"
+            },
+            {
+                "title": "OTADiff: Ovarian Tumor-Aware Diffusion Model for Ultrasound Image Augmentation and Detection",
+                "authors": "Van-Anh Ngo; Nam-Anh Ta; Thi-Loan Pham; Thi-Lan Le; Hai Vu; Thanh-Hai Tran",
+                "published": "Published 29 August 2025, MAPR 2025",
+                "link": "https://ieeexplore.ieee.org/document/11133809/",
+                "image": "/assets/images/papers/Paper/Paper 2025/Conf_OTADifff.png"
+            },
+            {
+                "title": "Att2Search: an Attribute-based Pedestrian Search",
+                "authors": "Huu-Bach Dao; Thi-Hoai Phan; Thuy-Binh Nguyen; Hong-Quan Nguyen; Hoang-Son Bui; Thanh-Hai Tran; Thi Ngoc Diep Do; Thi-Lan Le",
+                "published": "Published 29 August 2025, MAPR 2025",
+                "link": "https://ieeexplore.ieee.org/document/11133895",
+                "image": "/assets/images/papers/Paper/Paper 2025/Conf_MAPR_Att2search.png"
+            },
+            {
+                "title": "Systematic evaluation of deep learning-based vehicle detection methods",
+                "authors": "Ba-Chau Tran; Ngoc-Minh Nguyen; Pham Truong Duy Vu; Cao Quang Anh Nguyen; Hoang-Son Bui; Hong-Quan Nguyen; Thi-Lan Le",
+                "published": "Published 29 August 2025, MAPR 2025",
+                "link": "https://ieeexplore.ieee.org/document/11133912/",
+                "image": "/assets/images/papers/Paper/Paper 2025/Conf_MAPR_VehicalDetection.png"
+            },
+            {
+                "title": "Ovarian Malignance Risk Prediction from Medical Notes: a case study in Vietnam",
+                "authors": "Hanh-Trang Bui; Hoang-Linh Nguyen; Chi-Mai Pham; Vu Hai; Thanh-Hai Tran",
+                "published": "Published 29 August 2025, MAPR 2025",
+                "link": "https://ieeexplore.ieee.org/document/11133895",
+                "image": "/assets/images/papers/Paper/Paper 2025/Conf_OvaNOTE.png"
+            }
+        ],
         "2024": [
             {
                 "title": "Marker-Aware Ovarian Tumor Segmentation from Ultrasound Images",
