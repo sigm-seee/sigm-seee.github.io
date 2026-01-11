@@ -107,6 +107,55 @@
             text-align: left;
             /* Căn trái */
         }
+
+        .projects-section {
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        .projects-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .ongoing-title {
+            color: #c00000;
+        }
+
+        .finished-title {
+            color: #2e7d32;
+        }
+
+        .project-card {
+            background: #fafafa;
+            padding: 14px 18px;
+            margin-bottom: 14px;
+            border-radius: 8px;
+            border-left: 5px solid #ccc;
+        }
+
+        .project-card.ongoing {
+            border-left-color: #c00000;
+        }
+
+        .project-card.finished {
+            border-left-color: #4caf50;
+        }
+
+        .project-name {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 6px;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .project-role {
+            font-style: italic;
+        }
     </style>
 
 
@@ -118,79 +167,145 @@
         onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
 
     <div class="container text-center">
-        <!-- <h2 style="margin-bottom: 30px; text-align: center;">Active Projects</h2> -->
+
         <h1 class="display-4 text-center member-name"
-            style="margin-bottom: 40px; font-size: 2.5rem; font-weight: bold;"> Active Projects </h1>
+            style="margin-bottom: 40px; font-size: 2.5rem; font-weight: bold;">
+            Active Projects
+        </h1>
 
-
+        <!-- ================= Ongoing Projects ================= -->
         <div class="projects-section">
-            <h3 class="left-align">On-goging Projects</h3>
-            <ul class="projects-list">
-                <li>
-                    <strong>HUST funded project "Research and develop a method for detecting beehive anomalies from
-                        images
-                        captured at the hive entrance"</strong>, T2024-PC-044, 2024-2026.
-                </li>
-                <li>
-                    <strong>Nation KC 4.0 project "Research, design and manufacture of Cobot applied in industry and
-                        some other fields with human-robot interaction"</strong>,
-                    2022-2024, grant number: KC-4.0-35/19-35, funded by Ministry of Science and Technology, responsible
-                    for hand gesture recognition.
-                </li>
-                <li>
-                    <strong>VLIR SI “DORA: open Drone data platform for biodiversity mapping”</strong>
-                    with UGhent, Belgium, VNUF, Vietnam, 2023-2025.
-                </li>
-                <li>
-                    <strong>MOET funded project “Research and develop a driver monitoring system (DMS) based on
-                        intelligent edge computing on specialized hardware”</strong>,
-                    2024-2025.
-                </li>
-            </ul>
+            <h3 class="projects-title ongoing-title">
+                <i class="fas fa-hourglass-half"></i> Ongoing Projects
+            </h3>
+
+            <div class="project-card ongoing">
+                <div class="project-name">
+                    HUST-funded project:
+                    “Research and develop a method for detecting beehive anomalies from images captured at the hive
+                    entrance”
+                </div>
+                <div class="project-meta">
+                    <span class="project-code">T2024-PC-044</span> ·
+                    <span class="project-time">2024–2026</span>
+                </div>
+            </div>
+
+            <div class="project-card ongoing">
+                <div class="project-name">
+                    National KC 4.0 project:
+                    “Research, design and manufacture of Cobot applied in industry and other fields with human–robot
+                    interaction”
+                </div>
+                <div class="project-meta">
+                    <span>KC-4.0-35/19-35</span> ·
+                    <span>2022–2024</span> ·
+                    <span class="project-role">Hand gesture recognition</span>
+                </div>
+            </div>
+
+            <div class="project-card ongoing">
+                <div class="project-name">
+                    VLIR SI project:
+                    “DORA: Open Drone Data Platform for Biodiversity Mapping”
+                </div>
+                <div class="project-meta">
+                    <span>UGhent (Belgium) – VNUF (Vietnam)</span> ·
+                    <span>2023–2025</span>
+                </div>
+            </div>
+
+            <div class="project-card ongoing">
+                <div class="project-name">
+                    MOET-funded project:
+                    “Research and develop a driver monitoring system (DMS) based on intelligent edge computing on
+                    specialized hardware”
+                </div>
+                <div class="project-meta">
+                    <span>2024–2025</span>
+                </div>
+            </div>
         </div>
 
+        <!-- ================= Finished Projects ================= -->
         <div class="projects-section">
-            <h3 class="left-align">Finished Projects</h3>
-            <ul class="projects-list">
-                <li>
-                    <strong>AFORS “Communication-efficient and client selection for federated learning with label noise
-                        correction”</strong>
-                    with Toulon University.
-                </li>
-                <li>
-                    <strong>ANR project “Cham Documentation – CHAMDOC”</strong>,
-                    Anne-Valérie Schweyer CASE, Paris; L3i, La Rochelle (Prof. Jean Christophe Burie); HUST, Lab. des
-                    Structures Sonores, Ottawa.
-                </li>
-                <li>
-                    <strong>Nation KC 4.0 project "Study and application on industry 4.0 technologies in management of
-                        honey bee production for export and national consumption"</strong>,
-                    2022-2024, funded by Ministry of Science and Technology, responsible for image-based honeybee
-                    detection, tracking and behavior analysis.
-                </li>
-                <li>
-                    <strong>MOET funded project "Research and develop a deep learning model to simultaneously separate
-                        sounds and images from video, applied in preserving Vietnamese folk music treasures"</strong>,
-                    2023-2024.
-                </li>
-                <li>
-                    <strong>Nation KC 4.0 project "Applied Artificial Intelligence for Ultrasound Imaging Supporting
-                        Ovarian Cancer Diagnosis in Vietnam"</strong>,
-                    2022-2024, funded by Ministry of Science and Technology.
-                </li>
-                <li>
-                    <strong>MOET funded project “Research on building atlas and plant traceability tools for pollen and
-                        honeybee, application in quality management of bee products in Vietnam”</strong>,
-                    2023-2024.
-                </li>
-                <li>
-                    <strong>MOET funded project “Research and develop a software system to support traumatic brain
-                        injury prognosis using multi-modal information and artificial intelligence”</strong>,
-                    2023-2024.
-                </li>
-            </ul>
+            <h3 class="projects-title finished-title">
+                <i class="fas fa-check-circle"></i> Finished Projects
+            </h3>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    AFORS project:
+                    “Communication-efficient and client selection for federated learning with label noise correction”
+                </div>
+                <div class="project-meta">
+                    <span>Toulon University</span>
+                </div>
+            </div>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    ANR project:
+                    “Cham Documentation – CHAMDOC”
+                </div>
+                <div class="project-meta">
+                    <span>Paris – La Rochelle – HUST – Ottawa</span>
+                </div>
+            </div>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    National KC 4.0 project:
+                    “Industry 4.0 technologies for honey bee production management”
+                </div>
+                <div class="project-meta">
+                    <span>2022–2024</span> ·
+                    <span class="project-role">Image-based detection, tracking & behavior analysis</span>
+                </div>
+            </div>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    MOET-funded project:
+                    “Deep learning for simultaneous sound and image separation from videos”
+                </div>
+                <div class="project-meta">
+                    <span>2023–2024</span>
+                </div>
+            </div>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    National KC 4.0 project:
+                    “Applied AI for ultrasound imaging supporting ovarian cancer diagnosis in Vietnam”
+                </div>
+                <div class="project-meta">
+                    <span>2022–2024</span>
+                </div>
+            </div>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    MOET-funded project:
+                    “Building atlas and plant traceability tools for pollen and honeybee”
+                </div>
+                <div class="project-meta">
+                    <span>2023–2024</span>
+                </div>
+            </div>
+
+            <div class="project-card finished">
+                <div class="project-name">
+                    MOET-funded project:
+                    “AI-based multimodal system for traumatic brain injury prognosis”
+                </div>
+                <div class="project-meta">
+                    <span>2023–2024</span>
+                </div>
+            </div>
         </div>
     </div>
+
 
 
 

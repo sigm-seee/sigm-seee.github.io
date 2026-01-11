@@ -194,6 +194,87 @@
                 /* 1 card per row */
             }
         }
+
+        /* Title */
+        .notification-title {
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        /* Wrapper */
+        .notification-wrapper {
+            margin-bottom: 40px;
+        }
+
+        /* Feed box */
+        .notification-feed {
+            max-height: 420px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        /* Card */
+        .notification-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 16px 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .notification-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .notification-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: #c00000;
+            margin-bottom: 10px;
+        }
+
+        .notification-header i {
+            font-size: 18px;
+        }
+
+        /* Links */
+        .notification-header a {
+            color: #c00000;
+            text-decoration: none;
+        }
+
+        .notification-header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Body */
+        .notification-body {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .notification-body ul {
+            padding-left: 18px;
+        }
+
+        .notification-body ul ul {
+            margin-top: 6px;
+        }
+
+        /* Image */
+        .notification-image {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+        }
     </style>
     <style>
         .column {
@@ -391,104 +472,223 @@
 
         <div class="bigspacer"></div>
         <div class="bigspacer"></div>
-        <h1 class="display-4 text-center member-name"
-            style="margin-bottom: 20px; font-size: 2.5rem; font-weight: bold;"> Notifications
+        <h1 class="display-4 text-center member-name notification-title">
+            Notifications
         </h1>
-        <!-- <div class="row d-flex align-items-center"> -->
-        <div class="row d-flex align-items-center justify-content-center">
 
-            <!-- Cột nội dung -->
+        <div class="row justify-content-center align-items-start notification-wrapper">
+
+            <!-- Notifications feed -->
             <div class="col-md-8">
-                <div class="feedbox pad-left" style="margin-right: 30px; height: 400px; overflow: auto;">
-                    <!-- Notifications 3 -->
-                    <div class="note-title">
-                        <i class="fas fa-bullhorn fa-fw"></i>
-                        <a class="off" style="font-family: 'Montserrat'; font-weight: 700; font-size: 15px;"
-                            href="https://mapr.uit.edu.vn/">The 8th International Conference on Multimedia Analysis and
-                            Pattern Recognition (MAPR 2025) - Nha Trang, Vietnam</a>
-                    </div>
-                    <div class="note" style="font-family: 'Montserrat'; font-weight: 500; font-size: 14px;">
-                        <ul>
-                            <li>The conference will be held on <strong>August 14-15, 2025</strong>.</li>
-                            <li><strong>Important Dates:</strong>
-                                <ul style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Paper Submission Deadline: <del><strong>May 01, 2025</strong></del> <strong>May
-                                            15, 2025 (extended)</strong>
-                                    </li>
-                                    <li>Paper Acceptance Notification: <strong>Jul 01, 2025</strong></li>
-                                    <li>Camera Ready Deadline: <strong>Jul 07, 2025</strong></li>
-                                    <li>Author Registration Deadline: <strong>Jul 07, 2025</strong></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- En notification-->
+                <div class="notification-feed">
 
-                    <!-- Notifications 3 -->
-                    <div class="note-title">
-                        <i class="fas fa-bullhorn fa-fw"></i>
-                        <a class="off" style="font-family: 'Montserrat'; font-weight: 700; font-size: 15px;">SigM Lab
-                            student won 2nd Prize at the Hackathon Harvard Health System 2025 – Hanoi, Vietnam Hub.</a>
+                    <!-- Notification 1 -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>
+                                Master’s Thesis Defense – Duy-Tung Nguyen
+                            </span>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>
+                                    Master’s student <strong>Duy-Tung Nguyen</strong> defended his master’s thesis
+                                    entitled
+                                    <strong>
+                                        “Assessing the Generalization Ability of Machine Learning Models Using
+                                        Generative Models,
+                                        with Application to Multi-Object Tracking”
+                                    </strong>.
+                                </li>
+                                <li>
+                                    <strong>Date:</strong> January 12, 2026
+                                </li>
+                                <li>
+                                    <strong>Venue:</strong> Room E.615, C7 Building, Hanoi University of Science and
+                                    Technology (HUST)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="note" style="font-family: 'Montserrat'; font-weight: 500; font-size: 14px;">
-                        <ul>
-                            <li>
-                                Congratulations to Team VitalSense on winning Second Prize at the Hackathon: Building
-                                High Value Health Systems Through AI, organized by Hanoi Medical
-                                University in collaboration with Harvard University.
-                                <p></p>
-                                The team impressed the judges with their innovative project: "<strong>Applying AI for
-                                    Early
-                                    Screening and Progress Monitoring of Neurodevelopmental Disorders in Children
-                                    Through
-                                    Image Data</strong>."
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- En notification-->
 
-                    <!-- Notifications 1 -->
-                    <div class="note-title">
-                        <i class="fas fa-bullhorn fa-fw"></i>
-                        <a class="off" style="font-family: 'Montserrat'; font-weight: 700; font-size: 15px;"
-                            href="https://densohackathon.com/home">PhD Student Day 2024</a>
+                    <!-- Notification 2 -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>
+                                PhD Dissertation Proposal Defense – Trung-Hieu Le
+                            </span>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>
+                                    PhD student <strong>Trung-Hieu Le</strong> defended his doctoral dissertation
+                                    proposal at the departmental level
+                                    entitled
+                                    <strong>
+                                        “Activity Recognition Based on the Combination of Accelerometers and Vision”
+                                    </strong>.
+                                </li>
+                                <li>
+                                    <strong>Date:</strong> December 29, 2025
+                                </li>
+                                <li>
+                                    <strong>Venue:</strong> Room C1.317, C1 Building, Hanoi University of Science and
+                                    Technology (HUST)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="note" style="font-family: 'Montserrat'; font-weight: 500; font-size: 14px;">
-                        <ul>
-                            <li>Organize an annual reporting day for PhD students to present their research results in 6
-                                months on <strong>December 20, 2024</strong>, in room <strong>E.803 of the C7
-                                    building</strong>, Hanoi University of Science and Technology.</li>
-                        </ul>
-                    </div>
-                    <div class="smallspacer"></div>
 
-                    <!-- Notifications 2 -->
-                    <div class="note-title">
-                        <i class="fas fa-bullhorn fa-fw"></i>
-                        <a class="off" style="font-family: 'Montserrat'; font-weight: 700; font-size: 15px;"
-                            href="https://densohackathon.com/home">ETTN K67 Students win The Denso Factory Hackathons
-                            2024</a>
+                    <!-- Notification 3 -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>
+                                Master’s Thesis Defense – Hoang-Son Bui
+                            </span>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>
+                                    Master’s student <strong>Hoang-Son Bui</strong> defended his master’s thesis
+                                    entitled
+                                    <strong>
+                                        “Ovarian Tumor Segmentation and Morphological Extraction from Ultrasound Images”
+                                    </strong>.
+                                </li>
+                                <li>
+                                    <strong>Date:</strong> November 13, 2025
+                                </li>
+                                <li>
+                                    <strong>Venue:</strong> Room E.613, C7 Building, Hanoi University of Science and
+                                    Technology (HUST)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="note" style="font-family: 'Montserrat'; font-weight: 500; font-size: 14px;">
-                        <ul>
-                            <li>Congratulations to the students of the Talent Program ETTN K67, under the
-                                guidance of Dr. Kim-Hue Ta, for becoming the champions of the Denso Factory Hacks 2024
-                                competition organized by FPT Corporation and Denso Corporation with project
-                                "<strong>Deploying Fog-Based AIoT Platform for CNC Machine Monitoring</strong>".
-                            </li>
-                        </ul>
+
+                    <!-- Notification 4 -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>
+                                PhD Dissertation Proposal Defense – Phuong-Dung Nguyen
+                            </span>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>
+                                    PhD student <strong>Phuong-Dung Nguyen</strong> defended her doctoral dissertation
+                                    proposal at the departmental
+                                    level entitled
+                                    <strong>
+                                        “Student Activity Recognition from Classroom Videos”
+                                    </strong>.
+                                </li>
+                                <li>
+                                    <strong>Date:</strong> September 29, 2025
+                                </li>
+                                <li>
+                                    <strong>Venue:</strong> Room C1.317, C1 Building, Hanoi University of Science and
+                                    Technology (HUST)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="smallspacer"></div>
+
+                    <!-- Notification item -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-bullhorn"></i>
+                            <a href="https://mapr.uit.edu.vn/">
+                                The 8th International Conference on Multimedia Analysis and Pattern Recognition (MAPR
+                                2025)
+                                – Nha Trang, Vietnam
+                            </a>
+                        </div>
+                        <div class="notification-body">
+                            <ul>
+                                <li>The conference will be held on <strong>August 14–15, 2025</strong>.</li>
+                                <li><strong>Important Dates:</strong>
+                                    <ul>
+                                        <li>Submission: <del>May 01, 2025</del> <strong>May 15, 2025</strong></li>
+                                        <li>Acceptance: <strong>Jul 01, 2025</strong></li>
+                                        <li>Camera Ready: <strong>Jul 07, 2025</strong></li>
+                                        <li>Registration: <strong>Jul 07, 2025</strong></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Notification item -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-award"></i>
+                            <span>
+                                SigM Lab student won 2nd Prize at the Hackathon Harvard Health System 2025
+                            </span>
+                        </div>
+                        <div class="notification-body">
+                            <p>
+                                Congratulations to <strong>Team VitalSense</strong> for winning Second Prize at the
+                                Hackathon:
+                                <em>Building High Value Health Systems Through AI</em>.
+                            </p>
+                            <p>
+                                Project:
+                                <strong>Applying AI for Early Screening and Progress Monitoring of Neurodevelopmental
+                                    Disorders
+                                    in Children</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Notification item -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-calendar-check"></i>
+                            <a href="https://densohackathon.com/home">PhD Student Day 2024</a>
+                        </div>
+                        <div class="notification-body">
+                            <p>
+                                Annual reporting day on <strong>December 20, 2024</strong>,
+                                Room <strong>E.803 – C7 Building</strong>,
+                                Hanoi University of Science and Technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Notification item -->
+                    <div class="notification-card">
+                        <div class="notification-header">
+                            <i class="fas fa-trophy"></i>
+                            <a href="https://densohackathon.com/home">
+                                ETTN K67 Students win The Denso Factory Hackathons 2024
+                            </a>
+                        </div>
+                        <div class="notification-body">
+                            <p>
+                                Congratulations to ETTN K67 students under the guidance of
+                                <strong>Dr. Kim-Hue Ta</strong> with project:
+                            </p>
+                            <p>
+                                <strong>Deploying Fog-Based AIoT Platform for CNC Machine Monitoring</strong>.
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
-            <!-- Cột ảnh -->
+            <!-- Image -->
             <div class="col-md-4 text-center">
-                <img class="img-fluid" style="width: 100%; height: auto;" src="/assets/images/about/Lab20-11.jpg"
-                    alt="Lab Image">
+                <img class="notification-image" src="/assets/images/about/Lab20-11.jpg" alt="Lab Image">
             </div>
         </div>
+
 
     </div>
     <div class="bigspacer"></div>

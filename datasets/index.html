@@ -63,6 +63,86 @@
     -->
 
 </head>
+<style>
+  .dataset-card {
+    display: flex;
+    gap: 20px;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+
+  .dataset-image {
+    flex: 0 0 450px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .dataset-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .dataset-content {
+    flex: 1;
+  }
+
+  .dataset-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 1.5rem;
+  }
+
+  .dataset-title a {
+    color: #c00000;
+    text-decoration: none;
+  }
+
+  .dataset-title a:hover {
+    text-decoration: underline;
+  }
+
+  .dataset-year {
+    font-weight: 500;
+    color: #777;
+    margin-left: 6px;
+  }
+
+  .dataset-desc {
+    font-size: 1.0rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .dataset-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0066cc;
+  }
+
+  /* .dataset-card {
+    display: flex;
+    gap: 20px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    background: #ffffff;
+    border-radius: 10px;
+    border-left: 4px solid #222425;
+    /* default blue */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); */
+  /* } */
+</style>
 
 <body>
 
@@ -71,306 +151,236 @@
     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
 
   <!-- Content -->
+  <!-- <div class="container">
+    <h2>Datasets</h2> -->
+
   <div class="container">
-    <h2>Datasets</h2>
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="media-left" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/ForestSeg/Tree.png" alt="Forest Tree Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/ForestSeg.html" target="_blank">
-            <h4 class="media-heading">Forest Segmentation Dataset <small class="text-muted">(2025)</small></h4>
-          </a>
 
+    <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem; font-weight: bold;">
+      Datasets
+    </h1>
 
-          <p style="text-align: justify;">
-            ForestSeg-T1 contains 1,832 high-resolution UAV images from Vietnam National University of Forestry in
-            Hanoi, captured using DJI Phantom 4 RTK and DJI Air 3 at 70–211m altitudes. Each image includes 1–17
-            manually annotated tree crowns and flight parameters. The dataset supports forest monitoring, biomass
-            estimation, and environmental change detection. Its multi-seasonal imagery enables long-term forest
-            analysis. Evaluations across four time intervals (T1–T4) show that environmental conditions impact
-            segmentation performance, with T4 achieving the best results (AP 60.82%, accuracy 71.32%), emphasizing the
-            importance of temporal diversity and data quality.
-          </p>
-        </div>
+    <!-- ================= Forestry & Environment ================= -->
+    <h3 class="dataset-group">
+      <i class="fas fa-leaf"></i> Forestry & Environment
+    </h3>
+    <div class="bigspacer"></div>
+
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/ForestSeg/Tree.png" alt="ForestSeg Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/ForestSeg.html" target="_blank">Forest Segmentation Dataset</a>
+          <span class="dataset-year">(2025)</span>
+        </h4>
+        <p class="dataset-desc">
+          ForestSeg-T1 contains 1,832 high-resolution UAV images captured in multi-seasonal
+          conditions for tree crown segmentation, supporting forest monitoring and long-term
+          environmental analysis.
+        </p>
+        <a class="dataset-link" href="/datasets/ForestSeg.html" target="_blank">View dataset →</a>
       </div>
     </div>
 
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="media-left" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/OvarianTumor/OvaTUS.png"
-              alt="OvaTUS Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/VietForest/VietForest.png" alt="VietForest Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/VietForest.html">VietForest Dataset</a>
+          <span class="dataset-year">(2024)</span>
+        </h4>
+        <p class="dataset-desc">
+          VietForest comprises 26,251 images of 156 Vietnamese plant species, covering
+          18 orders, 45 families, and 122 genera, supporting biodiversity analysis
+          and conservation research.
+        </p>
+        <a class="dataset-link" href="/datasets/VietForest.html">View dataset →</a>
+      </div>
+    </div>
+
+    <div class="bigspacer"></div>
+    <!-- ================= Medical Imaging ================= -->
+    <h3 class="dataset-group">
+      <i class="fas fa-heartbeat"></i> Medical Imaging
+    </h3>
+    <div class="bigspacer"></div>
+
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/OvarianTumor/OvaTUS.png" alt="OvaTUS Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
           <a href="/datasets/Ovarian.html" target="_blank">
-            <h4 class="media-heading">Ovarian Tumor Dataset (OvaTUS) <small class="text-muted">(2025)</small></h4>
+            Ovarian Tumor Dataset (OvaTUS)
           </a>
-
-
-          <p style="text-align: justify;">
-            The OvaTUS dataset was collected by our research team in collaboration with the National Hospital of
-            Obstetrics and Gynecology (NHOG) in Hanoi, Vietnam. It includes ultrasound images from women who visited the
-            hospital for ovarian tumor assessments and consented to participate in the study. The dataset contains six
-            labeled categories: Unilocular Cyst, Solid Tumor, Hemorrhagic Tumor, Multilocular Cyst, Solid Multilocular
-            Cyst, and Solid Unilocular Cyst. The dataset has been thoroughly annotated with accurate labels by experts
-            and sonographer, and the
-            process of data collection is still ongoing.
-          </p>
-        </div>
+          <span class="dataset-year">(2025)</span>
+        </h4>
+        <p class="dataset-desc">
+          OvaTUS is an ultrasound dataset collected in collaboration with NHOG, Hanoi,
+          containing six annotated ovarian tumor categories for diagnosis
+          and segmentation research.
+        </p>
+        <a class="dataset-link" href="/datasets/Ovarian.html" target="_blank">View dataset →</a>
       </div>
     </div>
 
-    <hr>
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="pull-right" href="#" class="text-center">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/CoboGesture/s7_TranVanThang_2_35_38.gif"
-              alt="The CStudentAct Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/CoboGesture.html">
-            <h4 class="media-heading">The CoboGesture Dataset <small class="text-muted">(2024)</small></h4>
-          </a>
-          <p style="text-align: justify;">The dataset consists of 150 videos from 50 subjects, including 11 females and
-            39 males.
-            Each video ranges from 100 seconds to 140 seconds in length and contains 2,479 gesture samples divided into
-            19 classes.
-            The time interval between two gestures is approximately 4 seconds.
-            In total, these 150 videos result in 490,000 RGB frames, corresponding to about 4.5 hours of video.
-          </p>
+    <div class="bigspacer"></div>
 
-        </div>
+    <!-- ================= Human Activity & Gesture ================= -->
+    <h3 class="dataset-group">
+      <i class="fas fa-user"></i> Human Activity & Gesture
+    </h3>
+    <div class="bigspacer"></div>
+
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/CoboGesture/s7_TranVanThang_2_35_38.gif" alt="CoboGesture Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/CoboGesture.html">CoboGesture Dataset</a>
+          <span class="dataset-year">(2024)</span>
+        </h4>
+        <p class="dataset-desc">
+          CoboGesture contains 150 long-duration videos from 50 subjects,
+          annotated into 19 gesture classes, designed for continuous
+          gesture recognition research.
+        </p>
+        <a class="dataset-link" href="/datasets/CoboGesture.html">View dataset →</a>
       </div>
     </div>
 
-    <hr>
-
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="pull-right" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/CStudentAct/CStudentAct.jpg"
-              alt="The CStudentAct Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/CStudentAct.html">
-            <h4 class="media-heading">The CStudentAct Dataset <small class="text-muted">(2024)</small></h4>
-          </a>
-          <p style="text-align: justify;">Although several image and video datasets have been collected for student
-            activity recognition,
-            they are mainly annotated at the frame level or sequence level, which can be used for object detection-based
-            and video classification-based approaches.
-            Therefore, to promote research in continuous student activity recognition, we have prepared a new dataset
-            named CStudentAct.
-            The CStudentAct Dataset is an extension of the StudentAct Dataset</p>
-
-        </div>
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/CStudentAct/CStudentAct.jpg" alt="CStudentAct Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/CStudentAct.html">CStudentAct Dataset</a>
+          <span class="dataset-year">(2024)</span>
+        </h4>
+        <p class="dataset-desc">
+          CStudentAct is a continuous student activity recognition dataset
+          extending StudentAct, supporting fine-grained temporal annotation
+          and classroom behavior analysis.
+        </p>
+        <a class="dataset-link" href="/datasets/CStudentAct.html">View dataset →</a>
       </div>
     </div>
 
-    <hr>
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/StudentAct/CameraSetting.png" alt="StudentAct Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/StudentAct.html" target="_blank">StudentAct Dataset</a>
+          <span class="dataset-year">(2021)</span>
+        </h4>
+        <p class="dataset-desc">
+          StudentAct is a benchmark dataset for human activity recognition
+          in classroom environments, supporting detection, tracking,
+          and activity classification.
+        </p>
+        <a class="dataset-link" href="/datasets/StudentAct.html" target="_blank">
+          View dataset →
+        </a>
+      </div>
+    </div>
+    <div class="bigspacer"></div>
 
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="pull-right" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VietForest/VietForest.png"
-              alt="The VietForest dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/VietForest.html">
-            <h4 class="media-heading">The VietForest dataset <small class="text-muted">(2024)</small></h4>
-          </a>
-          <p style="text-align: justify;">Our Vietnamese forestry dataset (VietForest) is a valuable
-            resource comprising 156 classes of plant species predominantly found in the forests of Phu Tho province.
-            This dataset
-            encompasses a diverse range of flora, including 18 orders, 45
-            families, and 122 genera, totaling 26,251 images. The dataset
-            showcases local plant species, many of which hold significant
-            ecological importance and some of which are listed for conservation efforts. The dataset not only aids in
-            understanding the
-            local habitat but also provides detailed biological information
-            associated with each species</p>
+    <!-- ================= Tracking & ReID ================= -->
+    <h3 class="dataset-group">
+      <i class="fas fa-camera"></i> Tracking & Re-identification
+    </h3>
+    <div class="bigspacer"></div>
 
-        </div>
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/VnBeeTracking/annotation.png" alt="VnBeeTracking Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/VnBeeTracking.html">VnBeeTracking Dataset</a>
+          <span class="dataset-year">(2023)</span>
+        </h4>
+        <p class="dataset-desc">
+          VnBeeTracking provides annotated videos captured at beehive entrances,
+          supporting honeybee detection, tracking, and behavior analysis
+          under real-world conditions.
+        </p>
+        <a class="dataset-link" href="/datasets/VnBeeTracking.html">View dataset →</a>
       </div>
     </div>
 
-    <hr>
-
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="pull-right" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/VnBeeTracking/annotation.png"
-              alt="The Pollenbee Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/VnBeeTracking.html">
-            <h4 class="media-heading">The VnBeeTracking Dataset <small class="text-muted">(2023)</small></h4>
-          </a>
-          <p style="text-align: justify;">The VnBeeTracking Dataset is built for the purpose of serving the tracking
-            honeybee problem.</p>
-          <p style="text-align: justify;">The videos in the dataset are collected at the beehive entrance at the
-            Research Center for Tropical Bees
-            and Beekeeping, Vietnam National University of Agriculture in April 2022. </p>
-          <p style="text-align: justify;">We used a data acquisition system consisting of an Nvidia jetson nano
-            development kit and an IMX477 HQ
-            camera with a 6mm CS-Mount lens
-            which are placed in a housing surveillance weatherproof outdoor camera box. </p>
-
-        </div>
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/pollenbee/video_dataset.gif" alt="VnPollenBee Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
+          <a href="/datasets/pollenbee.html">VnPollenBee Dataset</a>
+          <span class="dataset-year">(2022)</span>
+        </h4>
+        <p class="dataset-desc">
+          VnPollenBee is designed for pollen-bearing bee detection,
+          containing over 60,000 labeled samples collected
+          using an edge-based acquisition system.
+        </p>
+        <a class="dataset-link" href="/datasets/pollenbee.html">View dataset →</a>
       </div>
     </div>
 
-    <hr>
-
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="media-left" href="https://dinhtus49.github.io/">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/pollenbee/video_dataset.gif"
-              alt="The Pollenbee Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/pollenbee.html">
-            <h4 class="media-heading">The VnPollenBee Dataset <small class="text-muted">(2022)</small></h4>
-          </a>
-
-
-          <p style="text-align: justify;">
-            The VnPollenbee Dataset is built for the purpose of serving the problem of detecting pollen bees.
-            The dataset contains more than 2000 imagesconsisting of 1,758 pollen bearing and 59,068 non-pollen bearing
-            bees. <br>
-            The dataset was collected at the bee farm of the Vietnam Agricultural Academy by a data acquisition system
-            consisting of an
-            Nvidia jetson nano development kit and an IMX477 HQ camera with a 6mm CS-Mount lens,
-            all devices are placed in a housing surveillance weatherproof outdoor camera box. We adjust the camera along
-            with the downward-facing view.
-            We attach the housing surveillance weatherproof outdoor camera box within only one stage of the hive body.
-            Our data acquisition system:
-          </p>
-        </div>
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/VnPersonSearch3000/VnPersonSearch3000.jpg" alt="VnPersonSearch3000 Dataset">
       </div>
-    </div>
-
-    <hr>
-
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="media-left" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/StudentAct/CameraSetting.png"
-              alt="StudentAct Dataset">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
-          <a href="/datasets/StudentAct.html" target="_blank">
-            <h4 class="media-heading">StudentAct Dataset <small class="text-muted">(2021)</small></h4>
-          </a>
-
-
-          <p style="text-align: justify;">
-            The StudentAct dataset is meant to aid research efforts in the general area of developing, testing and
-            evaluating algorithms for
-            human activity recognition. The Hanoi University of Science and Technology (HUST) has copyright in the
-            collection of
-            activity video and associated data and serves as a distributor of the StudentAct dataset.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="media-left" href="#">
-            <img class="pull-left mr-3 img-fluid"
-              src="/assets/images/datasets/VnPersonSearch3000/VnPersonSearch3000.jpg" alt="Fully Automated Person ReID">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
+      <div class="dataset-content">
+        <h4 class="dataset-title">
           <a href="/datasets/VnPersonSearch3000.html" target="_blank">
-            <h4 class="media-heading">VnPersonSearch3000 <small class="text-muted">(2021)</small></h4>
+            VnPersonSearch3000
           </a>
-
-
-          <p style="text-align: justify;">
-            The 3000VnPersonSearch dataset includes pairs of image and description. The images are
-            person bounding boxes that are extracted from video frames. The videos are captured by
-            both moving cameras and fixed-position cameras with different fields of view. They are
-            captured during day and night time with street lamp light. The capture scenarios are mostly
-            crowded street and outdoor festival scenes, so the occlusion and pose variance also appear
-          </p>
-        </div>
+          <span class="dataset-year">(2021)</span>
+        </h4>
+        <p class="dataset-desc">
+          VnPersonSearch3000 includes image-description pairs for person
+          search tasks, collected in crowded outdoor environments
+          under diverse lighting conditions.
+        </p>
+        <a class="dataset-link" href="/datasets/VnPersonSearch3000.html" target="_blank">
+          View dataset →
+        </a>
       </div>
     </div>
 
-    <hr>
-
-    <div class='row'>
-      <div class="media mb-1 mt-1">
-        <div class="col-md-4">
-          <a class="media-left" href="#">
-            <img class="pull-left mr-3 img-fluid" src="/assets/images/datasets/FAPR.jpg"
-              alt="Fully Automated Person ReID">
-          </a>
-        </div>
-        <div class="media-body col-md-8">
-          <!-- <a href="pollenbee.html"> -->
+    <div class="dataset-card">
+      <div class="dataset-image">
+        <img src="/assets/images/datasets/FAPR.jpg" alt="FAPR Dataset">
+      </div>
+      <div class="dataset-content">
+        <h4 class="dataset-title">
           <a href="/datasets/FAPR.html" target="_blank">
-            <h4 class="media-heading">Fully Automated Person ReID (FAPR) <small class="text-muted">(2020)</small></h4>
+            Fully Automated Person ReID (FAPR)
           </a>
-          <!-- Member list here -->
-          <!-- <a href="#">
-                  <img src="/assets/images/team/le-thi-lan-300x300.jpg" class="img-circle" alt="Thi-Lan Le" height="60">
-                </a>
-
-                <a href="#">
-                  <img src="/assets/images/team/Hong-QuanNguyen.jpg" class="img-circle" alt="Hong-Quan Nguyen" height="60">
-                </a>
-                                
-                <a href="#">
-                  <img src="/assets/images/team/Thuy-BinhNguyen.jpg" class="img-circle" alt="Thuy-Binh Nguyen" height="60">
-                </a>                           -->
-
-          <p style="text-align: justify;">
-            This dataset contains total 15 videos and is recorded on three days by two static non-overlapping cameras
-            with HD resolution (1920 × 1080),
-            at 20 frames per second (fps) in indoor and outdoor environment conditions. There are 7 to 10 different
-            people in each video.
-            The result of splitting the frames is 11876 images that have been labeled with the boundingboxes and
-            corresponding identifiers.
-            There are 28567 boundingbox. Dataset can be used for human detection, tracking, and re-identification
-            problems
-          </p>
-        </div>
+          <span class="dataset-year">(2020)</span>
+        </h4>
+        <p class="dataset-desc">
+          FAPR contains multi-camera videos recorded in indoor and outdoor
+          environments, supporting detection, tracking, and person
+          re-identification research.
+        </p>
+        <a class="dataset-link" href="/datasets/FAPR.html" target="_blank">
+          View dataset →
+        </a>
       </div>
     </div>
 
+    <!-- </div> -->
 
   </div>
 
