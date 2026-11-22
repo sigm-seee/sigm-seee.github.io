@@ -8,26 +8,26 @@ highlighter: rouge
 
 markdown: kramdown
 
-repository: Niemeyer-Research-Group/niemeyer-research-group.github.io
+repository: sigm-seee/sigm-seee.github.io
 
-medium_publication: nrg-excitations
+medium_publication: false
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title: Niemeyer Research Group
-tagline: Computational combustion and fluid dynamics
+title: SigM Lab
+tagline: Signal Processing, Information and Multimedia
 institution:
-  url: https://www.uit.edu.vn/
-  name: Quarter 6, Linh Trung Ward, Thu Duc District, Ho Chi Minh City
+  url: https://www.hust.edu.vn/
+  name: Hanoi University of Science and Technology (HUST)
 department:
-  url: https://www.uit.edu.vn/
-  name: Room A108, Block A, University of Information Technology, VNU-HCM
+  url: https://www.hust.edu.vn/
+  name: Rooms E802, E804, E806, E808, C7 Building
 author:
-  name: Kyle E. Niemeyer
-  email: kyle.niemeyer@oregonstate.edu
-  github: kyleniemeyer
-  twitter: kyleniemeyer
+  name: SigM Lab
+  email: lan.lethi1@hust.edu.vn
+  github: sigm-seee
+  twitter:
 
 collections:
   my_team:
@@ -59,7 +59,7 @@ defaults:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: https://niemeyer-research-group.github.io/
+production_url: https://sigm-seee.github.io/
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -132,9 +132,9 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #
   analytics :
-    provider : google
+    provider : false
     google :
-      tracking_id : 'UA-19551072-5'
+      tracking_id : ''
     getclicky :
       site_id :
     mixpanel :

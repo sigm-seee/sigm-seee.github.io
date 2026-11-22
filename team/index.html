@@ -9,7 +9,7 @@
 
 
   <meta name="description" content="People in the lab">
-  <meta name="author" content="Kyle E. Niemeyer">
+  <meta name="author" content="SigM Lab">
 
   <!-- Enable responsive viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -209,7 +209,12 @@
       font-size: 17px;
       font-family: OpenSansCondensed;
     }
-  </style>
+  .sigm-members { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; margin: 35px 0 50px; text-align: center; }
+.sigm-members img { width: 170px; height: 170px; object-fit: cover; object-position: center 20%; }
+.sigm-members a { overflow-wrap: anywhere; }
+@media (max-width: 850px) { .sigm-members { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .sigm-members { grid-template-columns: 1fr; } }
+</style>
 </head>
 
 <body>
@@ -221,106 +226,19 @@
   <!-- Content -->
   <div class="container">
 
-    <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> Permanent Members
-    </h1>
-    <div class="grid-container">
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Cô Lan.png" alt="Assoc. Prof. Thi-Lan Le">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/lan.lethi1" target="_blank" style="color: black;">
-              Assoc. Prof. Thi-Lan Le
-            </a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Head of SigM Laboratory</p>
-          <p class="note">Computer Vision - Multimedia Analysis</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Thầy Hải.png" alt="Assoc. Prof. Hai Vu">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/hai.vu" target="_blank" style="color: black;">
-              Assoc. Prof. Hai Vu
-            </a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Computer Vision - Egocentric Vision</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Cô Hải.png" alt="Assoc. Prof. Thanh-Hai Tran">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/hai.tranthithanh1" target="_blank" style="color: black;">
-              Assoc. Prof. Thanh-Hai Tran
-            </a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Computer Vision - Multimedia Analysis</p>
-          <p class="note">Human-Robot Interaction</p>
-        </div>
-      </div>
-    </div>
-
-    <h3 style="margin-bottom: 30px;"></h3>
-
-    <div class="grid-container-4x2">
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Thầy Thắng.png" alt="Assoc. Prof. Manh-Thang Hoang">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/thang.hoangmanh" target="_blank" style="color: black;">Assoc. Prof.
-              Manh-Thang Hoang</a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Signal Processing - Nonlinear Science</p>
-          <p class="note">Complex Network</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Cô Diệp.jpg" alt="Dr. Thi Ngoc Diep Do">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/diep.dothingoc" target="_blank" style="color: black;">Dr. Thi Ngoc
-              Diep Do</a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Natural Language Processing</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Cô Huệ.png" alt="Dr. Kim-Hue Ta">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/hue.tathikim" target="_blank" style="color: black;">Dr. Kim-Hue Ta</a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Cryptography - Blockchain</p>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <img src="/assets/images/team/Permanent Members/Main - Thầy Dũng.png" alt="Assoc. Prof. Tien-Dung Nguyen">
-        <div class="member-info">
-          <div class="member-name" style="font-size: 1.2rem;">
-            <a href="https://research.hust.edu.vn/dung.nguyentien1" target="_blank" style="color: black;">Assoc. Prof.
-              Tien-Dung Nguyen
-            </a>
-          </div>
-          <!-- <p class="note"><b>Supervisor</b></p> -->
-          <p class="note">Image and Video Analysis</p>
-          <p class="note">Signal Processing</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<h1 class="display-4 text-center member-name" style="margin-bottom: 30px; font-size: 2.5rem;">SigM Lab Members</h1>
+<p class="text-center">The 2026 lab introduction lists 10+ invited members, 7 master's students, 10 PhD students and 50 undergraduate students.</p>
+<div class="sigm-members"><div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Cô Lan.png" alt="Assoc. Prof. Thi-Lan Le" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/lan.lethi1" style="color: black;">Assoc. Prof. Thi-Lan Le</a></h2><p class="note">Computer vision, multimedia analysis</p><p><a href="mailto:lan.lethi1@hust.edu.vn">lan.lethi1@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Cô Hải.png" alt="Assoc. Prof. Thanh-Hai Tran" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/hai.tranthithanh1" style="color: black;">Assoc. Prof. Thanh-Hai Tran</a></h2><p class="note">Computer vision, multimedia analysis, human-robot interaction</p><p><a href="mailto:hai.tranthithanh1@hust.edu.vn">hai.tranthithanh1@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Thầy Hải.png" alt="Assoc. Prof. Hai Vu" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/hai.vu" style="color: black;">Assoc. Prof. Hai Vu</a></h2><p class="note">Computer vision, egocentric vision</p><p><a href="mailto:hai.vu@hust.edu.vn">hai.vu@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Cô Diệp.jpg" alt="Dr. Ngoc-Diep Do" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/diep.dothingoc" style="color: black;">Dr. Ngoc-Diep Do</a></h2><p class="note">Natural language processing</p><p><a href="mailto:diep.dothingoc@hust.edu.vn">diep.dothingoc@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Thầy Dũng.png" alt="Assoc. Prof. Tien-Dung Nguyen" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/dung.nguyentien1" style="color: black;">Assoc. Prof. Tien-Dung Nguyen</a></h2><p class="note">Signal processing, image and video analysis</p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Cô Huệ.png" alt="Dr. Kim-Hue Ta" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/hue.tathikim" style="color: black;">Dr. Kim-Hue Ta</a></h2><p class="note">Cryptography, blockchain</p><p><a href="mailto:hue.tathikim@hust.edu.vn">hue.tathikim@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/Main - Thầy Thắng.png" alt="Assoc. Prof. Manh-Thang Hoang" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;"><a href="https://research.hust.edu.vn/thang.hoangmanh" style="color: black;">Assoc. Prof. Manh-Thang Hoang</a></h2><p class="note">Signal processing, nonlinear science, complex networks</p><p><a href="mailto:thang.hoangmanh@hust.edu.vn">thang.hoangmanh@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/tien-cuong-bui.jpg" alt="Dr. Tien-Cuong Bui" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;">Dr. Tien-Cuong Bui</h2><p class="note">LLMs, LVLMs, data science</p><p><a href="mailto:cuong.buitien@hust.edu.vn">cuong.buitien@hust.edu.vn</a></p></div></div>
+<div class="grid-item"><img src="/assets/images/team/Permanent Members/hanh-trang-bui.png" alt="Bachelor Hanh-Trang Bui" loading="lazy"><div class="member-info"><h2 class="member-name" style="font-size: 1.2rem;">Bachelor Hanh-Trang Bui</h2><p class="note">Computer vision, multimedia analysis</p></div></div>
+</div>
+</div>
   <h1 class="display-4 text-center member-name" style="margin-bottom: 40px; font-size: 2.5rem;"> Invited Researchers
   </h1>
   <div class="container">
@@ -930,7 +848,12 @@
       background: #333;
       color: #fff;
     }
-  </style>
+  .sigm-members { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; margin: 35px 0 50px; text-align: center; }
+.sigm-members img { width: 170px; height: 170px; object-fit: cover; object-position: center 20%; }
+.sigm-members a { overflow-wrap: anywhere; }
+@media (max-width: 850px) { .sigm-members { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .sigm-members { grid-template-columns: 1fr; } }
+</style>
 
   <h1 class="display-4 text-center member-name mb-5" style="font-size:2.5rem;">
     Alumni Members
@@ -1057,7 +980,12 @@
       height: 520px;
       object-fit: cover;
     }
-  </style>
+  .sigm-members { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; margin: 35px 0 50px; text-align: center; }
+.sigm-members img { width: 170px; height: 170px; object-fit: cover; object-position: center 20%; }
+.sigm-members a { overflow-wrap: anywhere; }
+@media (max-width: 850px) { .sigm-members { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .sigm-members { grid-template-columns: 1fr; } }
+</style>
 
   <h3 style="margin-bottom: 30px;"></h3>
 
