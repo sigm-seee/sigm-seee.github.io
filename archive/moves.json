@@ -1,0 +1,734 @@
+[
+  {
+    "from": "_data",
+    "to": "archive/jekyll/_data",
+    "files": {
+      "_data/banner-images.yaml": "e15174badb222357eb079900e21e063fe4c95fbd8d9451d52e5aae7b92dbccad",
+      "_data/collaborators.yaml": "a6372ecc19c149d7db3f203d02844825f06f32d896730f502cf46069b2423172",
+      "_data/conference-papers.yaml": "be1589989fa7e07f3f113c6ff9801dbc471aa0f09db09424c45fae9626ca8b07",
+      "_data/funders.yaml": "a0f40fb9e3d9fdb2a497a32bcaad11870f52fd93b3a41f1703d34011d7e41526"
+    }
+  },
+  {
+    "from": "_includes",
+    "to": "archive/jekyll/_includes",
+    "files": {
+      "_includes/analytics.html": "494e15c6963f9bef9f7b13b702b036626c5d7dea9e6eec5db755f68c21c9a174",
+      "_includes/banner.html": "a604ebe1387b5469a53e461168b4edcdeebb944fc9e58fd0a47492701c560521",
+      "_includes/card.html": "a1010dc03d758509b46d0a42788283edd49d9f87d8cd780a7d57ab636238072f",
+      "_includes/citation.html": "3adace635a0d75c42e50a5a9c0e8add280031524affd2f2122e79744fad6f4f6",
+      "_includes/content.html": "98bcd21c5fdc469d84006e05b134c3a74fc9fef3cfc989f2560c7406c86f8ebc",
+      "_includes/favicons.html": "a1db0e35920298cca3efbf1955771193cda0735f3fe504391b136b6761318ad1",
+      "_includes/feature.html": "2254bd48e7a1469be29c4014c715d3d014344640a586daa9308814bb1d0f4f74",
+      "_includes/figure.html": "f7c869ad34797373f97fe15f96d7ef1140aad5cb88d28dc5bfb666ffb5b8bb90",
+      "_includes/fonts.html": "134797b9e568b38cd12cabe909e02d9a18037212e889e6e0a5d3782a5a369525",
+      "_includes/footer.html": "b5d149a1a27e48bbd1c5adc9475940e42575dd9d73b79ef6969a40018a0c65cc",
+      "_includes/gallery.html": "c0404d192e6fcd18f005d425d962336f6af9c88740b2d6901c12139bccd04659",
+      "_includes/head.html": "ef48675ca76fbcf645d9a74868df53e9b38eea2fb1dd71868b373dca17455a57",
+      "_includes/header.html": "c984af564f13c9c709b0e2c8fa2c790dcbd4dc27e8299a588bcc83a1cc2487e0",
+      "_includes/link.html": "3731fc0de60b048a94ce989c33166bc5ec4c487735659d2124dcc063a1dfd688",
+      "_includes/list.html": "ae16288cfb8e4646b2cdb5a2e17250992858368150519db999415c462d411fb0",
+      "_includes/manubot-logo.svg": "159ad7dbfda78e6909500ee4d5dcfdfb5e96cf4cd228db10b2d6220da5cf1c0d",
+      "_includes/meta.html": "af59ba8be0505ad641f8c4fd6e78430b0531058cb726fc25610ebdc7cb1d832c",
+      "_includes/orcid-logo.svg": "3fd5811570ad364d7cc7a4e9e3bda206b258d24191ac75ebba0b04c71accc2ac",
+      "_includes/portrait.html": "1594b1073d81d555928e75c14e2ea88fbbd4e9f7d13e8570849ef2dc02207e04",
+      "_includes/post-excerpt.html": "8f4cad6e5ca8cec8f77ad167a8fbbab0ffb8c7f1d7fb8db35d18156169520e51",
+      "_includes/post-info.html": "446f8c70934b8bd996048dcb04541c82b2b8a7eb105c9da02ba4d8682a6aea47",
+      "_includes/post-nav.html": "527f8b7a73bff85d4c7790aa93f47f3d4d2ee449fd8dd42699103effe03aa110",
+      "_includes/role.html": "b0193b1742e932b5b21990e80f9f6e1082f8b908da576f07e6a5bef11a00a5fe",
+      "_includes/scripts.html": "ed27fd68e3e847696c75ef30e3006e8c10ba181f0d301090e512b5fb32376470",
+      "_includes/search-box.html": "7c2c3e8fc54766496565e761959bada5748bf5c683aebaf39d618f4fff56e490",
+      "_includes/search-info.html": "98595e6db44d8c0d3c780be8c8a1aea1e008dfecad7e19fcaa7946a39b3cf128",
+      "_includes/section.html": "e5db48e89ae9015032d5961a870d2e39443052f31bddfeda051155f4fcd12749",
+      "_includes/styles.html": "a4e6608be8dd94cd5c6c6fff0bad5ce8b9f876cc2f552bed5797e3c3a5667360",
+      "_includes/tags.html": "f2397076bbbed08aec1ae3f2be92d0efe9cd192b3571658f95e6d03610339ec1",
+      "_includes/tooltip.html": "14e3b850cc1e7e610c9dd65018927c5172e46efce9667cd61ea030bbbd3eb8b3",
+      "_includes/two-col.html": "82e8c31495cf32e050713f2786cc8c80cc405624f18bff11f0e72c5304feb77a",
+      "_includes/JB/analytics": "24e408f20e321c7121eb57d9b9d8664e43b467efb4c3c48eaed22050efb1c06e",
+      "_includes/JB/categories_list": "ca01c9b10ebf72581951e4e653e5f8f97e3b645fe7cea62999e7f1b0276e44c3",
+      "_includes/JB/comments": "472e80286a5b0f9726e51eb2dde27a6ce4d347f08268b1698bc7ec423cbdef32",
+      "_includes/JB/file_exists": "c5fe8a7b236fb8e3de6d03ae45f4da937b61f5c2cd9c3a51ebf5d4110fad9961",
+      "_includes/JB/gist": "eed5a792a1fee17019b783e333cee8ebe141b73fce29c8a0e0314068c457681c",
+      "_includes/JB/is_production": "23013dbd7c24aa6fe9db31373419a409247d8a97c684d386e83f5f670b64baa4",
+      "_includes/JB/liquid_raw": "e389945e459578db0676438405b145468114b1eb605ac259d6f6c19c195c66c7",
+      "_includes/JB/pages_list": "11fe7bad6e0780000058c65100abd8fc615270eb16b8b379950fe873b672860e",
+      "_includes/JB/posts_collate": "0020f56ff95b0125a464cacb04a28c6228740533bc2652351a1e91ea2abc9004",
+      "_includes/JB/setup": "ceae751a45b30688ca232e34bf4faddb80900f760e0c4a1e226b859ff35ce1ab",
+      "_includes/JB/sharing": "25351f520ba8baeb81097d68d4f06068feccf48aa004380412955fe11c2fb6d5",
+      "_includes/JB/sort_collection": "7a54b5002b788d001b2067527b41f91711d944ee7cb5a141b2257f6dcb494480",
+      "_includes/JB/tags_list": "cdf65bb2dbbf3a6f1a105e2222906c7d6ba3cc8b20d658ddeecccfa0ecede60f",
+      "_includes/JB/analytics-providers/getclicky": "3406fbfa3bb06bac45b7ace3afd6f50a2bd5839b00434dd1b017ae4b9d35c618",
+      "_includes/JB/analytics-providers/google": "d9c4fcca85e3be62079a9832793bba826ee5c06fa1a43272191c476e0d0b6f5d",
+      "_includes/JB/analytics-providers/mixpanel": "4bee5fa1ba0c620df0f139cd957b6131cf7d17fad00fba62230642b48ba43457",
+      "_includes/JB/analytics-providers/piwik": "6bdf5c66d0dc3c927362d20127d301fb2ac0090629adee02b28308faf7dac4a1",
+      "_includes/JB/comments-providers/disqus": "a71d72076d6758c2a2547d3a01278b099c3955d337ca6f2aa54d2961ed384e4f",
+      "_includes/JB/comments-providers/facebook": "261b719da8a46eb81c93f494dfa8530e41940fefb6412c8c6ea15c2b2fc9a38f",
+      "_includes/JB/comments-providers/intensedebate": "f8765d81af26ccacb4535610e42da550eb103e6d8fbb9a827b8520324dcfc118",
+      "_includes/JB/comments-providers/livefyre": "2b97beb744d95c803b22eb8c9fd8c7c822aa0baf386cbf42b16c445895aece58",
+      "_includes/JB/sharing-providers/global": "b12d1e06107afb1e8a983e09673b4cc94241654a8904c701ab145edec013a4ae",
+      "_includes/JB/sharing-providers/sharing": "8e708a4e5a09d75dbc65c99b8433cedbe53613b300c616fbebc376cd4f7ef26f",
+      "_includes/JB/sharing-providers/twitter": "20c278ca34cfd87e99ed54697b2578f08ec3af4b5f67a833d9ff30845cb65100",
+      "_includes/themes/bootstrap-3/default.html": "a9a813da7c8000922fa77d900cd9f6022ae460cd048c12998afe6c1c3b8646b8",
+      "_includes/themes/bootstrap-3/page.html": "d3bf1faac3768ad47f08faf694d15346b0fb5b75a960c18b8446f771e15e0f71",
+      "_includes/themes/bootstrap-3/post.html": "1d5416f7a809c5eca232da552f2d9b7020c82e0a277715a0bb24fa4c4ab9d4c7",
+      "_includes/themes/bootstrap-3/settings.yml": "b0e1bdba13a7d74595589724d4cc60e81fa5ebe3f6bbe95d9167734d5d8ff72b",
+      "_includes/themes/lab/default.html": "b21b54450ba4ea5bc75b01a71d60aa1a682caea5d161d38ada944a5b50dd4243",
+      "_includes/themes/lab/member.html": "99c9951cf7c40eddaf7b8496b5da85ca34b1a672f9cb8e1a53b3f9668cb8a025",
+      "_includes/themes/lab/news.html": "1d5416f7a809c5eca232da552f2d9b7020c82e0a277715a0bb24fa4c4ab9d4c7",
+      "_includes/themes/lab/page.html": "d3bf1faac3768ad47f08faf694d15346b0fb5b75a960c18b8446f771e15e0f71",
+      "_includes/themes/lab/paper.html": "0bb89b45807ef7ed0bac5f36903406d92ce30de1b8faccedd353ad84e3b631a0",
+      "_includes/themes/lab/post.html": "feebb8937fbb8110be87d4bc27ee229cbb8f136fe7243ef61db1bff9b58ba247",
+      "_includes/themes/lab/project.html": "4b4834f9a2a98bbc5b5d7e78e668f722dc207971d8e5a40dec5ed876b589677b",
+      "_includes/themes/lab/settings.yml": "c90d8054c3230841c8eee19144537419833be9e7c304b2e93eeddde975572a52",
+      "_includes/themes/lab/software.html": "00211d56b561a922fd17cde812b905f3d45458a3c26a0a6df19809ddb41e520c",
+      "_includes/themes/twitter/default.html": "69843cee84ed25200f0af0dc34aefa2a76a0de2712d3aa29dd5c2f664f4f0e43",
+      "_includes/themes/twitter/page.html": "36366efdc7bdbb65584afba68c0dfa647023eb24faccb3a0468c17cf367b0a09",
+      "_includes/themes/twitter/post.html": "a7c00f9cf84be86876f706a6b1994f33a6c15abef76af7e9aff20bb8d8481ccb",
+      "_includes/themes/twitter/settings.yml": "670a2bf62f802301434eb9147c2c9bd200a7a4a5c3a0c563fae7317ae8193179"
+    }
+  },
+  {
+    "from": "_layouts",
+    "to": "archive/jekyll/_layouts",
+    "files": {
+      "_layouts/default.html": "2acae34c00a4adec9c8337ef15b0ce6fec3d3f6eaf78f447359c1be293590ec3",
+      "_layouts/member.html": "e7bb2b97a26c3c29e9315b2bebbbdf5c7b578c3e95e2c96be79c99df093a4086",
+      "_layouts/news.html": "940afb1d19ed5793f813dddc0c18e934032495c2c647978d3867b85fcdcf61ad",
+      "_layouts/page.html": "b25aec981bfa65c3264ff70740e4c15d49274eea4d902f2be5e3bc6919ab175b",
+      "_layouts/paper.html": "251c047d40d68dd8fc557874079305d353738fd9d810fadfc45c11041dc05fb0",
+      "_layouts/post.html": "8c167276ca865e25949d8c3b0dc352f5d63771dc1e96464677c2cc2d8b937ea1",
+      "_layouts/project.html": "a17566f79d57cb963a055c1a6c87bc5bde45e5e64178810854b6d3d1fa2bb565",
+      "_layouts/software.html": "895a7381fd516b962ab50e6d72f997fa43bf10d2fd1b9b181381fef96909e336"
+    }
+  },
+  {
+    "from": "_my_team",
+    "to": "archive/jekyll/_my_team",
+    "files": {
+      "_my_team/adam-krivoshein.md": "7aab48ca015bef279443bf5fb0f9c93193a21c4595ecf9ff58e7bf385b7aabce",
+      "_my_team/aj-fillo.md": "e78081d6acb1e4abc8e52470b338ea5d67a98ac044bcabe818e972d56c22c1f3",
+      "_my_team/andrew-alferman.md": "cacae88fb651663de3521d27090db5adf08a731c0a338f11549abe2c8ab8dc56",
+      "_my_team/ben-howorth.MD": "ac4a0c5e120672ad36fbefc2fc6fee4c34275cecb39bd8284275124b91d871cc",
+      "_my_team/braam-beresford.md": "452837400efe3c074a3ab68df483c6657295c5a2381cc18b2bd23e27abda3feb",
+      "_my_team/chris-minar.md": "7ac3a07bd547d2aa981b06ef92c3343679b453a46c6c7cfed7c15603fd4412e2",
+      "_my_team/dan-magee.md": "cedaef6dac6827b990563844b17ce0b7b3e26460a13901423a9f3bd1fcce0be1",
+      "_my_team/dana-marti.md": "06552b484b80af525d07ae603b7c46ee8bb4facadd113a2e342ccdb01b6ac0c9",
+      "_my_team/deven-bishnu.md": "4a5d6ae9fcfc2373edd847ec2fdab11e9d0a33451a298e410742e1da686f3356",
+      "_my_team/emily-klee.md": "66679ffa6c33972ab312bf67f654b427bc149e27ce94c5f4b918715111ae8b22",
+      "_my_team/himakar-ganti.md": "bac8499e9b3fbf37e15c7e5c6c5ef10ae4e037d49d3013e74880d6fc7827065b",
+      "_my_team/jayani-jayasuriya.md": "42e0f6bcd100ff573a9f9d46867c4310c78ad9033809ef14728d272dd34e3be4",
+      "_my_team/jimwel-aguinaldo.md": "be575541083a99fc72c135eff52ff14d7d0995109dadd105e12c59f5ccaa7279",
+      "_my_team/kenny-warren.md": "918dbb37750345f5465c695c9758bce7b9c7af696de11f2155dbaa5cd8687609",
+      "_my_team/khang-tran.md": "2a63ad561016b5184b1343989e296123b4d8dd93d350be1f5e0d85e8d17725c0",
+      "_my_team/kyle-niemeyer.md": "7c89f2445940a8a149d6f17bf39bf683c984a29860b9cb7a77f9b90f466ecd0c",
+      "_my_team/logan-fairman.md": "01d6e56671ba77aca62e1062590a16eb8964337b2bbfc635310a1bdfed708182",
+      "_my_team/luz-pacheco.md": "c63d93dfbe6338c264de19eb8598c8c9e0fd49d9bb9b9f42567b4373602e3178",
+      "_my_team/maria-politi.md": "998fb334f07f67a07af2cdbfb1d536d20f86d8669d3b71538425550a175c8c62",
+      "_my_team/matt-zaiger.md": "50883de76f7a63aab34253982391a15e15110d9d032cf78d6b9cdb27efb7c266",
+      "_my_team/miguel-soler.md": "4c342b1d48c8545845cdea2e0eeb45a6037d7f6ac15bb88bb08eaf8dc9871d7f",
+      "_my_team/morgan-mayer.md": "dc115d0993ea257ce84f70826cf0f7909831d821f1c68f88507df9deb70a0900",
+      "_my_team/nick-curtis.md": "09de22d5670fa8a0e7e12df204bb24858d575c948c2168174c65cf1ce8c81ffc",
+      "_my_team/parker-clayton.md": "60fd1dd39b8d3be1c6ea043ffa0efff5f4d4b767ad67d553aafca434e140a24d",
+      "_my_team/phillip-mestas.md": "f8269a665426fa3b5ae1b3a95509ede928a13df2dac8f8e5c4a0ea436e7451a6",
+      "_my_team/shane-daly.md": "247df1fa17c5a163f0dba00a099d055250e7b4021d1c8fc4dd9f403cdae9b889",
+      "_my_team/tejas-mulky.md": "83d5a7f3ce2170a0b09ba404b138288bc41c05b8c90c1b2cf483b965c0e9bd4e"
+    }
+  },
+  {
+    "from": "_plugins",
+    "to": "archive/jekyll/_plugins",
+    "files": {
+      "_plugins/debug.rb": "f3bbc5507f42a434e08f38746fddd341bc69e00ff4dad5ee14085ea12184e318",
+      "_plugins/display-medium-posts.rb": "ea31c9005256079eb0507be41a5e598d8a34812a639270bead7fdea5dbc0c87a",
+      "_plugins/trackback.rb": "59b182bb9c3420f2295af9159d9691e8d43dc842656dddc11b8b56e7fca0485f",
+      "_plugins/tweet.rb": "78956070081b8b8e4b1fcccb1bdbb8764fb5bcf9d16b4db322baf86eb934fea7"
+    }
+  },
+  {
+    "from": "_projects",
+    "to": "archive/jekyll/_projects",
+    "files": {
+      "_projects/arc-position-sensing.md": "2efcc5e6ba73476bef5f048483b8d073b70d33fb7b214a17a02698b4606afb41",
+      "_projects/chemked.md": "4d335a566b6a0f3f3162052f243a6b7af2e7b21fc416e50f6ee83c5a37fb98ce",
+      "_projects/detonation-magnetohydrodynamics.md": "ca4f56980b7d0374ebd433f8a84f1d16d857fbd5031e21eee30c9838b08d286b",
+      "_projects/kinetic-model-reduction.md": "103c366165e46b7864692534cbe4ffb8bc1c3db1195b8c878d9729e578cee53f",
+      "_projects/LTC-index.md": "b8d00a6bb63592abed28458082f134929677c3766b2f534090cee8e7f9ea9a6a",
+      "_projects/ocean-flows.md": "82add8b0e71c7899f66c5b70d278f8dc086ad07e5b91c81a44899f136f4377fd",
+      "_projects/open-software.md": "050d90c588959fbce269533b9ddb4b5608636f54372d3e23e732116ba86fec1c",
+      "_projects/slackha.md": "0e04df9568919d4209811dd6aa3d2d890fe2fde01a03d8c82c50892f2457bd2d",
+      "_projects/smoldering-combustion.md": "e64f48de46facdb5c0ab5de0fba9208cb1a8ba2600d944d7bf6f42bb25f84621",
+      "_projects/swept-time-space.md": "ae0a2673fc3067b4ac6f68185a0f1cb13757542b2a0c8e91bbc21cb105746833",
+      "_projects/turbulent-combustion.md": "90e3e8dbbe2b1d98f986301646c3bd496488419d94b63513954a6a2197284a92"
+    }
+  },
+  {
+    "from": "css",
+    "to": "archive/jekyll/css",
+    "files": {
+      "css/all.scss": "5746a52c8784e4b9253d92c101f52bc77ae5983e9b84b056ee033ae13acda9e3",
+      "css/anchor.scss": "29f425a03867f01b999116dd89865d72f3e1103c8441de02c7466b0cf020cd34",
+      "css/background.scss": "880daaef9a430a6615428702c263b22c3cd52dc7c23de1bf8cf168f1d2c35d0a",
+      "css/banner.scss": "40e21d304de77157b5c5b450c264effa4b3f10455ba393fd07c4349492629cc2",
+      "css/card.scss": "f9d955155134ca0a86d002f8a0354464f3c4b7c38b5489711c7229c8053a37df",
+      "css/citation.scss": "96ab4449dcd1d012b53ccd7d245a76baa64dd8065a772a96910da7bc4fb034b4",
+      "css/code.scss": "3b4aadf9dd585ce2eb6f6fd7876e9cfda519e75976727a273d07766d8aa746b8",
+      "css/feature.scss": "52bb75704916dc84ba77c75cf4a227f7365955c7038be5ddb9662ceb37dfd12b",
+      "css/figure.scss": "32914591c1d12905996cea21cbd71881596600912dc258d16f0f985adff8844c",
+      "css/footer.scss": "d1146890fc1e98bf1529ee8b7b0f2d0e81290a16c3f5bcaa3b3bce858d7861c2",
+      "css/gallery.scss": "485902533f9bb4108dab44afb4e102dfdc2a4cdff40372330da0eecd996d3ce9",
+      "css/header.scss": "60e1dcfb647b550e9eaaf4dba306f8641a38bf98b3e422d50cdf8048ffef9dbd",
+      "css/heading.scss": "e3550817e44508a6b594bea41b69d9faf09346c664c5c3e286ef56c024f3252d",
+      "css/highlight.scss": "2ba05bf0a0b4baff5d042e44cfaa1c5ec96f0e173bfd0694f1f44cb3cdc5083b",
+      "css/icon.scss": "1e35b48b2231e51c0d1dbb17e9fbcae40fcf73e2de154c3000ec33e72357b33c",
+      "css/image.scss": "33acda26a240cd799bc45b24d47c6ed4591f777a7cfef803387c5282d1bf335a",
+      "css/input.scss": "042968575550be9d836dce1a79860cf5338f84ce0779468e195ec8e9e4a132aa",
+      "css/link.scss": "1c11ef3ace8164fa111ebfbff31d56962c8a3dbed7750c8db524fab60d0c660b",
+      "css/list.scss": "5a208d7f217c3119ef121cda439b40777336257c042fb7bb09192590cab5945e",
+      "css/mixins.scss": "cb9f2dd3ff454403596778964622fcd5e0f344e5fb1f7f5eda770b0183b49516",
+      "css/palettes.scss": "07933906a584a7cd368a99df9e32ca0f32ee754139f98314647d47a74f93857b",
+      "css/paragraph.scss": "b10ff6d0b546da064b174dceadf27898bda997da05f14f60c0d7cc419661f5a6",
+      "css/portrait.scss": "e11e6da634b5b2d313d398fe8c86a790aa4e457d946dddb4b34712bca511fa59",
+      "css/post-excerpt.scss": "2e0fa07fdf9af9ae5ec2a55091c78317703c9f3cbb7c8dc5da83bae43ef6d1f7",
+      "css/post-info.scss": "62a48b40db05cb8ff402349314dd7fa42884a051dfa1b5171da8704176fb5a99",
+      "css/post-nav.scss": "06df793d8d9bf816e0c7a3b1f443a3b6f1f6e9664cbdf97c27928b109fe562d3",
+      "css/quote.scss": "75d9508dbb8a53c77e00e9c760f975f41e9207f18fd818be8f472b8fdb43bad0",
+      "css/role.scss": "cf1fb9b8edc465ffd2e0366a95b19c28cff189c2a720d8b59c713368c80a7d96",
+      "css/rule.scss": "38fbb14700224c928d8a36fe1b53eab0738852aa1a57343c97185f0751367459",
+      "css/search-box.scss": "20baabeee52ac8715a82747618621c0ddf08bae3a46465769d2696c0a0c53b0c",
+      "css/search-info.scss": "04b426f62fd1bc91ddc6a1e10e3153746b5689bbce12283f62fafa6c6ec5b09d",
+      "css/section.scss": "21bf78c523684dbf733d3822877c4ffd3e9ddd68b2da19cb2e39817b1e44d7dd",
+      "css/table.scss": "e9b2a5f5d8289572fb669dd5051c1db699c6112a929ccbc0b33de771361cea9e",
+      "css/tags.scss": "cdd15497dc4c920ca62f536a1d49a5b18890023014c09e2bc005d2eeee12fcda",
+      "css/theme.scss": "a8aea7b65084d223e08a9b88a34689a28c01da8887afd5fe32e3c6d386dd03ce",
+      "css/tooltip.scss": "3ca03cc13ef9359e13a269f9c3a341b321ecf43eceabfd534a02099a42596519",
+      "css/two-col.scss": "36f6f71c7a3ac58e5c1dd7d2414e662af0ab86e33c9906029444dabfa3909be6",
+      "css/util.scss": "d5eab9bf058d37f4b436692d81809178acc6dc998bbb89d1359b26f0333184e0"
+    }
+  },
+  {
+    "from": "js",
+    "to": "archive/jekyll/js",
+    "files": {
+      "js/anchors.js": "34ca4d51059f647e68570ef9d09b610c9f29b485bca699c1a64b2256e3e80320",
+      "js/fetch-tags.js": "66a715bcdce8319ff9919323492d7440b291c907d4cc7668650bfd2eb3973316",
+      "js/search.js": "13833e3727576355f3d07baab59adae8183be49970a57a7dc8868474e6dc5abe",
+      "js/tooltips.js": "a891eb107267764456de1b81899fc2e94b87be7807856214ea80df5db4ad77d4",
+      "js/true-hide.js": "f907e9f27f8f84a18478d4931d163ab4f2ae3c9c5b28afad9aea712afc004455"
+    }
+  },
+  {
+    "from": "_site",
+    "to": "archive/generated/_site",
+    "files": {
+      "_site/404.html": "a2634b0855eed7095b111bf8119613820f565edf1b33536d144adf8ca8de70ce",
+      "_site/about.html": "33fff07185f0445924edccc3fbcbf1644da954ed126fef91d64b293af18939fc",
+      "_site/archive.html": "531c68060d4d3db41b665dc10c9734a43c84c1d1103f40e8a46e3d1007d20616",
+      "_site/atom.xml": "a97f32be466907cc5049a2281d272b95d5bddd64aa6524ab68cedae59d34039b",
+      "_site/categories.html": "38ff92041c8be35a9905fdd267ccac2520d358d9c7f5d31705791bf896c1e610",
+      "_site/Gemfile": "2fcf87fd7d2ff442ed7f6b330f782110158502ff6114b89d1476a7d967906c91",
+      "_site/github_deploy_key_niemeyer_research_group_niemeyer_research_group_github_io.enc": "abb9ec59eab6a2ab008e4cbc37869db07742ad566b5ea4c9c4833f1cc576da6b",
+      "_site/index.html": "0fb761fa9aa3249922be41fca506269aa64ab67337a16b7b97d7c071625e4629",
+      "_site/keybase.txt": "6146dc33273827bf4e4f39d1cde5ca5cffdbf5cd47c8d0351992c3b285efe96f",
+      "_site/notes.md": "276bd46d4d6c4a61beaaf60c2072075367114b26a8fe805795ae12b62f829199",
+      "_site/pages.html": "2a00b51da12a577eb9ec08e15575d438f93479b1adf5edbfe609bf626676abfb",
+      "_site/redirects.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "_site/rss.xml": "80e0e9892698a84231150d89fc79a9b359c7ae0df02d4d6bf16b65cbc11eb0d1",
+      "_site/sitemap.txt": "6bcb34a3218c8727cb4bb5a51c2f9f9e5142e0422992f0826f47d918404d5375",
+      "_site/tags.html": "2bd4f02a75643fbf8aef447c8c98ddc095d97cb4b8b829037da4cc5a05afdf37",
+      "_site/assets/css/academicons.css": "165afe9840eec48058742fbd6656805a4d4d6bd7cb2f00f2acc67fb7314bbbc5",
+      "_site/assets/css/academicons.min.css": "a0689310bf322706699d110d39834f47c7b7832a33b9199699e76807eb804dd3",
+      "_site/assets/css/icon-list-group.css": "ae97f1fbd92ece17bf50f814d6161fd28df05c0388c2abb2b6e786c91aaa8576",
+      "_site/assets/fonts/academicons.eot": "69ddb32f98340651a412bd6460e6e63cfb0860cb3c0355afc0fc30d985a4cbac",
+      "_site/assets/fonts/academicons.svg": "859e6529262a928b5a8957bff146baf9ffae7f397a11f630742f397130e41a1a",
+      "_site/assets/fonts/academicons.ttf": "bc064a4b289a8bcd38babd1a9e299cefaf7190746ff529aece7ead91a339a81f",
+      "_site/assets/fonts/academicons.woff": "0fd0139f428687c5ed80fc1a04f3c4d99517d90bf2b73dca4a4c18faf2d7c4e1",
+      "_site/assets/images/cc-by.svg": "727ea1d86d597da9ce2f74fe0bd7177c7512400a7e9ab1ae2bfaaaf2321681fb",
+      "_site/assets/images/NRG-logo.gif": "b18333261aecd0acb80c6a47a937ddbdfaba4228916420ca6d1f1c6171ab99d6",
+      "_site/assets/images/NRG-logo.pdf": "9ea2b0f10e7ad76a1f20a590d8e38f5874c8b6ff47ec6afdc3aff176b27e44e9",
+      "_site/assets/images/NRG-logo.png": "ec4d8006f989a0392f5af7476ac4ee978e4b431d4601abef49266af2152abce3",
+      "_site/assets/images/under_construction.gif": "0553c149cf97b0084f6d12b11fda6710ccd8df127e7ed6467ecbcff07d2396fd",
+      "_site/assets/images/banner/artificial_turbulent_profile.png": "3f8953256f0876f7dbe0e7e20e51cbee1e623be6d26583c7025f43b7281b74ab",
+      "_site/assets/images/banner/detonation_density.png": "c846a70e4dc4cfc525bb93afd2b0a0924557f0547e85047856ccd3658c89f61c",
+      "_site/assets/images/banner/turbulent_temp_profile.png": "6193e703effc06b2e11a8221e9632e929613446606632de351f97029ffe56c04",
+      "_site/assets/images/funders/chevron-logo.svg": "9d1d8f4ddab17a3d43d39048448c566e3223a4bf92b9577e8ff5248164ce7655",
+      "_site/assets/images/funders/NASA-logo.svg": "bfbdf79bd1e9a8b749860c25a9e60d3eb45661f0bfff6bf9d8fae1cdecfae7ed",
+      "_site/assets/images/funders/netl-logo.svg": "f1bda5b1ef4331237cb8cf03f8e8f48f20467fe489043c81193d711d9e498a6d",
+      "_site/assets/images/funders/NSF-logo.svg": "6c55b19a89d908ccd3baf9fb57e34803b81160c03b8ec9b5b6d996082cc6e619",
+      "_site/assets/images/funders/OregonBEST-logo.jpg": "d9c24081dc9ffb9857e90440c9f2758713d057794a53dc12ebb0f43d74e4578e",
+      "_site/assets/images/funders/SERDP-logo.svg": "5b6d40bd0225cd5b508609d52d54236b51cfc6029d15bbc1047cd542520cc36d",
+      "_site/assets/images/gallery/kyle_at_whiteboard.jpg": "3ad259729ac100731dfb96dcf52a69b1f24426772e6ddcd94daea8c4745663dd",
+      "_site/assets/images/gallery/NRG-7Dec16-full.jpg": "ae53ed5e723b2286ef4dfd73d42003d0ff1059f2268de5d5825ef92381cc12cc",
+      "_site/assets/images/in-case-of-fire/in_case_of_fire.pdf": "91b6e252853f89525b01ea23514e1961cc64a166e3be864cab0ddafda058312e",
+      "_site/assets/images/in-case-of-fire/in_case_of_fire.png": "0cd930564afc696b2bf89acc7669688ab624d6858ba0282c22b0364b0a280552",
+      "_site/assets/images/in-case-of-fire/in_case_of_fire.svg": "093ff258e350dbeaad46917600eabf54a4b1f770962feaf581bbcbd3ba1bc865",
+      "_site/assets/images/in-case-of-fire/in_case_of_fire_ink.svg": "411aba6af66aabb592202ee88faf74b244fc2e6457e864cb65fe14aaa4503873",
+      "_site/assets/images/in-case-of-fire/LICENSE": "65a30c3a6003978500625b078020303ac5e65847163e9a0c9cd6de5fc3be699a",
+      "_site/assets/images/in-case-of-fire/README.md": "6c3c50d1b37f470a4ce538a31eb870d0d9bece2cb99a69e7a27eae32438e8186",
+      "_site/assets/images/news/default-news.png": "a396339ac80dfe7dd2d291b8939007e455b98f524733c3aa7ae6ecd5e460a0be",
+      "_site/assets/images/news/default-news.svg": "96623dd3e80574b640c65e151998b13bcfb61789302efbcd5c9a2d9093e47e45",
+      "_site/assets/images/papers/bone-tissue-imaging-abstract.png": "571dadc84bdf4ef7650f0855664c10f2499c2ab0925a115930417566c6d83715",
+      "_site/assets/images/papers/butanol-structure.png": "f0bd05c587771dca666d7ca88cb8f2f0fdbd6c7ba32ce88a5be816c9ec05312d",
+      "_site/assets/images/papers/chemked-ijck.png": "f9c89420c4de8d90ae7b77e6435d2d83a7cb9d50695505b9a65699628df1cda6",
+      "_site/assets/images/papers/cpc-chemistry-vectorization.png": "abb79c0cbfcd151e6aef29508ebc6de28f4b724b3ea730e0ecd02ea7d1ef285e",
+      "_site/assets/images/papers/default-paper.png": "c4e3d1f9aa50fc56a6fca71add95d3eb082db10ed051395ad9b037a513bcc21a",
+      "_site/assets/images/papers/default-paper.svg": "55cb2b0cc2932906f53b9522e7cb640e6a18a65e6e13789626e271888cfb36bd",
+      "_site/assets/images/papers/enfuem.2018.32.cover.jpg": "42acb5a548e2d786bd52f6adb6ffdd2808f7cad5bdcc48804b2192aec79824cd",
+      "_site/assets/images/papers/GPU-swept-rule-1D.png": "2f5374ca2febdafa3d3cfe215ccbe1ee2152099c85e96df9c66d0d5e873cae7f",
+      "_site/assets/images/papers/integrator-abstract.png": "be60e87685d8bfe7caeb61f5fa199661cb65a46076bfd2ac5695697312fb70fb",
+      "_site/assets/images/papers/jmse-aps-analysis.png": "853f4bdd032f5311ef0bf845e3ebb7836d212e45b57a211000445945a92b636a",
+      "_site/assets/images/papers/joss-peerjcs.png": "c3548b3f43d9c9d0784f76c39dbde5c6a6ffbaa07ac959e2bc80cfc9694dfc64",
+      "_site/assets/images/papers/kerosene-model-reduction-abstract.svg": "cb0a0542e44b646cc4f9931c355da93c94dcdf70326db66fe19fb9bc137b0baa",
+      "_site/assets/images/papers/LTC-index-abstract.png": "31c552519627fc21b59433304b5c7aaef308ae4c9350b116f062237353ea8c26",
+      "_site/assets/images/papers/LTC-index-oxygenated-abstract.png": "a014e5dab4b71a36fb92bf04946c2f0a2c3a99c0532863bdbd93db8f1ca1b3d1",
+      "_site/assets/images/papers/model-parameter-discrepancy.png": "18571b538883a2bf76a2e745d15dd14725b4f397391ec4f832f84f18636e57c1",
+      "_site/assets/images/papers/multicomponent-reduction-abstract.png": "5a0bb138d56e27db5a140f2be478affb78d688567a2015d8b31761cbf6231bbd",
+      "_site/assets/images/papers/nbutanol-counterflow-abstract.png": "f1483d1aa1f4ba56a1c1cb7b12276ebb9ff9b4235083bda803413aacc5ae422f",
+      "_site/assets/images/papers/oil-water-natural-gas-engine-abstract.png": "ccb09a9bb6df486c1e4a82e7e44576614ec5d68b668b414ab143e2ff3f2e403b",
+      "_site/assets/images/papers/open-engineering.png": "83719db03bceabea3a9ce7a0eddbcd235003b30eb23032076ff782504ebd6163",
+      "_site/assets/images/papers/peer-review-abstract.png": "98357d0b7079aa7f0076684d29e11e54e65e2f90b4e71609594a03fbb4c8b5f9",
+      "_site/assets/images/papers/pyjac-paper-abstract.svg": "5221059caf6d151a2c5b1bfa61510f9b807a7cc7fa2ab219b3b9aea5df8c0f62",
+      "_site/assets/images/papers/reduced-gasoline-surrogate-abstract.svg": "e5fd0fc781b45ebbc718d7046512edd28fe34e43ea8428cd04860d81039cf130",
+      "_site/assets/images/papers/review-GPU-CFD-abstract.png": "ca59581361f9c45b30be5ec7011c4afe5329114eff8da135e9c89c9849971c34",
+      "_site/assets/images/papers/RON-FTIR-abstract.svg": "23fb006b87d4a1a7443578cca33b397c82dbd8c72c36a0d60daa4f178fe5f2b3",
+      "_site/assets/images/papers/skeletal-reduction-graph-search-abstract.svg": "6ace89496a5e4271b856656d4686f832086ef42480125669e6f37ffb460b1034",
+      "_site/assets/images/papers/skeletal-reduction-paper-abstract.svg": "22fdfd04ed32ac38c48f4bc28c3bb298d15501be9e851d145f02975cf207fe15",
+      "_site/assets/images/papers/smoldering-exp-comp-poci.jpg": "ca4f2d78e992f20385012ef139d90f9b82ba8591825bbc951d477e4185332f81",
+      "_site/assets/images/papers/smoldering-mixtures-poci.png": "c406b6dfe35d73ba0d259f9ebac5122785a635c3e74f82f3a66ee58ad20d4917",
+      "_site/assets/images/papers/software-citation-challenge.png": "806d3f8b3d1190f50239e672d8f52a97fb6493fcfe37d8aad92002b00986d319",
+      "_site/assets/images/papers/software-citation-principles-abstract.svg": "01c0b647de60405a242abbb95626b8c3202b091b2057d2b816c026d49539f407",
+      "_site/assets/images/papers/target-species-selection-abstract.svg": "7f9a31fbed4cdd204cd74987ec76c66ac70fb9edab673ebb1f1dd9bc202f180e",
+      "_site/assets/images/papers/wssspe3-report-abstract.svg": "fb948da3e182266972c437567c9febe45211b3aa0c4ff9063e736ce3d767ea03",
+      "_site/assets/images/papers/wssspe4-jors.svg": "fb948da3e182266972c437567c9febe45211b3aa0c4ff9063e736ce3d767ea03",
+      "_site/assets/images/projects/arc-position-sensing.png": "853f4bdd032f5311ef0bf845e3ebb7836d212e45b57a211000445945a92b636a",
+      "_site/assets/images/projects/kinetic-model-reduction.svg": "ce3eb9ccac8abb0bd510dd23bc454f2f5f12f578033284759ea3e21d74af796d",
+      "_site/assets/images/projects/LTC-index.png": "70bd7237b34d55c0d23a32310500dbd5fda698d16f7f80fe7a4f279e53bd24b2",
+      "_site/assets/images/projects/open-software.svg": "657069339fbb272d08dc51b989673d6d9b6cfaf29f75d5225e59e636ae20cc86",
+      "_site/assets/images/projects/pde-mhd.png": "c846a70e4dc4cfc525bb93afd2b0a0924557f0547e85047856ccd3658c89f61c",
+      "_site/assets/images/projects/prometheus-logo.svg": "80d70373099ac538269fbde42a887b33cf53f563380ab272bdac4206a89db56e",
+      "_site/assets/images/projects/smoldering-combustion.png": "1fe62584067e8c5c8d5058395a51deb0e1c3e1c6adc391baed5ee62ec80f2754",
+      "_site/assets/images/projects/swept-diagram.jpg": "12e11d23558296b18931d04507aaef47090552b644a099718d2c946d5be712a1",
+      "_site/assets/images/projects/turbulent_temp_profile.png": "6193e703effc06b2e11a8221e9632e929613446606632de351f97029ffe56c04",
+      "_site/assets/images/team/adam-krivoshein.png": "76484aca82b12250047ba2d075fd985487f877eaaa72be5948036ac9484afa5a",
+      "_site/assets/images/team/andrew-alferman.jpg": "0bd50be2f24affdda9cd1f9761b4c22c2bbc94c0fbf4c6f7cc1c81224d3e8299",
+      "_site/assets/images/team/braam.jpg": "7fbd7b92cfc3b98242bbcd8efb71265e02c28701206553fe2bfabbecf0ab9bae",
+      "_site/assets/images/team/chris_minar.jpg": "93df84306765c2460ac939061bee02caf96f548a6cac0c30ff9001f62dac634e",
+      "_site/assets/images/team/clayton.jpg": "525a184c39d6b37cc1e2d174d08c9ed8e2ad1e86b544a875d92302ba4e238a1c",
+      "_site/assets/images/team/dan-magee.png": "9637bf3151210e7cc320bd3c3beedfdfa9640b19dbf4554d2ad8408fff5204a3",
+      "_site/assets/images/team/dana-marti.jpeg": "01aad7cf88fe1d1f9a4abbe5aa27d536c743e31b785b96b6efcf06034b95fa41",
+      "_site/assets/images/team/default-member.png": "e328a2eb0a700052ebd9860c6a7e97bac0a0414061a9c601b2362d970ef77494",
+      "_site/assets/images/team/default-member.svg": "9cdcc14fa2b1e82860a91c8fac50355c8b89a202b03f2a65018657d74715970a",
+      "_site/assets/images/team/deven-bishnu.jpg": "26ca1cea806b47dedde1dd6d38f8d6493040399bfec556bcded748db47daeaf3",
+      "_site/assets/images/team/emily-klee.jpg": "a5e00fa7356ff9b78ff207f8bfdd0d150bc3d4380c931e4e6f569cb8ac3f39b5",
+      "_site/assets/images/team/fillo.jpg": "fd6bc6faa7c59bf26ab475ce587c7826a10cebe8cabdf90c13502ab98654b643",
+      "_site/assets/images/team/group-Wyoming-Oct2017.jpg": "751d161f93ac4826d6234611a2125c1ef98d36e8f5a73852d1549ec2b0ec165d",
+      "_site/assets/images/team/himakar-ganti.jpg": "99ac9d37f8db3576e471bed9f67536b17fcfb3616198fcbbd5794511ed12f197",
+      "_site/assets/images/team/jayani-jayasuriya.jpg": "68abc236bd28469a61fa007f14f351afe11d08829362c023d436a26f6aa5c7f3",
+      "_site/assets/images/team/jimwel.jpg": "8bb839619ac3716e590b04a4effce24809543fa5aec70eaa90cbd6751a286766",
+      "_site/assets/images/team/kenny-warren.jpg": "f398da38826e12fc9c0386f9152d3076d136c918a4735f4687518c9da9d0227a",
+      "_site/assets/images/team/khang-tran.png": "530e2b916c2d5074c08ff2fb7ea3b9823abc37154c5be9eecb39623658b53d1b",
+      "_site/assets/images/team/kyle-niemeyer-web.jpg": "da92f5864bf9ea2cb76b324e2cd4ec70a8477f7265c5de30dc75c6fbafb29725",
+      "_site/assets/images/team/logan-fairman.jpg": "1bd965588ee213d8b21a2fec5a42d1de2ad428119bf154657f04af673e1916d8",
+      "_site/assets/images/team/luz-2.jpeg": "06290ac7a2a4adef651d173054d90cdb5c601429bae66c79a808c7ea8f140b2f",
+      "_site/assets/images/team/luz-pacheco.jpg": "93b57f8867088cc4e50d17a25bfa34dd1d9252a0269995a9a881c4dd0d353fb7",
+      "_site/assets/images/team/maria-politi.jpg": "b7548671671e8b1880213618526f2691ee7ef166d488edbd15c34b404c96a96f",
+      "_site/assets/images/team/morgan-mayer.jpg": "27cbe3e00cffc67fa6314d8ddabe1ad14e8aaeb6549e601ef30bfd09b659035e",
+      "_site/assets/images/team/nick-curtis.jpg": "6931ffd3ce8f69c07aa2b03895b5089daf5ce33a3f5e6b45647740fa414eed85",
+      "_site/assets/images/team/NRG-7Dec16.jpg": "234fcd32d85e475c9da3ce6ce40e4ea462c55f8221c3b75299ae7e2e9de08d36",
+      "_site/assets/images/team/NRG-Denver-Nov2017.jpg": "afa676704b1e7570ba57698dcdcf0103cd95811cb4c6531e36f6c8c004ec400a",
+      "_site/assets/images/team/phillip-mestas.jpg": "a77fc916567991fd26582b06e17459a9ddeed7b8465c6dc7a6a326ddec146b11",
+      "_site/assets/images/team/phillip-mestas.png": "789878cf38cd3e6c3b269d3d348e03204cdc630fa2e30f708f8a7104ce412957",
+      "_site/assets/images/team/shane.jpg": "66769f1f9aaaac351e079d4977821102285b5c8a960f6a58540ff2a28e927ce5",
+      "_site/assets/images/team/soler-miguel.jpg": "74c00d50b9686c52ace8c37b5d4ef055097db918609ddd12493e7224bb5d6075",
+      "_site/assets/images/team/tejas-mulky.jpg": "9724415966bc712b1503d3c1be8db1d7c8492e52e482e52bf9b9f3cba6872485",
+      "_site/assets/images/team/zaiger.jpeg": "63d95ffdc7d571a5faeb1e6a138759cee8bdc863dcd6957e46d3023a6cb7f857",
+      "_site/assets/images/team/zaiger_matt.jpg": "7a3db033ae6175525302e679e549a478c7f847ff0f00b0c713745c2b979ca6b8",
+      "_site/assets/pdfs/Zhong_etal_Acta_Mech_Sin_2015.pdf": "64927f2e558f524aed8822898340f13256554b1f514055906041d40cc915a3c2",
+      "_site/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css": "8c2ce94d9e23ed70b5eea5de66eb3e1875a80213d728eb51c40263b6ff9cc338",
+      "_site/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css": "81e40cfd9268d77c245692bfe869d56836f557c91b494785b0cf068e875b9892",
+      "_site/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css": "c6e04f387f8c41d539928d067268a2e92d47c21c46d7f6beb20656e9e7e0dd14",
+      "_site/assets/themes/bootstrap-3/bootstrap/fonts/glyphicons-halflings-regular.eot": "62fcbc4796f99217282f30c654764f572d9bfd9df7de9ce1e37922fa3caf8124",
+      "_site/assets/themes/bootstrap-3/bootstrap/fonts/glyphicons-halflings-regular.svg": "0b12aba182a43da34d79361168a665a0ec78a6a79169a730ca96b7cf696cd7c4",
+      "_site/assets/themes/bootstrap-3/bootstrap/fonts/glyphicons-halflings-regular.ttf": "e27b969ef04fed3b39000b7b977e602d6e6a2b1c8c0d618bebf6dd875243ea3c",
+      "_site/assets/themes/bootstrap-3/bootstrap/fonts/glyphicons-halflings-regular.woff": "63faf0af44a428f182686f0d924bb30e369a9549630c7b98a969394f58431067",
+      "_site/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js": "46ed2dfb732a01dbc80515ce6a48bcb24dea4bcab8522c71868231812000b58d",
+      "_site/assets/themes/bootstrap-3/css/style.css": "9f4c144c16e394987a20af820a121fcbd0a8a4e0e4aaad8dac85adbe318e6946",
+      "_site/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css": "8c2ce94d9e23ed70b5eea5de66eb3e1875a80213d728eb51c40263b6ff9cc338",
+      "_site/assets/themes/lab/bootstrap/css/bootstrap.min.css": "81e40cfd9268d77c245692bfe869d56836f557c91b494785b0cf068e875b9892",
+      "_site/assets/themes/lab/bootstrap/css/bs-sticky-footer.css": "c6e04f387f8c41d539928d067268a2e92d47c21c46d7f6beb20656e9e7e0dd14",
+      "_site/assets/themes/lab/bootstrap/fonts/glyphicons-halflings-regular.eot": "62fcbc4796f99217282f30c654764f572d9bfd9df7de9ce1e37922fa3caf8124",
+      "_site/assets/themes/lab/bootstrap/fonts/glyphicons-halflings-regular.svg": "0b12aba182a43da34d79361168a665a0ec78a6a79169a730ca96b7cf696cd7c4",
+      "_site/assets/themes/lab/bootstrap/fonts/glyphicons-halflings-regular.ttf": "e27b969ef04fed3b39000b7b977e602d6e6a2b1c8c0d618bebf6dd875243ea3c",
+      "_site/assets/themes/lab/bootstrap/fonts/glyphicons-halflings-regular.woff": "63faf0af44a428f182686f0d924bb30e369a9549630c7b98a969394f58431067",
+      "_site/assets/themes/lab/bootstrap/js/bootstrap.min.js": "46ed2dfb732a01dbc80515ce6a48bcb24dea4bcab8522c71868231812000b58d",
+      "_site/assets/themes/lab/css/solarized.scss": "84528ce8af83adeef3c4e2ab93b93a7118832961a30a991d9865d5fae3a06b41",
+      "_site/assets/themes/lab/css/style.css": "b66e95e211f6dbe8f0d4c309f7d16fd1a98df165a180095178fc19dadd78c861",
+      "_site/assets/themes/lab/images/logo/android-chrome-192x192.png": "6bf68ef98010d93c3359ec16de451fa93b51584dfc1e2294239a474d8e06a7d0",
+      "_site/assets/themes/lab/images/logo/android-chrome-256x256.png": "e1f35828eb0bc9931b374f347369e28a79b65673e887dc569b36aa07ecb5fdb7",
+      "_site/assets/themes/lab/images/logo/apple-touch-icon-120x120.png": "fb7e6a6fe66279575c5d226332d58f2e6c9e9f1c7ec6f3a6694c003d453510b4",
+      "_site/assets/themes/lab/images/logo/apple-touch-icon-152x152.png": "32770695c25092cc6a675dafc97c75993a936e6af949a3282ed3dd258f032d8a",
+      "_site/assets/themes/lab/images/logo/apple-touch-icon-180x180.png": "d12cc13828ac0c04c16b8d2fe547c43e5054d7f8c810e1b1bf525b874ec10b3e",
+      "_site/assets/themes/lab/images/logo/apple-touch-icon-60x60.png": "a7770b6e1ead76da16eb3a7c8d82909e4fde90ba4d9873948f3e7d47beb956dc",
+      "_site/assets/themes/lab/images/logo/apple-touch-icon-76x76.png": "0254aaae801462550b544336c1e4a4cbe5c9843e5a0c7823b344ead0836d8556",
+      "_site/assets/themes/lab/images/logo/apple-touch-icon.png": "d12cc13828ac0c04c16b8d2fe547c43e5054d7f8c810e1b1bf525b874ec10b3e",
+      "_site/assets/themes/lab/images/logo/browserconfig.xml": "066ad6ad08b3ea8c670fc450f03aaae96551d6d63bb0b497dc0a6c21cc97a8b7",
+      "_site/assets/themes/lab/images/logo/favicon-16x16.png": "aa485f39b19d96dc440802bf065393177b93fb5e84ecf7200e6fe6579b207108",
+      "_site/assets/themes/lab/images/logo/favicon-32x32.png": "4c8a22b8238f123a417d5af2f3942dd6d20be37d46ea49500fc191377a1a5d35",
+      "_site/assets/themes/lab/images/logo/favicon.ico": "d30266df250039b4efce758cdcade14fe6900e0f13098d25b894def170110ea8",
+      "_site/assets/themes/lab/images/logo/lab-logo.png": "ec4d8006f989a0392f5af7476ac4ee978e4b431d4601abef49266af2152abce3",
+      "_site/assets/themes/lab/images/logo/lab-logo.svg": "7aba266eee25c73491a80ddf93c5b14ee6d98eb15a483d356c352c66ae2615f1",
+      "_site/assets/themes/lab/images/logo/manifest.json": "844c0ecf3afa8846899c18d41db570689be63238df742d5dddb471d5b62d0e3c",
+      "_site/assets/themes/lab/images/logo/mstile-150x150.png": "a1692479cd2d3f894b5a8601e2da09bcca2870bcfc46e9bdd993f7f6e15df89f",
+      "_site/assets/themes/lab/images/logo/safari-pinned-tab.svg": "77cc96dd649073c9a21b1ee3318218984662612d0c179223ed01d12a245974f9",
+      "_site/assets/themes/lab/less/solarized.less": "14fc780dbedb00067cd17cf8f04b34cfcd2f189ef926eea8a6d6991cbc4b6f95",
+      "_site/assets/themes/lab/less/style.less": "a9caff914c1bb845c3cea5765888190abfc58a139ab342e16aed8cce1dfe4ffd",
+      "_site/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css": "6bffafd49ada52a30c7ca93852754c814f36f0bf500eb868be137bc4bcb66c9b",
+      "_site/assets/themes/twitter/bootstrap/img/glyphicons-halflings-white.png": "f0e0d95a9c8abcdfabf46348e2d4285829bb0491f5f6af0e05af52bffb6324c4",
+      "_site/assets/themes/twitter/bootstrap/img/glyphicons-halflings.png": "d99e3fa32c641032f08149914b28c2dc6acf2ec62f70987f2259eabbfa7fc0de",
+      "_site/assets/themes/twitter/css/style.css": "b284bd14e95eab9a24211711cffb6e080afa07f225efff41df1a554cc815c1ae",
+      "_site/docs/code-of-conduct.html": "5b053ca4240d01d944dff7c4911315beb4f48b086a0ef13285adbb272b3091c0",
+      "_site/docs/expectations.html": "a29b7dd8cdd451382862e3768cd30ce4a1d6af8d65ecf11360fdc9fb25ae15a2",
+      "_site/docs/index.html": "514545cd0d13c2c406e332f41d03e02543f9e792d88f628cf3ab6e66a72869ef",
+      "_site/docs/mission.html": "7af89278768abc43014f3f64240483586683df93209e946a61188ce9983b0d7a",
+      "_site/funding/index.html": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "_site/medium_posts/medium_posts/New NSF grant, and commitment to better science communication.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "_site/news/aj-featured-newspaper.html": "f467c6fbfd3eafec28b1c565810b5f116606e20d1ffeb46c47c79f2ac86b8645",
+      "_site/news/dan-andrew-luz-defended.html": "8fd0b13272b723e9cf876d05bbed97a12f407b3ff0b369690b9099123cc5d0b4",
+      "_site/news/index.html": "b357328a47487a97842cc291ea1939bfe4b6e4e04f5cc8e312bb36a88ad003a2",
+      "_site/news/kyle-faculty-spotlight.html": "ff543c5531bbfd4464924caf3fa3f33d68bab1fc149fbb8eb608ccb70fb35c34",
+      "_site/news/liblab-local-news.html": "5c46f09dd36882262f0d022b37f813a4e841dcea45a2d08407d6f2b05f6bf9d8",
+      "_site/news/NRG-featured-news.html": "31dff3c627d897de076094f8eb1659b5cd1ec78555ca321df09b1bc48a905044",
+      "_site/news/pilot-liblab-video.html": "9db6d206e5952bd75074054fa5125a6744db770b9bf7136cf4ece8bc6acb1921",
+      "_site/papers/index.html": "352283b70cce88ba33def7f4227598d06cad9490c1caea9ea9423c20eb59d81d",
+      "_site/papers/paper/bone-imaging.html": "52ae1f09f89116192947a972d3520ab7e9ea95b675c7a470ce81efc056e1f048",
+      "_site/papers/paper/butanol-skeletal-models.html": "81de43dfaff83b542da375f99f1824a2d587422574643bd88c4701212501cf64",
+      "_site/papers/paper/chemked-ijck.html": "c950f6da778ac96aaacd0a367ebd10381d2b258e2d8a8a6a61529e89234b38de",
+      "_site/papers/paper/cpc-chemistry-vectorization.html": "fda9a4d171e2dfa79c30f30e50fd2f8aa157c8e547e83e8bd3b17bf6d2242b91",
+      "_site/papers/paper/FACE-surrogates.html": "53bef23631390f1be1cf9bd6397603142f7797274303c622f7d00e2683c0f3a3",
+      "_site/papers/paper/GPU-swept-rule-1D.html": "ff58efdd5939d1a71088294d0f61fa8c0efe6cdef9dd2d88f5ab90f1ab3f3b92",
+      "_site/papers/paper/graph-search.html": "17dac3e249a61b7adcf9f1ac8a7dd4f22c4bd590d7a6ab97295ff089c7f71715",
+      "_site/papers/paper/jmse-aps-analysis.html": "628cdc92b8e784628c9f26113af1272e50693ab4bb7e53a98d13e3fc1f4351a8",
+      "_site/papers/paper/joss-peerjcs.html": "a528d197ca1ec1a1f5d016b39a2dda75a6f2b5cc6e893394e304bd40b3db9811",
+      "_site/papers/paper/kerosene-model-reduction.html": "c56dd84637f6e853382d4d9c7ce779ecaaf0ed1204a50257385cd5e08060c65e",
+      "_site/papers/paper/LTC-index-oxygenated.html": "99b540686da82c13162702ff51458fd1df598ae93ed1d7f33dae87b31941674a",
+      "_site/papers/paper/LTC-index.html": "c4d4f17e0e0e1d82b1ab5480a5d801f96e6afdadd37f7046f07d3ebd622e43d0",
+      "_site/papers/paper/model-parameter-discrepancy.html": "256c98967971bb9de86f22b03cfb06c3253529a35d0496b92b61dbb6499bb0f2",
+      "_site/papers/paper/moderately-stiff-GPU.html": "236ee26fa5cc9e658f02478a01837608aedd3313ab370c995b0ad9bbc52da019",
+      "_site/papers/paper/multicomponent-reduction.html": "801aa5e452a84890354239da43f935a86187d671db2eca7cedde5638ddd2df11",
+      "_site/papers/paper/nbutanol-counterflow.html": "13aab742a0a9f4a2e32b75cc8c9fd2dad477402e9bfa341dc09cf86a2f010456",
+      "_site/papers/paper/oil-water-natural-gas-engine.html": "64f9237073f049196b5e80db4bc3bded31cd662889715a81f886c57309b4dd0a",
+      "_site/papers/paper/openness-engineering.html": "1f67efda9718df95de8639de7342b2c801cd3a1f9bba774e715a487639800f74",
+      "_site/papers/paper/peer-review.html": "1a56aded74f7c8b54900e4423cb1e1d3d88deb1577c767ce70bbf1b08eb2f17a",
+      "_site/papers/paper/pyjac-paper.html": "fff9477dba670b490ce17312250c061b7f1bb3caab98c9b24a977dcf7ac3f352",
+      "_site/papers/paper/reduced-gasoline-surrogate.html": "b4e067db51364f0cec775912c47025652a7d4d8fd8cbe0dece826595929f98b0",
+      "_site/papers/paper/review-GPU-CFD.html": "7df7f21b59b22f849148c8203d0c58b8c18db8f23036cf88e693f27c74c37c0d",
+      "_site/papers/paper/RON-FTIR.html": "0f59a9e51aadd83c735f571b99192db8985c8376725ff7c69add4e196a5bc7fb",
+      "_site/papers/paper/skeletal-reduction.html": "da57d3e0e4922846bf284526e29079fb5713d2b54d38c93ddecec098bf1c764f",
+      "_site/papers/paper/smoldering-exp-comp-poci.html": "238afdf948e1cfe51186bf6ed7399c130fba34e8799142ad2f0969a306465060",
+      "_site/papers/paper/smoldering-mixtures-poci.html": "0a31e0a27af4d6ca5a78473a66d9100976e887d68cfa2d8add94cde97d32855b",
+      "_site/papers/paper/software-citation-challenge.html": "cf579b5d6c5b1447bc106a40a3fc459ccac7a18d8bec4d902a3881353ffa618f",
+      "_site/papers/paper/software-citation-principles.html": "b58b2358385d8475f7928ab1e9aba92c5d508dd0380ded3d76b7f71383360262",
+      "_site/papers/paper/stiff-GPU-integrators.html": "c2498e4a2566dabb30b43d4e788081a6417b6887d1d2cf52e7db7dfe01b95810",
+      "_site/papers/paper/target-species-selection.html": "ca33ca5842169ef4a001dbe73f311213edcd342be03a84557899bcad15cd5d1c",
+      "_site/papers/paper/wssspe3-report.html": "1aa63d2422f218d8061dac3bc790776e827a7a2594635774af52a0df39f9faae",
+      "_site/papers/paper/wssspe4-jors.html": "7bf52c03344570a99fdd5e91d9e06213fa55e6fba4a29777e01c674d7db40755",
+      "_site/research/arc-position-sensing.html": "deaf7d2a736ef97141ff182f34a1059cb612ffef4c454a577d18860754cc8519",
+      "_site/research/chemked.html": "61779a980e87eb48c095008f1a4c8361fbf9c3a7a15c60e4b75ade017a24edb4",
+      "_site/research/detonation-magnetohydrodynamics.html": "03307db9ffcdcdf0ccc2db5832e011c812cd7a58ffbf7f5056fd8c8a70f7d91f",
+      "_site/research/index.html": "1abc3e8c46297c639e4730fa41cc0476bc62c75817b48bec705b5f24ce60b18b",
+      "_site/research/kinetic-model-reduction.html": "ee275ed22463cb552c72ada69ac5fb90d704c911cba049e7dea4e740f59f2c23",
+      "_site/research/ltc-index.html": "7a3d2db9a25e09b487fcf54a382001f70ac0a5d423632a80f395282db3238a9e",
+      "_site/research/ocean-flows.html": "937d5fe733c56bfd9c90397301803fe51f4922b84c6c096f9f9a97febbf8227c",
+      "_site/research/open-software.html": "7c85a1e6226f0e6224886623c059966f8dd3ce8405f26c0f0d6bed93592c24d3",
+      "_site/research/slackha.html": "c508529e2fa7d2e42e3a94cabdf6df89ae6dd8c2f503368fd774596a0d293533",
+      "_site/research/smoldering-combustion.html": "5b65f302851039ee284ccbdf3442223af86beac9b12c8de54459a8f28ca8f556",
+      "_site/research/swept-time-space.html": "756269909a7bdc9b59fb73c5f4a23854ddf32f02296c3184f81ba0ea22300b80",
+      "_site/research/turbulent-combustion.html": "e48331a2ef427faba3439a76763b9eb60ed87a4872aa80bf401800c91dbaffba",
+      "_site/software/index.html": "4b2d0b527f0902fab4a04c516f293b0df8c06cf935101bd3049c81b3e23a6e50",
+      "_site/team/adam-krivoshein.html": "388b95a4338445317c749b5c462e45ab285d9ac1cf843a9a69d46210f197c295",
+      "_site/team/aj-fillo.html": "61aeac24c8995fc1c35b7f669762b31c654145ba61f1a1e40f1f2f456c99bf1c",
+      "_site/team/andrew-alferman.html": "1be5cc99feac3131e0a290db5aa93c7c652f5a321ba65e7fceb68ec8fa5f8ec2",
+      "_site/team/braam-beresford.html": "0be79879f5be868bfdefb88dc8f51f086ef0a71c1f22997f78757d63887e435d",
+      "_site/team/chris-minar.html": "a3c2df7a1d5e3e7925da012f03c22fe81017a6a5b7c45a9ded1900a703f67415",
+      "_site/team/dan-magee.html": "e41f702dc7bdf6df45ac036178c50d01b01d05f37bf10bc4925c983d45225976",
+      "_site/team/dana-marti.html": "833c9b7bf81b31cef0548a909b8ef2a1796584d72523ae22640ac151812783d2",
+      "_site/team/deven-bishnu.html": "4545192d2d7eab71b5aafb3c8a6fba4818b8bc4830024451e9bbdf640dd30190",
+      "_site/team/emily-klee.html": "183914acac732c299264d22e388d0f23fcfc27a76032e8cb57b8937c92a87aa7",
+      "_site/team/himakar-ganti.html": "6081120392f54cb695f914de29b14e7171b7096149c95b4a8f2e4d591a769c78",
+      "_site/team/index.html": "7db376f56eb67f636b0f81a62f96f189cb66bef3a85558d09d88a1c050f379ac",
+      "_site/team/jayani-jayasuriya.html": "a5a94e91e3b31f0d029dbef9fd9c697321fa0546f62737754935337087eb308d",
+      "_site/team/jimwel-aguinaldo.html": "b7fdb75dc22f144efc1edb2d519b5169b32af5ef67c264b2b87e9eb635a7f091",
+      "_site/team/kenny-warren.html": "4a9c0f71203b6b2269a1cd24fd86555b273b56652fc0ce06672358d39b64468b",
+      "_site/team/khang-tran.html": "b50b8145f1f3534b433ccb577274472bac668978bd77a56a5f6fabc52be2b59a",
+      "_site/team/kyle-niemeyer.html": "7f594a78f6804380a0d8b04c70d80b5dd2ca3f668c43db38ad38f10d8c2d9522",
+      "_site/team/logan-fairman.html": "865b71ddf1b264b4d5351c5a3d96ff3ea1876c78547b065cb32e2c43d5264f28",
+      "_site/team/luz-pacheco.html": "281f965b60a2bf61ee207bc15557f5a231403b5b05c69b8cfcf36e05d42b98b2",
+      "_site/team/maria-politi.html": "e6630555a43779ef55cf059dc9350578e53e0cc252c42b56321c454a9bd0784f",
+      "_site/team/matt-zaiger.html": "db33cfa1cfe03f3b2565214cf778bc61d2e1da687d894f514bf19df4c392f926",
+      "_site/team/miguel-soler.html": "b92f75ce7461f919e0ec4d5043612e58e1af744e8cb338240431155ff5788857",
+      "_site/team/morgan-mayer.html": "80a5a9ed4acef2fd176d5ba0ee40da37a574c524636aab47b1880e40bbda7a24",
+      "_site/team/nick-curtis.html": "641144cd06770ad053e44e72f2d37b45b9a7169be8e20ec031a7e508f467f65b",
+      "_site/team/parker-clayton.html": "693ba3b41d5ab978eb9cb8d7747f56519ad8c23bb13138c4154ed45ff9447ebd",
+      "_site/team/phillip-mestas.html": "fef83196574bb24dd70ac963d7bb14880c50f92f9e43544826cfdc442a2c6cbf",
+      "_site/team/shane-daly.html": "24310490dd7138cc21d8cf7d480ebf4b416469e8ad44cea60d94dcb75aa3033b",
+      "_site/team/tejas-mulky.html": "36cdb0edabeab73871e8b258930eb8f0ac920e826b248ff239917288edb21b30"
+    }
+  },
+  {
+    "from": "docs",
+    "to": "archive/legacy-site/docs",
+    "files": {
+      "docs/code-of-conduct.html": "6ce6fa1e7e3b410f2e67970589c12867f5c875f785354448a5ce1d1aa1bc523f",
+      "docs/code-of-conduct.md": "ebe0d051e956b8268bcbc6b9557dcdc84e997bca1d418d06dace4b67d2e5b004",
+      "docs/expectations.html": "c49a9adc69119dfc70aadc6a3e4221fde09065219acedf886ada341d1b23a9f1",
+      "docs/expectations.md": "d44556631f03a8e38d35e833b2e520d430a4b30198abc05f8f7c219e58d2748c",
+      "docs/index.html": "4f98e3d7c7f6a855feeb447a945c974c2d1ead62c7d99022d1dd45e83f8f7b42",
+      "docs/index.md": "15d6e615289df9bec63a77b734abaecb964c8fc119403bdbd669cfee52033d33",
+      "docs/mission.html": "5f26e36f2cc18ea3f87d1c180ef9b8ab76af2933ea366b26a13b7523c2770dd0",
+      "docs/mission.md": "b1dfa8a288f4f7e1ae8bba104f52afcfdf39d4cc2881052a48ad14192b21da49"
+    }
+  },
+  {
+    "from": "funding",
+    "to": "archive/legacy-site/funding",
+    "files": {
+      "funding/index.html": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "from": "medium_posts",
+    "to": "archive/legacy-site/medium_posts",
+    "files": {
+      "medium_posts/medium_posts/Kyle awarded 2019 BSSw Fellowship.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "medium_posts/medium_posts/My plan to address systemic racism in STEM and my units.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "medium_posts/medium_posts/New NSF grant, and commitment to better science communication.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "medium_posts/medium_posts/New NSF grants to support research in oceanography and Cantera software development.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "medium_posts/medium_posts/NRG at the 11th US National Combustion Meeting!.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "medium_posts/medium_posts/NRG undergraduate researchers present their summer work.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "medium_posts/medium_posts/Response to ongoing police violence against Black Americans.html": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    }
+  },
+  {
+    "from": "news",
+    "to": "archive/legacy-site/news",
+    "files": {
+      "news/af-defended.html": "f9fd9d31ed506ab0382bfc451ca1c1452412aba7699246c7e2e3a05b5e521134",
+      "news/index.html": "d69de507ecd7198536041f7e6319cf961e21900708cdbecb40a44a1c712e1c56",
+      "news/_posts/2016-11-23-kyle-faculty-spotlight.md": "0d0f152a21dcef20f47844d72863430eabe4425070bc84ffbe2f080105066392",
+      "news/_posts/2017-03-01-pilot-liblab-video.md": "84e7904ba313eb208eeb9226dd92107bce263c08a4f3123a4872b8b289b2f49f",
+      "news/_posts/2017-10-21-NRG-featured-news.md": "22ce30f43d9570b185dd6613f2cf4a95f7a23dabd3a5312c75432412a684d6fa",
+      "news/_posts/2017-12-20-liblab-local-news.md": "47142eb831f5db7b1b1e5b39039b536b6a8bf58f9d97adaadb6c7b4e37e41736",
+      "news/_posts/2018-06-20-dan-andrew-luz-defended.md": "2496563dfccb7c69b7dd876a717ae283fe00a670d430baa20bc0b4b778a65b37",
+      "news/_posts/2018-07-09-aj-featured-newspaper.md": "aa979afc5b9cf7a5d4404b73ec84f82573c22f4328f69dcdc7f2bc1e2a016934"
+    }
+  },
+  {
+    "from": "PapersByYear",
+    "to": "archive/legacy-site/PapersByYear",
+    "files": {
+      "PapersByYear/index.html": "eb0a59186cf17f174d505b53fd5954afcb6938450ebb5b4a8e7d38b1c2b8238d",
+      "PapersByYear/paper/bone-imaging.html": "bc42b81b5f2235542c387b8d70de087dc40b106f7ed903471ac73e026c8d417b",
+      "PapersByYear/_posts/2009-10-01-bone-imaging.md": "faad723447546d8ad342b3ae77816b7faff43ecfb8d980d75b5eadb52d24017b"
+    }
+  },
+  {
+    "from": "software",
+    "to": "archive/legacy-site/software",
+    "files": {
+      "software/index.html": "8a09eefa44fbb656675542bf62662f5c32edaeec2f8af4c3e6019842f140c5e0"
+    }
+  },
+  {
+    "from": "tutorials",
+    "to": "archive/legacy-site/tutorials",
+    "files": {
+      "tutorials/cai_dat_detectron2_mmdetection.html": "c4b437cd16ec36a7e7a69ebd64427e37ceb612e2abb97316605d2b8edb4dccef",
+      "tutorials/huong_dan_su_dung_docker.html": "087a1c53afee4e7ebe8fc08aadf9b3e4e7089d9a61c0732ba147c8f6e67b0233",
+      "tutorials/index.html": "97c60427ec29d6f55af845c16edc3094e372b9f74e241a4b7210b8a7c3593c6b",
+      "tutorials/mmdetection_step_by_step.html": "0550acf1e575c9907f0e943f6ab3ec3f5961c123e7149546d2dd34ce2cad0863",
+      "tutorials/submit_coco.html": "363da90c880da0f733b2f6f79b3cfab4bf7d8b25fdbce49565122530bd04d516"
+    }
+  },
+  {
+    "from": "papers/_posts",
+    "to": "archive/legacy-site/papers/_posts",
+    "files": {
+      "papers/_posts/2009-10-01-bone-imaging.md": "faad723447546d8ad342b3ae77816b7faff43ecfb8d980d75b5eadb52d24017b",
+      "papers/_posts/2010-09-01-skeletal-reduction.md": "ae722c3faefccdef6f3d568e1caabe95593fb309c68ab0def105f97a6af36278"
+    }
+  },
+  {
+    "from": "papers/paper",
+    "to": "archive/legacy-site/papers/paper",
+    "files": {
+      "papers/paper/bone-imaging.html": "bc42b81b5f2235542c387b8d70de087dc40b106f7ed903471ac73e026c8d417b"
+    }
+  },
+  {
+    "from": "references",
+    "to": "archive/references",
+    "files": {
+      "references/2025-SigM_SEEE-student-2026ver.pptx": "eec48332876598b9c937466b05122e318f55c2d1946b477607e760f1c5712fde"
+    }
+  },
+  {
+    "from": "_config.yml",
+    "to": "archive/jekyll/_config.yml",
+    "files": {
+      "_config.yml": "c7ee04f45622be5bd249471551001dc6345005a39ed146a0bb7283ed6833e91c"
+    }
+  },
+  {
+    "from": ".travis.yml",
+    "to": "archive/jekyll/.travis.yml",
+    "files": {
+      ".travis.yml": "0df565a04bc952341151f859e0a08cd1ece39bec74d604c13ecb2b2bf473bcbf"
+    }
+  },
+  {
+    "from": ".doctr-files",
+    "to": "archive/jekyll/.doctr-files",
+    "files": {
+      ".doctr-files": "0c017f4b085f748ff71d9fadf80892c2cb437eccfe193913a3d61d7d4ed060b9"
+    }
+  },
+  {
+    "from": "Gemfile",
+    "to": "archive/jekyll/Gemfile",
+    "files": {
+      "Gemfile": "2fcf87fd7d2ff442ed7f6b330f782110158502ff6114b89d1476a7d967906c91"
+    }
+  },
+  {
+    "from": "Rakefile",
+    "to": "archive/jekyll/Rakefile",
+    "files": {
+      "Rakefile": "69219c62f9552df5030da6ab1f503700cd264ab887c21b1f652a46c367b6aeb6"
+    }
+  },
+  {
+    "from": "github_deploy_key_niemeyer_research_group_niemeyer_research_group_github_io.enc",
+    "to": "archive/jekyll/github_deploy_key_niemeyer_research_group_niemeyer_research_group_github_io.enc",
+    "files": {
+      "github_deploy_key_niemeyer_research_group_niemeyer_research_group_github_io.enc": "abb9ec59eab6a2ab008e4cbc37869db07742ad566b5ea4c9c4833f1cc576da6b"
+    }
+  },
+  {
+    "from": "404.md",
+    "to": "archive/legacy-root/404.md",
+    "files": {
+      "404.md": "955350ce1937295da089262eaa3875acc27743b5f7599ad2e64ccc4442236aaf"
+    }
+  },
+  {
+    "from": "about.md",
+    "to": "archive/legacy-root/about.md",
+    "files": {
+      "about.md": "1b978f97173db8b155dac34345b1b507ba4dffd186dd812af6f21cd030793ffb"
+    }
+  },
+  {
+    "from": "archive.html",
+    "to": "archive/legacy-root/archive.html",
+    "files": {
+      "archive.html": "886da87eb330df81cdceadc08469adbec6c76b651bda122ea12aa8aea00886be"
+    }
+  },
+  {
+    "from": "atom.xml",
+    "to": "archive/legacy-root/atom.xml",
+    "files": {
+      "atom.xml": "3fdf3b910a1b1887decab5a19870cda9e41c0da8b8f8ad07e0a7b80d45176a97"
+    }
+  },
+  {
+    "from": "categories.html",
+    "to": "archive/legacy-root/categories.html",
+    "files": {
+      "categories.html": "b4ac9a4f5e195c5f2a1274b904c266ab09a7a40d862b418decd86aac01558687"
+    }
+  },
+  {
+    "from": "changelog.md",
+    "to": "archive/legacy-root/changelog.md",
+    "files": {
+      "changelog.md": "193c1fe20628ec0a78a0c0099587bfb44254f9036d4ab4368119a7a4517afa84"
+    }
+  },
+  {
+    "from": "keybase.txt",
+    "to": "archive/legacy-root/keybase.txt",
+    "files": {
+      "keybase.txt": "6146dc33273827bf4e4f39d1cde5ca5cffdbf5cd47c8d0351992c3b285efe96f"
+    }
+  },
+  {
+    "from": "notes.md",
+    "to": "archive/legacy-root/notes.md",
+    "files": {
+      "notes.md": "276bd46d4d6c4a61beaaf60c2072075367114b26a8fe805795ae12b62f829199"
+    }
+  },
+  {
+    "from": "pages.html",
+    "to": "archive/legacy-root/pages.html",
+    "files": {
+      "pages.html": "e0b31024e27b91f5b952d1985cafd3e94a8e5866802c464e118e1ae46c9f565a"
+    }
+  },
+  {
+    "from": "projects.html",
+    "to": "archive/legacy-root/projects.html",
+    "files": {
+      "projects.html": "c891fa662816fd7868ee55b8997adaaafea6e893e9b324ec5777218c86745b55"
+    }
+  },
+  {
+    "from": "redirects.json",
+    "to": "archive/legacy-root/redirects.json",
+    "files": {
+      "redirects.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  },
+  {
+    "from": "rss.xml",
+    "to": "archive/legacy-root/rss.xml",
+    "files": {
+      "rss.xml": "e98c9eb169bdb58387886041c0768b7d205673ed8cabe64064e9c15f0a643d1e"
+    }
+  },
+  {
+    "from": "sitemap.txt",
+    "to": "archive/legacy-root/sitemap.txt",
+    "files": {
+      "sitemap.txt": "63676230cc33fad659f28711942389600224b9274049533b28ea3807a6241989"
+    }
+  },
+  {
+    "from": "tags.html",
+    "to": "archive/legacy-root/tags.html",
+    "files": {
+      "tags.html": "e263e487b79c0beec1865b4f8e98ac96fed9c6be1483abf0dbe79001e4664496"
+    }
+  },
+  {
+    "from": "research/arc-position-sensing.html",
+    "to": "archive/legacy-site/research/arc-position-sensing.html",
+    "files": {
+      "research/arc-position-sensing.html": "5ffe977e2b2ccf2fe6755b63964c8adacddfb99dacf5b0e2c72d325bfcc0a985"
+    }
+  },
+  {
+    "from": "research/chemked.html",
+    "to": "archive/legacy-site/research/chemked.html",
+    "files": {
+      "research/chemked.html": "8e1585fbc804e14519b14a8666b611be6aa039fe5e2d9ffbd33ea6d957eaa067"
+    }
+  },
+  {
+    "from": "papers/index_test.html",
+    "to": "archive/legacy-site/papers/index_test.html",
+    "files": {
+      "papers/index_test.html": "2586762e3c0ab77fe53c5abad283021b1949cfc86509d409b306113428d90820"
+    }
+  }
+]
