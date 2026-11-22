@@ -17,7 +17,7 @@ Facebook: [SigM Lab](https://www.facebook.com/profile.php?id=61552247136375)
 
 ## Student research opportunities {#join}
 
-See [research topics and supervisor contacts](/research/#student-topics).
+See [research topics and supervisor contacts](/student-topics/).
 
 ## Website
 

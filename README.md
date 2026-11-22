@@ -4,7 +4,7 @@ Signal Processing, Information and Multimedia Laboratory, Hanoi University of Sc
 
 ## Updating the public site
 
-The repository root is the static site served by GitHub Pages (`.nojekyll`). Edit `index.html`, `team/index.html`, `research/index.html`, `projects/index.html`, `datasets/index.html`, `about.html` and shared fragments in `includes/`. Preview with `python -m http.server 8000` from this directory.
+The repository root is the static site served by GitHub Pages (`.nojekyll`). Edit `index.html`, `team/index.html`, `research/index.html`, `student-topics/index.html`, `projects/index.html`, `datasets/index.html`, `about.html` and shared fragments in `includes/`. Preview with `python -m http.server 8000` from this directory.
 
 `_site/` contains an older generated copy; it is not the root site. Legacy Jekyll files remain in the repository. `team.html` redirects to the maintained `/team/` page.
 
